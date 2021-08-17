@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etude d’une lunette afocale &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/instr_meth_lunette.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TD Optique 4: Instruments d’optique" href="td_instr.html" />
+    <link rel="prev" title="Etude d’un oculaire" href="instr_meth_oculaire.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="bases.html">
+   Approximation de l’optique géométrique - Bases
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes.html">
+     La lumière est une onde
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="approx.html">
+     Approximation de l’optique géométrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snell.html">
+     Lois de Snell-Descartes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fibre.html">
+     Activité méthode : Les bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_bases.html">
+     TD Optique 1 : Les bases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sys_centres.html">
+   Systèmes centrés
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="s_cen_gene.html">
+     Systèmes centrées: présentation générales
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stigmatisme.html">
+     Stigmatisme rigoureux. Notion d’images.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="miroir.html">
+     Miroir plan: Présentation et relation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gauss.html">
+     Stigmatisme approché et condition de Gauss
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="elements.html">
+     Eléments principaux des systèmes centrés
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_s_cen.html">
+     TD Optique 2a: Systèmes centrés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_g.html">
+   Lentilles minces - Approches graphiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_pres.html">
+     Lentilles minces: Présentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_rayons.html">
+     Lentilles minces: tracés des rayons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_g.html">
+     Application: recherche d’antécédent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_g.html">
+     TD Optique 2b: Lentilles minces - Construction graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_an.html">
+   Lentilles minces - Relations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_relations.html">
+     Relations des lentilles minces
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_exemple.html">
+     Exemples d’études
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_an.html">
+     Application: démonstration de la relation de conjugaison
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="l_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_esp.html">
+       Zones d’espaces conjuguées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_proj.html">
+       Projection
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_an.html">
+     TD Optique 2c: Lentilles minces - Relations mathématiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oeil.html">
+   L’oeil et ses défauts
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="instruments.html">
+   Instruments d’optique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="instr_loupe.html">
+     Exemple d’étude: la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="instr_meth.html">
+     Activités méthodes
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_instr.html">
+     TD Optique 4: Instruments d’optique
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/instr_meth_lunette.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/instr_meth_lunette.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/instr_meth_lunette.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="etude-d-une-lunette-afocale">
+<h1>Etude d’une lunette afocale<a class="headerlink" href="#etude-d-une-lunette-afocale" title="Permalink to this headline">¶</a></h1>
+<p>On considère un lunette afocale, c’est-à-dire donnant une image à l’infini d’un objet à l’infini. Nous allons voir quelques caractéristiques et méthodes d’étude d’un tel dispositif.</p>
+<p>On considère une lunette constituée de deux lentilles:</p>
+<ul class="simple">
+<li><p>l’objectif <span class="math notranslate nohighlight">\(L_1\)</span> (de distance focale image <span class="math notranslate nohighlight">\(f_1\)</span>). Il sert à grandir un objet et recueillir un maximum de de lumière de l’objet</p></li>
+<li><p>l’oculaire <span class="math notranslate nohighlight">\(L_2\)</span> (de distance focale image <span class="math notranslate nohighlight">\(f_2\)</span>). Il sert - comme on l’a vu précédemment - à grossir l’image intermédiaire donnée par l’objectif et à la renvoyer au Punctum Remotum de l’oeil pour limiter la fatigue oculaire.</p></li>
+</ul>
+<p><em>S’y ajoute en général un <strong>réticule</strong> entre l’objectif et l’oculaire où doit - lorsque la lunette est réglée - venir se former l’image intermédiaire. Il sert au réglage de la lunette et peut-être gradué pour réaliser des mesures sur l’objet (ou plus précisément l’image intermédiaire).</em></p>
+<p>Pour les constructions géométriques et les applications numériques, on prendra:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f_1 = 5\rm{cm}\)</span> et <span class="math notranslate nohighlight">\(f_2 = 2 \rm{cm}\)</span>.</p></li>
+<li><p>Distance entre les centre optique: <span class="math notranslate nohighlight">\(\overline{O_1 O_2} = d &gt; 0\)</span>.</p></li>
+<li><p>Diamètre l’objectif: <span class="math notranslate nohighlight">\(D_1 = 4 \rm{cm}\)</span></p></li>
+<li><p>Diamètre l’oculaire: <span class="math notranslate nohighlight">\(D_2 = 2 \rm{cm}\)</span></p></li>
+</ul>
+<p>On notera les foyers objets et images respectivement <span class="math notranslate nohighlight">\(F_1, F_2\)</span> et <span class="math notranslate nohighlight">\(F_1, F_2\)</span>.</p>
+<p>On notera A un objet à l’infini sur l’axe optique, <span class="math notranslate nohighlight">\(A'\)</span> son image par l’objectif (image intermédiaire) et <span class="math notranslate nohighlight">\(A_1\)</span> son image finale</p>
+<p>On notera B un objet à l’infini hors de l’axe optique, <span class="math notranslate nohighlight">\(B'\)</span> son image par l’objectif (image intermédiaire) et <span class="math notranslate nohighlight">\(B_1\)</span> son image finale</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice - Généralités et grossissement</p>
+<ol class="simple">
+<li><p>Une lunette est dite <strong>afocale</strong> si elle donne d’un objet à l’infini une image à l’infini. Pourquoi dit-on qu’elle est <strong>afocale</strong>?</p></li>
+<li><p>En déduire une expression de <span class="math notranslate nohighlight">\(d\)</span> en fonction de <span class="math notranslate nohighlight">\(f_1\)</span> et <span class="math notranslate nohighlight">\(f_2\)</span>. Calculer <span class="math notranslate nohighlight">\(d\)</span> avec les valeurs données dans le tableau. On gardera cette valeur pour <span class="math notranslate nohighlight">\(d\)</span> dans toute la suite de l’exercice.</p></li>
+<li><p>Faire un schéma de la lunette astronomique (on prendra une échelle de 1:1 pour les dimensions longitudinales et transversales). Tracer le parcours de rayons arrivant d’un point B situé à l’infini hors de l’axe optique. On notera l’angle des rayons incidents avec l’axe optique <span class="math notranslate nohighlight">\(\theta\)</span>.On notera l’angle des rayons transmis par le système avec l’axe <span class="math notranslate nohighlight">\(\theta'\)</span>.</p></li>
+<li><p>Définir le grossissement G de la lunette astronomique. Donner son expression en fonction des distances focales des lentilles. Calculer G.</p></li>
+<li><p>Proposer deux façon d’augmenter le grossissement G. Quels sont les contraintes qui empêchent de l’augmenter indéfiniment?</p></li>
+<li><p>L’image observée par l’oeil est-elle droite ou inversée?</p></li>
+<li><p>Déterminer la taille de l’image intermédiaire <span class="math notranslate nohighlight">\(\overline{A'B'}\)</span>.</p></li>
+</ol>
+</div>
+<div class="dropdown admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Un dispositif <strong>afocale</strong> donne une image à l’infini d’un objet à l’infini. Les foyers sont alors renvoyés à l’infini (il n’y a pas de foyers).</p></li>
+<li><p>Pour le calcul du grossissement, il est crucial de passer par l’image intermédiaire. On ne calcule pas ici de grossissement commercial puisqu’on ne peut se rapprocher d’un objet à l’infini !</p></li>
+</ul>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On rappelle qu’en pratique l’oculaire peut être un ensemble de lentilles mais que nous la modéliserons pour simplifier par une seule lentille.</p>
+<p class="card-text">Nous verrons en TP le réglage d’une lunette afocale mais retenons déjà que celà impose de régler la distance oculaire-réticule (s’adapter à l’observateur) et si besoin la distance objectif-réticule (pour former une lunette afocale et former l’image intermédiaire dans le plan du réticule).</p>
+</div>
+</details><div class="attention admonition">
+<p class="admonition-title">Exercice - Cercle oculaire</p>
+<p>On appelle cercle oculaire l’image de la lentille <span class="math notranslate nohighlight">\(L_1\)</span> par la lentille <span class="math notranslate nohighlight">\(L_2\)</span>.</p>
+<ol class="simple">
+<li><p>Déterminer la position et la taille du cercle oculaire. Donner leur valeur numérique.</p></li>
+<li><p>Justifier l’affirmation suivante “Tout rayon entrant dans la lunette (et en ressortant évidemment) passe à l’intérieur du cercle oculaire”. En déduire que le cercle oculaire est l’endroit idéal pour placer son oeil.</p></li>
+<li><p>Faire un schéma permettant de construire le cercle oculaire.</p></li>
+</ol>
+</div>
+<div class="dropdown admonition important">
+<p class="admonition-title">Important</p>
+<p>Le cercle oculaire - image de l’objectif par l’oculaire - est l’endroit où passe toute la lumière entrante dans un espace étroit. C’est le meilleur endroit où placer son oeil pour avoir un maximum de luminosité et de champ.</p>
+<p>En général, les appareil sont construits de sorte que le cercle oculaire soit très proche de l’oculaire (ce qui revient à prendre une <span class="math notranslate nohighlight">\(f_2\)</span> très petite.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice - Limite de résolution</p>
+<p>On suppose dans un premier temps que la résolution de la lunette est due au pouvoir séparateur de l’oeil. On rappelle que le pouvoir séparateur de l’oeil est <span class="math notranslate nohighlight">\(\theta'_m=3.10^{-4}\rm{rad}\)</span>.</p>
+<ol class="simple">
+<li><p>Déterminer la résolution angulaire de la lunette étudiée ici.</p></li>
+<li><p>Pour des étoiles lointaines quasi-ponctuelles, quel autre phénomène risque de gêner leur observation?</p></li>
+</ol>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Limite de résolution et diffraction.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">En pratique, ce phénomène est beaucoup plus limitatif que la résolution de l’oeil quand on observe le ciel. C’est pourquoi l’utilisation d’objectif de grand diamètre peut-être utile. Les turbulences dans l’atmosphère participent aussi à la diminution de la résolution, c’est pourquoi on a construit un instrument d’observation spatiale (le télescope Hubble).</p>
+</div>
+</details><div class="attention admonition">
+<p class="admonition-title">Exercice - Latitude de mise au point</p>
+<ol class="simple">
+<li><p>L’oeil accommodant, l’objet visé peut ne pas être strictement à l’infini. Rappeler ce qu’est le processus d’accommodation.</p></li>
+<li><p>Déterminer la position <span class="math notranslate nohighlight">\(A_1\)</span> de l’image finale d’un objet réel visé situé en un point A qui n’est pas à l’infini. On exprimera la distance <span class="math notranslate nohighlight">\(\overline{F_2 A_1}\)</span> en fonction de <span class="math notranslate nohighlight">\(\overline{F_1 A}\)</span>.</p></li>
+<li><p>L’observateur place son oeil sur le cercle oculaire. Déterminer la latitude de mise au point.</p></li>
+</ol>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice - Champ angulaire</p>
+<ol class="simple">
+<li><p>Pour un objet situé à l’infini, quelle est le diamètre du faisceau incident?</p></li>
+<li><p>Dans le cas d’un faisceau parallèle à l’axe optique, déterminer le diamètre du faisceau transmis. Faire un schéma représentant le faisceau et son passage à travers la lunette. Plus ce diamètre est grand, plus la lunette est lumineuse, c’est pourquoi, outre le grossissement, le diamètre de l’objectif est déterminant dans la qualité de la lunette.</p></li>
+<li><p>Faire le même schéma pour un faisceau faisant un angle <span class="math notranslate nohighlight">\(\theta=30^{\circ}\)</span> par rapport à l’axe optique. Que se passe-t-il? En déduire que le faisceau “utile” entrant, c’est-à-dire l’ensemble des rayons entrant dans la lunette qui ressortent effectivement dépend de l’angle. Quelle est la conséquence sur l’observation?</p></li>
+<li><p>Déterminer graphiquement l’angle maximal pour lequel la section du faisceau “utile” est encore maximale (c’est-à-dire vaut la section déterminée pour le cas d’un faisceau parallèle à l’axe optique). On notera cette angle <span class="math notranslate nohighlight">\(\theta_{\max}\)</span>.</p></li>
+</ol>
+<p>On appelle cet angle le champ (angulaire) de pleine lumière. Quand on observe le ciel, la faible luminosité empêche souvent de visualiser des objets qui ne sont pas dans le champ de pleine lumière (même si une partie de la lumière qui arrive jusqu’à la lunette en ressort).</p>
+<p>On peut montrer que ce champ a pour expression: <span class="math notranslate nohighlight">\(\tan(\theta_{\max})=\frac{1}{2} \frac{D_2 f_1 - D_1 f_2}{f_1 (f_1+f_2)}\)</span>.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On s’intéresse à une lunette réelle. Ses caractéristiques sont:</p>
+<ul class="simple">
+<li><p>Distance focale: 600 mm.</p></li>
+<li><p>Diamètre de l’objectif: 50 mm.</p></li>
+<li><p>Oculaires: 4 mm.</p></li>
+<li><p>Diamètre oculaires: 24,5 mm.</p></li>
+<li><p>Grossissement: <span class="math notranslate nohighlight">\(150 \times\)</span>.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Vérifier le grossissement annoncé.</p></li>
+<li><p>Déterminer le champ en pleine lumière pour cette lunette astronomique.</p></li>
+<li><p>Observe-t-on la lune en entier?</p></li>
+<li><p>Quelle est la taille du plus petit cratère lunaire qu’on peut observer avec une telle lunette.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="instr_meth_oculaire.html" title="previous page">Etude d’un oculaire</a>
+    <a class='right-next' id="next-link" href="td_instr.html" title="next page">TD Optique 4: Instruments d’optique</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

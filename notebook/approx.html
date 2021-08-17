@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Approximation de l’optique géométrique &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/approx.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lois de Snell-Descartes" href="snell.html" />
+    <link rel="prev" title="La lumière est une onde" href="ondes.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="bases.html">
+   Approximation de l’optique géométrique - Bases
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes.html">
+     La lumière est une onde
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Approximation de l’optique géométrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snell.html">
+     Lois de Snell-Descartes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fibre.html">
+     Activité méthode : Les bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_bases.html">
+     TD Optique 1 : Les bases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sys_centres.html">
+   Systèmes centrés
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="s_cen_gene.html">
+     Systèmes centrées: présentation générales
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stigmatisme.html">
+     Stigmatisme rigoureux. Notion d’images.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="miroir.html">
+     Miroir plan: Présentation et relation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gauss.html">
+     Stigmatisme approché et condition de Gauss
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="elements.html">
+     Eléments principaux des systèmes centrés
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_s_cen.html">
+     TD Optique 2a: Systèmes centrés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_g.html">
+   Lentilles minces - Approches graphiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_pres.html">
+     Lentilles minces: Présentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_rayons.html">
+     Lentilles minces: tracés des rayons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_g.html">
+     Application: recherche d’antécédent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_g.html">
+     TD Optique 2b: Lentilles minces - Construction graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_an.html">
+   Lentilles minces - Relations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_relations.html">
+     Relations des lentilles minces
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_exemple.html">
+     Exemples d’études
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_an.html">
+     Application: démonstration de la relation de conjugaison
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="l_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_esp.html">
+       Zones d’espaces conjuguées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_proj.html">
+       Projection
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_an.html">
+     TD Optique 2c: Lentilles minces - Relations mathématiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oeil.html">
+   L’oeil et ses défauts
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="instruments.html">
+   Instruments d’optique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="instr_loupe.html">
+     Exemple d’étude: la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="instr_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_lunette.html">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_instr.html">
+     TD Optique 4: Instruments d’optique
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/approx.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/approx.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/approx.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#source-lumineuse">
+   Source lumineuse
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#faisceau-lumineux-et-rayon-lumineux">
+   Faisceau lumineux et rayon lumineux
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rayon-lumineux-et-diffraction">
+   Rayon lumineux et diffraction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Approximation de l’optique géométrique
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proprietes-dans-le-cadre-de-l-optique-geometrique">
+   Propriétés dans le cadre de l’optique géométrique
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="approximation-de-l-optique-geometrique">
+<h1>Approximation de l’optique géométrique<a class="headerlink" href="#approximation-de-l-optique-geometrique" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="source-lumineuse">
+<h2>Source lumineuse<a class="headerlink" href="#source-lumineuse" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Source lumineuse</p>
+<p>Une source lumineuse est un objet qui émet de la lumière.</p>
+<p>On distingue les sources lumineuses <strong>primaires</strong> qui produisent leurs propres lumières et les sources lumineuses <strong>secondaires</strong> qui réémettent la lumière (ou une partie de la lumière) qu’ils reçoivent.</p>
+</div>
+<div class="note dropdown admonition">
+<p class="admonition-title">Exemple - Exemples de sources</p>
+<ul class="simple">
+<li><p>Sources primaires: lampes, étoile, feu…</p></li>
+<li><p>Sources secondaires: être humain, livre, Lune, planètes…</p></li>
+</ul>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Définition : Sources étendues et sources ponctuelles</p>
+<p>Une source lumineuse ponctuelle est une source lumineuse assimilable à un point. Il s’agit d’un modèle théorique mais qu’on peut considérer acceptable pour des sources lointaines (étoiles) ou pour des sources rendues très petites par un diaphragme <a class="footnote-reference brackets" href="#diaphragme" id="id1">1</a> très fin.</p>
+<p>Une source étendue est constituée d’un ensemble de sources ponctuelles. La majorité des sources que nous utilisons sont des sources étendues (lampes, soleil, lune, source secondaire sur terre… ).</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Sources monochromatiques</p>
+<p>Une source monochromatique est une source qui n’émet qu’une seule longueur d’onde.</p>
+</div>
+</div>
+<div class="section" id="faisceau-lumineux-et-rayon-lumineux">
+<h2>Faisceau lumineux et rayon lumineux<a class="headerlink" href="#faisceau-lumineux-et-rayon-lumineux" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Rayon lumineux</p>
+<p>Un <strong>rayon lumineux</strong> est défini comme la direction de propagation de l’onde électromagnétique.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Propagation de la lumière en milieu homogène (Admis)</p>
+<p>Dans un milieu homogène, transparent, et isotrope (MHTI), les ondes électromagnétiques <strong>se propagent en ligne droite</strong>. Les rayons lumineux sont donc des droites.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+MHTI<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On définit les termes suivants:</p>
+<ul class="simple">
+<li><p class="card-text">Homogène: les caractéristiques du milieu (comme son indice de réfraction) sont identiques en tout point du milieu</p></li>
+<li><p class="card-text">Transparent: le milieu laisse passer la lumière ou au moins la partie du spectre étudié (spectre visible pour nous).</p></li>
+<li><p class="card-text">Isotrope: Les caractéristiques du milieu sont les mêmes dans les différentes directions de l’espace (par exemple la vitesse de la lumière est la même dans toutes les directions de l’espace).</p></li>
+</ul>
+</div>
+</details><div class="tip admonition">
+<p class="admonition-title">Définition : Faisceau lumineux</p>
+<p>Un <strong>faisceau lumineux</strong> est l’étendue de lumière issue d’un objet et - en général - passant par un diaphragme.</p>
+<p>Un faisceau lumineux est composé d’un ensemble de rayons lumineux.</p>
+<p>Outre le spectre de la lumière émise, un faisceau lumineux est caractérisé par son extension (sa forme et sa taille).</p>
+<div class="figure align-center" id="faisceau">
+<a class="reference internal image-reference" href="../_images/faisceau-de-lumiere.png"><img alt="../_images/faisceau-de-lumiere.png" src="../_images/faisceau-de-lumiere.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Faisceau lumineux</span><a class="headerlink" href="#faisceau" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="rayon-lumineux-et-diffraction">
+<h2>Rayon lumineux et diffraction<a class="headerlink" href="#rayon-lumineux-et-diffraction" title="Permalink to this headline">¶</a></h2>
+<p>On peut voir un rayon lumineux comme un faisceau de  section ponctuelle (donc nulle). Une idée pour isoler un rayon lumineux est donc d’utiliser un diaphragme de section ponctuelle (donc nulle).</p>
+<p>Celà permet d’avoir une vision de l’esprit de ce qu’est un rayon. En pratique, on peut chercher à le diaphragmer avec une section très très faible, mais…</p>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Phénomène de diffraction</p>
+<p>Lorsqu’on essaie d’isoler un rayon lumineux comme précédemment et qu’on atteint une taille de diaphragme de l’ordre du micromètre (pour le visible - c’est-à-dire qu’elle devient de <strong>l’ordre de la longueur d’onde</strong>), la tâche augmente et l’on voit apparaître des anneaux autour de la tâche.</p>
+<p>On parle de phénomène de <strong>diffraction.</strong></p>
+<p>Le phénomène de diffraction empêche de tendre rigoureusement vers un rayon lumineux isolé. Dans ces conditions, on ne peut même plus parler de rayon lumineux (il n’y a par exemple pas de correspondance entre un rayon avant et après le diaphragme.</p>
+<div class="figure align-center" id="isolons">
+<img alt="../_images/bog-isolons_un_rayon.png" src="../_images/bog-isolons_un_rayon.png" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Isoler un rayon lumineux</span><a class="headerlink" href="#isolons" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Approximation de l’optique géométrique<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Cadre de l’optique géométrique</p>
+<p>On considère qu’on se place dans le cadre d’étude de <strong>l’optique géométrique</strong> si l’on peut traiter un faisceau lumineux comme un ensemble de rayons lumineux.</p>
+<p>Dans ce cadre, les rayons lumineux dans un milieu homogène, transparent et isotrope sont des lignes droites.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Approximation de l’optique géométrique (Admis)</p>
+<p>On peut se placer dans le cadre de l’optique géométrique si les phénomènes de diffraction sont négligeable c’est-à-dire si <strong>les caractéristiques du milieu (indice de réfraction) varient sur des distances grandes devant la longueur d’onde du milieu</strong> (ou ne varient pas).</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Distances caratéristiques de variation<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Les “distances” de variations sont principalement pour nous la taille des diaphragmes et obstacles à la lumière que nous utilisons. Mais on peut étendre cette étude au cas où l’indice de réfraction varie continuement dans l’espace mais très “lentement ” (dans l’espace, pas dans le temps). On peut penser à l’atmosphère dont l’indice de réfraction varie en fonction de l’altitude (ce qui cause les mirages par exemple).</p>
+<p class="card-text">Dans ce genre de systèmes, on peut alors s’intéresser à une distance “caractéristique” sur laquelle les variations d’indice de réfraction sont sensibles. C’est cette distance qui doit être comparée à la longueur d’onde. Ce cas d’étude sera très rarement abordés en première (ou en tout cas, nous admettrons que le cadre de l’optique géométrique est alors valable).</p>
+</div>
+</details></div>
+<div class="section" id="proprietes-dans-le-cadre-de-l-optique-geometrique">
+<h2>Propriétés dans le cadre de l’optique géométrique<a class="headerlink" href="#proprietes-dans-le-cadre-de-l-optique-geometrique" title="Permalink to this headline">¶</a></h2>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Propagation rectiligne en MTHI</p>
+<p>On rappelle que dans un milieu homogène transparent et isotrope, les rayons lumineux se propagent en ligne droite.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Indépendance des rayons</p>
+<p>Les rayons lumineux sont indépendants, c’est-à-dire que la propagation de l’un n’influe pas sur la propagation l’autre, même quand ils se croisent.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Principe de retour inverse</p>
+<p>Si pour aller d’un point A à un point B, la lumière emprunte un chemin S. Alors pour aller du point B au point A, elle empruntera le chemin S en sens inverse.</p>
+</div>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="diaphragme"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Un diaphragme est un dispositif mécanique qui limitent l’étendue d’un faisceau lumineux. On peut le caractériser par sa forme et sa taille.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="ondes.html" title="previous page">La lumière est une onde</a>
+    <a class='right-next' id="next-link" href="snell.html" title="next page">Lois de Snell-Descartes</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La lumière est une onde &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/ondes.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Approximation de l’optique géométrique" href="approx.html" />
+    <link rel="prev" title="Approximation de l’optique géométrique - Bases" href="bases.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="bases.html">
+   Approximation de l’optique géométrique - Bases
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     La lumière est une onde
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="approx.html">
+     Approximation de l’optique géométrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snell.html">
+     Lois de Snell-Descartes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fibre.html">
+     Activité méthode : Les bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_bases.html">
+     TD Optique 1 : Les bases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sys_centres.html">
+   Systèmes centrés
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="s_cen_gene.html">
+     Systèmes centrées: présentation générales
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stigmatisme.html">
+     Stigmatisme rigoureux. Notion d’images.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="miroir.html">
+     Miroir plan: Présentation et relation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gauss.html">
+     Stigmatisme approché et condition de Gauss
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="elements.html">
+     Eléments principaux des systèmes centrés
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_s_cen.html">
+     TD Optique 2a: Systèmes centrés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_g.html">
+   Lentilles minces - Approches graphiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_pres.html">
+     Lentilles minces: Présentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_rayons.html">
+     Lentilles minces: tracés des rayons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_g.html">
+     Application: recherche d’antécédent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_g.html">
+     TD Optique 2b: Lentilles minces - Construction graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_an.html">
+   Lentilles minces - Relations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_relations.html">
+     Relations des lentilles minces
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_exemple.html">
+     Exemples d’études
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_an.html">
+     Application: démonstration de la relation de conjugaison
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="l_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_esp.html">
+       Zones d’espaces conjuguées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_proj.html">
+       Projection
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_an.html">
+     TD Optique 2c: Lentilles minces - Relations mathématiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oeil.html">
+   L’oeil et ses défauts
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="instruments.html">
+   Instruments d’optique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="instr_loupe.html">
+     Exemple d’étude: la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="instr_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_lunette.html">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_instr.html">
+     TD Optique 4: Instruments d’optique
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/ondes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/ondes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ondes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   La lumière est une onde
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#celerite-et-indice-de-refraction">
+   Célérité et indice de réfraction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relation-entre-celerite-et-longueur-d-onde">
+   Relation entre célérité et longueur d’onde
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="la-lumiere-est-une-onde">
+<h1>La lumière est une onde<a class="headerlink" href="#la-lumiere-est-une-onde" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>La lumière est une onde<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>On rappelle que les expériences réalisées en physique classique (principalement les phénomènes de diffraction et d’interférences) poussent à traiter la lumière comme une onde.</p>
+</div>
+<div class="section" id="celerite-et-indice-de-refraction">
+<h2>Célérité et indice de réfraction<a class="headerlink" href="#celerite-et-indice-de-refraction" title="Permalink to this headline">¶</a></h2>
+<p>On rappelle qu’une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.</p>
+<p>Dans le vide, la célérité des ondes lumineuses est <span class="math notranslate nohighlight">\(c = 3 \times 10^8 m.s^{-1}\)</span>. Dans un autre milieu, la célérité de l’onde <span class="math notranslate nohighlight">\(c_{milieu}\)</span> sera toujours inférieure à c.</p>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Indice de réfraction</p>
+<p>On définit l’indice de réfraction n d’un milieu par : <span class="math notranslate nohighlight">\(n = \frac{c}{c_{milieu}}\)</span>.</p>
+<p>n est toujours supérieur ou égale à 1.</p>
+</div>
+<div class="note dropdown admonition">
+<p class="admonition-title">Exemple - Indices de réfraction : valeurs</p>
+<ul class="simple">
+<li><p>L’indice de l’air est à peu près égal à 1. Il peut varier légèrement suivant la température et la densité (c’est la cause de mirage) et sa composition (propriété utilisée dans certains détecteurs de monoxyde de carbone).</p></li>
+<li><p>L’indice de l’eau liquide est d’environ 1,3 à température ambiante. Il a tendance à diminuer avec la température (mais la valeur donnée reste correcte entre 0<span class="math notranslate nohighlight">\(\circ\)</span>C et 100<span class="math notranslate nohighlight">\(\circ\)</span>C).</p></li>
+<li><p>L’indice du verre varie fortement en fonction de la nature du matériau. Il varie entre 1,4 et 1,7 (on peut monter à 1,8 pour certains verres ophtalmiques). En général, on prend comme moyenne 1,5 quand on n’a pas d’information.</p></li>
+<li><p>Les liquides ont aussi des indices de réfraction qui varie en fonction de leur nature et parfois en fonction de la concentration de certaines espèces. L’analyse de l’indice de réfraction d’un liquide - la réfractométrie - est une méthode d’analyse en chimie.</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Milieu dispersif</p>
+<p>Un milieu est dit <strong>dispersif</strong> si son indice de réfraction dépend de la longueur d’onde.</p>
+</div>
+<div class="note dropdown admonition">
+<p class="admonition-title">Exemple - Exemple de milieux dispersifs.</p>
+<p>C’est le cas de nombreux verre (utilisé dans les prismes) mais aussi de l’eau (principe de l’arc-en-ciel) - son indice de réfraction varie de 1,37 à 1,31 entre 200 et 1000nm.</p>
+</div>
+</div>
+<div class="section" id="relation-entre-celerite-et-longueur-d-onde">
+<h2>Relation entre célérité et longueur d’onde<a class="headerlink" href="#relation-entre-celerite-et-longueur-d-onde" title="Permalink to this headline">¶</a></h2>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Relation fréquence-longueur d’onde</p>
+<p>On rappelle (Terminale) que pour une onde monochromatique de fréquence <span class="math notranslate nohighlight">\(\nu\)</span>, de longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span> et de célérité <span class="math notranslate nohighlight">\(c_0\)</span>, on la relation :</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b4079fdb-7265-4830-8c2e-2d81309ad123">
+<span class="eqno">(1)<a class="headerlink" href="#equation-b4079fdb-7265-4830-8c2e-2d81309ad123" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\lambda \nu = c_0
+\end{equation}\]</div>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+La fréquence ne varie pas<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Pour un signal monochromatique donné, la fréquence ne varie pas lorsque le signal passe d’un milieu à un autre.</p>
+<p class="card-text">Conséquence : Puisque la célérité varie, la longueur d’onde aussi. Si le signal possède une longueur d’onde <span class="math notranslate nohighlight">\(\lambda_0\)</span> dans le vide, dans un milieu d’indice de réfraction n, la célérité est ainsi <span class="math notranslate nohighlight">\(\frac{c}{n}\)</span> et la longueur d’onde est donc <span class="math notranslate nohighlight">\(\lambda = \frac{\lambda_0}{n}\)</span>.</p>
+<p class="card-text">Lorsqu’on veut étudier la propriété d’un signal lumineux (type de rayonnement, couleur), les données référencées concernant <strong>la longueur d’onde dans le vide</strong>.</p>
+<p class="card-text">Exemple : les longueurs d’onde du visible données <span class="math notranslate nohighlight">\(400nm ;800nm\)</span> sont des longueurs d’onde dans le vide.</p>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="bases.html" title="previous page">Approximation de l’optique géométrique - Bases</a>
+    <a class='right-next' id="next-link" href="approx.html" title="next page">Approximation de l’optique géométrique</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

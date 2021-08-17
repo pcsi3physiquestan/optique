@@ -1,0 +1,766 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L’oeil et ses défauts &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/oeil.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Instruments d’optique" href="instruments.html" />
+    <link rel="prev" title="TD Optique 2c: Lentilles minces - Relations mathématiques" href="td_lentilles_an.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="bases.html">
+   Approximation de l’optique géométrique - Bases
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes.html">
+     La lumière est une onde
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="approx.html">
+     Approximation de l’optique géométrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snell.html">
+     Lois de Snell-Descartes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fibre.html">
+     Activité méthode : Les bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_bases.html">
+     TD Optique 1 : Les bases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sys_centres.html">
+   Systèmes centrés
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="s_cen_gene.html">
+     Systèmes centrées: présentation générales
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stigmatisme.html">
+     Stigmatisme rigoureux. Notion d’images.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="miroir.html">
+     Miroir plan: Présentation et relation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gauss.html">
+     Stigmatisme approché et condition de Gauss
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="elements.html">
+     Eléments principaux des systèmes centrés
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_s_cen.html">
+     TD Optique 2a: Systèmes centrés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_g.html">
+   Lentilles minces - Approches graphiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_pres.html">
+     Lentilles minces: Présentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_rayons.html">
+     Lentilles minces: tracés des rayons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_g.html">
+     Application: recherche d’antécédent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_g.html">
+     TD Optique 2b: Lentilles minces - Construction graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_an.html">
+   Lentilles minces - Relations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_relations.html">
+     Relations des lentilles minces
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_exemple.html">
+     Exemples d’études
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_an.html">
+     Application: démonstration de la relation de conjugaison
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="l_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_esp.html">
+       Zones d’espaces conjuguées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_proj.html">
+       Projection
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_an.html">
+     TD Optique 2c: Lentilles minces - Relations mathématiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   L’oeil et ses défauts
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="instruments.html">
+   Instruments d’optique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="instr_loupe.html">
+     Exemple d’étude: la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="instr_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_lunette.html">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_instr.html">
+     TD Optique 4: Instruments d’optique
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/oeil.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/oeil.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/oeil.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#l-oeil-modelisation">
+   L’oeil: Modélisation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#l-oeil-elements-et-modelisation">
+     L’oeil: Eleménts et modélisation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#l-oeil-accomodation">
+     L’oeil: Accomodation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#les-defauts-de-l-oeil">
+     Les défauts de l’oeil
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#les-caracteristiques-de-l-oeil">
+   Les caractéristiques de l’oeil
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#caracteristiques-de-l-oeil-champ-angulaire">
+     Caractéristiques de l’oeil: champ angulaire
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#caracteristique-de-l-oeil-resolution-angulaire">
+     Caractéristique de l’oeil: Résolution angulaire
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#caracteristiques-de-l-oeil-profondeur-de-champ">
+     Caractéristiques de l’oeil: Profondeur de champ
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#oeil-au-repos-et-instruments-d-optique">
+     Oeil au repos et instruments d’optique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#application-accomodation-de-l-oeil">
+   Application: accomodation de l’oeil
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-optique-3-l-oeil">
+   TD Optique 3: L’oeil
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     L’oeil et ses défauts
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="l-oeil-et-ses-defauts">
+<h1>L’oeil et ses défauts<a class="headerlink" href="#l-oeil-et-ses-defauts" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-objectifs admonition">
+<p class="admonition-title">Objectifs</p>
+<ul class="simple">
+<li><p>Modéliser l’oeil comme l’association d’une lentille de vergence variable et d’un capteur fixe.</p></li>
+<li><p>Connaître les ordres de grandeur de la limite de résolution angulaire et de la plage d’accommodation.</p></li>
+</ul>
+</div>
+<div class="section" id="l-oeil-modelisation">
+<h2>L’oeil: Modélisation<a class="headerlink" href="#l-oeil-modelisation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="l-oeil-elements-et-modelisation">
+<h3>L’oeil: Eleménts et modélisation<a class="headerlink" href="#l-oeil-elements-et-modelisation" title="Permalink to this headline">¶</a></h3>
+<p>D’un point de vue optique, on distingue plusieurs éléments de l’oeil (cette liste n’est pas exhaustive mais elle suffit à notre étude).</p>
+<ul class="simple">
+<li><p><em>La rétine</em>: constituée des cellules rétiniennes et reliée au nerf optique (qui apporte les information au cerveau). C’est l’endroit où l’image doit se former nettement.</p></li>
+<li><p><em>Le cristallin</em>: corps vitreux sur le devant de l’oeil. C’est “le système centré” qui sert à dévié les rayons pour former une image de l’objet visé sur la rétine.</p></li>
+<li><p><em>La pupille</em>: devant le cristallin, elle joue le rôle de diaphragme, notamment pour éviter de saturer les cellules rétiniennes en lumière.
+\end{itemize}</p></li>
+</ul>
+<div class="figure align-center" id="oeil-schema">
+<img alt="../_images/optique_oeil_schema.jpg" src="../_images/optique_oeil_schema.jpg" />
+</div>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Modélisation optique de l’oeil</p>
+<p>Du point de vue de l’optique géométrique, on peut modéliser l’oeil comme une lentille (le cristallin) diaphragmée (par la pupille) - celle-ci ne sera pas toujours représentée. La lentille est située en amont d’un écran (la rétine) situé à une distance d (en général d=2.5cm pour un oeil emmétrope - oeil normal).</p>
+<div class="figure align-center" id="oeil-modele">
+<img alt="../_images/optique_oeil_modele.jpg" src="../_images/optique_oeil_modele.jpg" />
+</div>
+</div>
+</div>
+<div class="section" id="l-oeil-accomodation">
+<h3>L’oeil: Accomodation<a class="headerlink" href="#l-oeil-accomodation" title="Permalink to this headline">¶</a></h3>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Principe d’accomodation</p>
+<p>Lorsque l’oeil vise un objet, il doit adapter sa distance focale pour former nettement l’image de l’objet visé sur la rétine. On parle <strong>d’accomodation.</strong></p>
+<p>L’accomodation de l’oeil se fait grâce à des muscles qui vont déformer le cristallin et changer sa distance focale.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Punctum Remotum</p>
+<p>L’oeil ne peut voir plus loin qu’un point appelé <strong>Punctum Remotum</strong>. Lorsqu’il vise ce point, les muscles de l’oeil sont relâché et ne se fatiguent pas. On dit que <strong>l’oeil est au repos</strong>.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque : Accomodation et fatigue oculaire<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On pourra compléter la remarque précédente en remarquant que plus l’objet se rapproche de l’oeil, plus les muscles doivent bomber le cristallin ce qui occasionne une fatigue oculaire d’autant plus grande.</p>
+</div>
+</details><div class="tip admonition">
+<p class="admonition-title">Définition : Punctum Proximum</p>
+<p>L’oeil ne peut voir plus près qu’un point appelé <strong>Punctum Proximum</strong> (car c’est la configuration où le cristallin est bombé au maximum).</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Exemple : Oeil emmétrope</p>
+<p>L’oeil emmétrope ou oeil normal est considéré comme la norme lorsqu’il s’agit d’étudier un oeil (on parle aussi d’oeil sans défaut) ou de construire et d’évaluer un instrument d’optique (cf. suite). Ses caractéristiques sont les suivantes:</p>
+<ul class="simple">
+<li><p>Le punctum Remotum est à l’infini.</p></li>
+<li><p>Le punctum Proximum est à une distance d = 25 cm</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="les-defauts-de-l-oeil">
+<h3>Les défauts de l’oeil<a class="headerlink" href="#les-defauts-de-l-oeil" title="Permalink to this headline">¶</a></h3>
+<p>Voici une présentation succincte des différents défauts de l’oeil. Il ne s’agit pas de connaître par coeur les causes possibles mais de savoir que des défauts peuvent exister.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Oeil myope<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Un oeil myope est un oeil qui ne peut pas voir de loin. Le Punctum Remotum est ramené à une distance proche (quelque fois quelques dizaines de centimètres).</p>
+<p class="card-text"><em>En général, la myopie est due à une cavité oculaire plus grande que la normale (myopie axiale) mais il arrive qu’elle soit liée à une augmentation  de l’indice de réfraction du cristallin (myopie d’indice).</em></p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Oeil hypermétrope<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Un oeil hypermétrope au repos à tendance à faire converger les rayons derrière la rétine. Cela est souvent dû à une cavité oculaire trop petite.</p>
+<p class="card-text"><em>La conséquence est que l’oeil n’est jamais au repos puisqu’il doit sans cesse accommoder pour voir l’objet visé, même à l’infini. Cela entraîne souvent une fatigue oculaire plus fréquente.</em></p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Presbytie<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">La presbytie, en général liée à l’âge, est la difficulté de voir de près. En général, cela est lié à une fatigue musculaire empêchant de bomber le cristallin suffisamment.</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Astigmatie<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">L’astigmatie est un défaut dans la symétrie axiale de l’oeil qui conduit à donner d’un point objet une image sous forme de tâche. Les images peuvent alors paraître déformée ou floue et entraîne une fatigue oculaire.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="les-caracteristiques-de-l-oeil">
+<h2>Les caractéristiques de l’oeil<a class="headerlink" href="#les-caracteristiques-de-l-oeil" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="caracteristiques-de-l-oeil-champ-angulaire">
+<h3>Caractéristiques de l’oeil: champ angulaire<a class="headerlink" href="#caracteristiques-de-l-oeil-champ-angulaire" title="Permalink to this headline">¶</a></h3>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Définition : Champ angulaire</p>
+<p>On définit le champ angulaire de l’oeil (ou d’un instrument d’optique) comme l’angle d’observation maximale.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Exemple : Champ angulaire de l’oeil</p>
+<p>Le champ angulaire d’un oeil est d’environ <span class="math notranslate nohighlight">\(160^\circ\)</span> à <span class="math notranslate nohighlight">\(180^\circ\)</span>. Il est en pratique limité d’un côté par la présence du nez.</p>
+<p>Le champ de vision binoculaire est d’environ <span class="math notranslate nohighlight">\(120^\circ\)</span> mais le champ dans lequel on discrimine les couleurs, celui où l’on peut reconnaître des symboles ou encore celui où l’on peut lire des inscriptions est plus faible.</p>
+<p><em>La donnée du champ angulaire est surtout culturel. On pourra néanmoins dans des cas précis d’instruments scientifiques (comme l’appareil photographique) être amené à déterminer géométriquement et par le calcul un champ angulaire (de l’appareil photo par exemple).</em></p>
+</div>
+</div>
+<div class="section" id="caracteristique-de-l-oeil-resolution-angulaire">
+<h3>Caractéristique de l’oeil: Résolution angulaire<a class="headerlink" href="#caracteristique-de-l-oeil-resolution-angulaire" title="Permalink to this headline">¶</a></h3>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Résolution angulaire<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">La résolution angulaire est l’écart angulaire minimale entre deux objets peuvent être distinguer par l’oeil. On parle aussi de pouvoir de résolution.</p>
+</div>
+</details><div class="tip dropdown admonition">
+<p class="admonition-title">Exemple : Résolution angulaire de l’oeil seul.</p>
+<p>La résolution angulaire de l’oeil seul est de l’ordre de <span class="math notranslate nohighlight">\(3 \times 10^{-4} \rm{rad}\)</span>.</p>
+<p>La résolution angulaire est due à l’existence de cellule rétinienne dont la taille est finie. Si deux objets proches forment une image sur la même cellule rétinienne, ils ne seront pas distingués.</p>
+<p>En pratique la diffraction par la pupille limite aussi la résolution angulaire.</p>
+</div>
+</div>
+<div class="section" id="caracteristiques-de-l-oeil-profondeur-de-champ">
+<h3>Caractéristiques de l’oeil: Profondeur de champ<a class="headerlink" href="#caracteristiques-de-l-oeil-profondeur-de-champ" title="Permalink to this headline">¶</a></h3>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Profondeur de champ<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">La profondeur de champ est l’intervalle de position donnant une image considérée comme nette par l’instrument (ici l’oeil) pour une configuration (un réglage) de l’instrument (ici pour une valeur de focale du cristallin).</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque : Pourquoi y a-t-il une profondeur de champ?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On peut se poser la question car en effet, le stigmatisme et l’aplanétisme prévoit la conjugaison d’un objet à une image et la conjugaison du plan de la rétine avec un seul plan (celui de l’objet visé).</p>
+<p class="card-text">La raison vient du fait que l’oeil n’a pas besoin de former un point sur la rétine pour voir l’objet net ! En effet, l’oeil est constitué de cellules rétiniennes qui ont une taille finie. Si la tâche (au lieu du point) formé est plus faible que la cellules rétiniennes, l’oeil verra l’objet net même s’il n’y a pas conjugaison au sens de l’optique géométrique.</p>
+<p class="card-text">Cette “imperfection” de l’oeil (elle limite la résolution) est très utile puisqu’elle permet de voir des objets nets alors qu’ils ne sont pas dans le même plan: c’est la profondeur de champ.</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Profondeur de champ et appareil photographique<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Il y a le même phénomène dans un appareil photographique (taille des tâches formées sur la pellicule pour l’argentique ou taille des récepteurs CCD pour le numérique).</p>
+<p class="card-text">Dans ce cas là aussi, cela permet d’avoir une profondeur de champ. Ceux qui ont fait un peu de photographie pourront associer la profondeur de champ à l’ouverture (diaphragme) de l’appareil photographique. Il en est de même pour l’oeil (rôle de la pupille).</p>
+</div>
+</details></div>
+<div class="section" id="oeil-au-repos-et-instruments-d-optique">
+<h3>Oeil au repos et instruments d’optique<a class="headerlink" href="#oeil-au-repos-et-instruments-d-optique" title="Permalink to this headline">¶</a></h3>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Principe de construction et d’étude d’un instrument d’optique</p>
+<p>Lorsqu’un fabricant va construire un instrument d’optique, il va chercher à assurer un confort visuel. Pour celà, il va faire en sorte que l’image finale soit au Punctum Remotum pour l’utilisateur.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><strong>Adaptation aux différents yeux et données commerciales.</strong></p>
+<p class="card-text">Lorsqu’un constructeur fournit des informations sur son appareil, il suppose qu’il est utilisé en condition optimale par un oeil emmétrope, c’est-à-dire que l’image finale donnée par l’instrument d’optique (lunette astronomique, telescope, loupe… ) est à l’infini. On parle de données “commerciales”. Nous étudierons souvent les instruments d’optique dans ces conditions.</p>
+<p class="card-text">Comme on l’a vu, le Punctum Remotum peut être à des endroit différents suivant l’utilisateur. C’est pourquoi la majorité des appareils offrent un réglage permettant d’adapter l’appareil à l’utilisation par une personne myope par exemple.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="application-accomodation-de-l-oeil">
+<h2>Application: accomodation de l’oeil<a class="headerlink" href="#application-accomodation-de-l-oeil" title="Permalink to this headline">¶</a></h2>
+<p>Cet exercice d’application directe est à faire à la suite du cours pour vérifier votre compréhension des méthodes. Vous pourrez confronter votre travail avec celui de vos camarades et poser des questions sur cet exercice en classe mais il ne sera pas donné de correction complète.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Déterminer la gamme de distance focale que peut prendre le cristallin d’un oeil emmétrope.</p>
+</div>
+</div>
+<div class="section" id="td-optique-3-l-oeil">
+<h2>TD Optique 3: L’oeil<a class="headerlink" href="#td-optique-3-l-oeil" title="Permalink to this headline">¶</a></h2>
+<p><em>Ces exercices seront traités en classe.</em></p>
+<div class="section" id="id1">
+<h3>L’oeil et ses défauts<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>On désire étudier l’oeil et l’un de ses défauts: la myopie. On modélise l’oeil par une lentille convergente représentant le cristallin (distance focale image <span class="math notranslate nohighlight">\(f'\)</span>, centre optique O) qui doit former l’image de l’objet observé sur la rétine qu’on modélisera par un écran situé en <span class="math notranslate nohighlight">\(A'\)</span> à une distance <span class="math notranslate nohighlight">\(e=\overline{OA'}=15\rm{mm}\)</span>. L’oeil observe un objet situé en A à une distance <span class="math notranslate nohighlight">\(\overline{AO}=d\)</span>.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ul class="simple">
+<li><p>Rappeler la définition du Punctum Proximum (noté ici <span class="math notranslate nohighlight">\(P_P\)</span>) et du Punctum Remotum (noté ici <span class="math notranslate nohighlight">\(P_R\)</span>). On note <span class="math notranslate nohighlight">\(d_m=\overline{P_P O}\)</span> et <span class="math notranslate nohighlight">\(D_m=\overline{P_R O}\)</span> leur position respective (en valeur absolue) sur l’axe optique de l’oeil. Donner leur valeur pour un oeil normal (dit emmétrope), on note la valeur de <span class="math notranslate nohighlight">\(d_m\)</span> pour l’oeil emmétrope <span class="math notranslate nohighlight">\(d_{m0}\)</span>.</p></li>
+<li><p>On note <span class="math notranslate nohighlight">\(V\)</span> la vergence d’un cristallin pour un oeil emmétrope. <span class="math notranslate nohighlight">\(V\)</span> est une fonction de <span class="math notranslate nohighlight">\(d\)</span>. Déterminer <span class="math notranslate nohighlight">\(V(d)\)</span>. Montrer que la vergence augmente quand l’objet est de plus en plus proche.</p></li>
+<li><p>Déterminer <span class="math notranslate nohighlight">\(V(D_{m0})\)</span> et <span class="math notranslate nohighlight">\(V(d_{m0})\)</span>. L’oeil est au repos quand il observe un objet dans le plan du Punctum Remotum, la valeur <span class="math notranslate nohighlight">\(V(D_{m0})\)</span> est donc la vergence du cristallin quand l’oeil est au repos.</p></li>
+</ul>
+</div>
+<p>On suppose un oeil myope où le cristallin est trop convergent (cas de myopie assez rares). On note sa vergence <span class="math notranslate nohighlight">\(V_m\)</span>. Celle-ci peut varier entre deux valeurs extrêmes qui sont: <span class="math notranslate nohighlight">\(V(d_{m0})+\delta V\)</span> et <span class="math notranslate nohighlight">\(V(D_{m0})+\delta V\)</span> avec <span class="math notranslate nohighlight">\(\delta V &gt; 0\)</span> et constant quelque soit la position d de l’objet observé. On appelle <span class="math notranslate nohighlight">\(\delta_V\)</span> le degré de myopie.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ul class="simple">
+<li><p>Un oeil myope et un oeil emmétrope observent tous deux un objet situé à une distance d (pour les deux yeux) de sorte que les deux yeux voient l’objet net. Quelle est la différence de vergence entre les deux cristallin?</p></li>
+<li><p>Déterminer en fonction de <span class="math notranslate nohighlight">\(d_{m0}\)</span> et <span class="math notranslate nohighlight">\(\delta V\)</span>, la position du <span class="math notranslate nohighlight">\(P_P\)</span> (notée <span class="math notranslate nohighlight">\(d_{mm}\)</span>) et du <span class="math notranslate nohighlight">\(P_R\)</span> (notée <span class="math notranslate nohighlight">\(D_{mm}\)</span>) pour un oeil myope. Justifier qu’on dise que le degré de myopie est l’inverse de la distance du Punctum Remotum.</p></li>
+<li><p>Calculer leur position pour <span class="math notranslate nohighlight">\(\delta V=0.1\delta; \delta V=4\delta; \delta V=10\delta\)</span>. Commenter.</p></li>
+<li><p>On désire corriger un oeil myope grâce à une lentille de contact qu’on accole au cristallin (en première approximation). Quel est le type de lentille qu’on doit choisir et quelle est sa vergence?</p></li>
+</ul>
+</div>
+<p>On désire corriger un oeil myope grâce à un verre de lunette qu’on considère être une lentille de vergence <span class="math notranslate nohighlight">\(V'\)</span> dont le centre optique O’ est situé à <span class="math notranslate nohighlight">\(d_L=\overline{O'O}=2\rm{cm}\)</span></p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ul class="simple">
+<li><p>Déterminer la valeur de <span class="math notranslate nohighlight">\(V'\)</span> en fonction de <span class="math notranslate nohighlight">\(\delta V\)</span> et <span class="math notranslate nohighlight">\(d_L\)</span> pour que l’oeil myope puisse alors observer un objet à l’infini net tout en étant au repos. A.N. <span class="math notranslate nohighlight">\(\delta V=4\delta\)</span></p></li>
+<li><p>Par abus de langage, on appelle degré de myopie la vergence du verre correcteur (en valeur absolue) qu’il faut mettre devant un oeil pour corriger sa myopie. A quelle condition sur <span class="math notranslate nohighlight">\(\delta V\)</span> et <span class="math notranslate nohighlight">\(d_L\)</span>, cette abus est-il acceptable?</p></li>
+<li><p>Dans le cas où <span class="math notranslate nohighlight">\(\delta V=4\delta\)</span>, calculer la nouvelle position du <span class="math notranslate nohighlight">\(P_P\)</span>, on notera cette distance (dans le sens positif) <span class="math notranslate nohighlight">\(d_{mc}\)</span>. Que devient cette distance dans le cas où <span class="math notranslate nohighlight">\(\delta V \ll 1/d_L\)</span>?</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="td_lentilles_an.html" title="previous page">TD Optique 2c: Lentilles minces - Relations mathématiques</a>
+    <a class='right-next' id="next-link" href="instruments.html" title="next page">Instruments d’optique</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

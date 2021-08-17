@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lentilles minces: tracés des rayons &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/lent_rayons.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Application: recherche d’antécédent" href="ex_app_lent_g.html" />
+    <link rel="prev" title="Lentilles minces: Présentation" href="lent_pres.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="bases.html">
+   Approximation de l’optique géométrique - Bases
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes.html">
+     La lumière est une onde
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="approx.html">
+     Approximation de l’optique géométrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snell.html">
+     Lois de Snell-Descartes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fibre.html">
+     Activité méthode : Les bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_bases.html">
+     TD Optique 1 : Les bases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sys_centres.html">
+   Systèmes centrés
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="s_cen_gene.html">
+     Systèmes centrées: présentation générales
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stigmatisme.html">
+     Stigmatisme rigoureux. Notion d’images.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="miroir.html">
+     Miroir plan: Présentation et relation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gauss.html">
+     Stigmatisme approché et condition de Gauss
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="elements.html">
+     Eléments principaux des systèmes centrés
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_s_cen.html">
+     TD Optique 2a: Systèmes centrés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="lentilles_g.html">
+   Lentilles minces - Approches graphiques
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_pres.html">
+     Lentilles minces: Présentation
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Lentilles minces: tracés des rayons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_g.html">
+     Application: recherche d’antécédent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_g.html">
+     TD Optique 2b: Lentilles minces - Construction graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_an.html">
+   Lentilles minces - Relations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_relations.html">
+     Relations des lentilles minces
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_exemple.html">
+     Exemples d’études
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_an.html">
+     Application: démonstration de la relation de conjugaison
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="l_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_esp.html">
+       Zones d’espaces conjuguées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_proj.html">
+       Projection
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_an.html">
+     TD Optique 2c: Lentilles minces - Relations mathématiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oeil.html">
+   L’oeil et ses défauts
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="instruments.html">
+   Instruments d’optique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="instr_loupe.html">
+     Exemple d’étude: la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="instr_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_lunette.html">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_instr.html">
+     TD Optique 4: Instruments d’optique
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/lent_rayons.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/lent_rayons.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/lent_rayons.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lentilles-minces-rayons-utiles">
+   Lentilles minces: Rayons utiles
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-trace-un-rayon-transmis-quelconque">
+   Méthode: Tracé un rayon transmis quelconque.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-determiner-un-point-image">
+   Méthode: Déterminer un point image.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-trace-un-faisceau-transmis">
+   Méthode: Tracé un faisceau transmis
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="lentilles-minces-traces-des-rayons">
+<h1>Lentilles minces: tracés des rayons<a class="headerlink" href="#lentilles-minces-traces-des-rayons" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="lentilles-minces-rayons-utiles">
+<h2>Lentilles minces: Rayons utiles<a class="headerlink" href="#lentilles-minces-rayons-utiles" title="Permalink to this headline">¶</a></h2>
+<p>En optique, les études graphiques peuvent être très utiles pour raisonner et prévoir. Mais pour une lentille mince, l’utilisation de la schématisation de Gauss empêche l’utilisation des lois de Snell-Descartes (il n’y a plus la courbure du dioptre ni son épaisseur).</p>
+<p>On doit donc utiliser d’autres méthodes pour construire la position d’une image A’B’ connaissant l’objet AB, construire la position d’un objet AB connaissant la position de l’image, déterminer le devenir d’un rayon ou d’un faisceau…</p>
+<p>Nous allons présenter ici les 4 rayons (plutôt 3 rayons et une propriété particulière) qui peuvent être utiles pour les études présentées ci-dessus. Ils utilisent les éléments principaux de la lentille.</p>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Rayons utiles</p>
+<div class="figure align-center" id="l-rayon-entrant">
+<img alt="../_images/optique_rayon_entrant_para.jpg" src="../_images/optique_rayon_entrant_para.jpg" />
+</div>
+<p>Un rayon incident parallèle à l’axe optique ressort en passant par le foyer principal image.</p>
+<p>A l’inverse, un rayon sortant passant par le foyer principal image a pour antécédent un rayon parallèle à l’axe optique.</p>
+<div class="figure align-center" id="l-rayon-sortant">
+<img alt="../_images/optique_rayon_sortant_para.jpg" src="../_images/optique_rayon_sortant_para.jpg" />
+</div>
+<p>Un rayon entrant passant par le foyer principal objet ressort de la lentille parallèlement à l’axe optique.</p>
+<p>A l’inverse, un rayon sortant parallèle à l’axe optique a pour antécédent un rayon qui passe par le foyer principal objet.</p>
+<div class="figure align-center" id="l-rayon-centre">
+<img alt="../_images/optique_rayon_centre_optique.jpg" src="../_images/optique_rayon_centre_optique.jpg" />
+</div>
+<p>Un rayon entrant passant par le centre optique ressort non dévié.</p>
+<div class="figure align-center" id="l-faisceau">
+<img alt="../_images/optique_rayon_faisceau_parallele.jpg" src="../_images/optique_rayon_faisceau_parallele.jpg" />
+</div>
+<p>Deux (ou plus) rayons incidents parallèles entre eux ressortent en se croisant en un foyer image (secondaire ou principal) donc dans le plan focal image.</p>
+<p>Deux (ou plus) rayons transmis parallèles entre eux ont pour antécédents des rayons qui se croisent en un foyer objet (secondaire ou principal) donc dans le plan focal objet.</p>
+</div>
+</div>
+<div class="section" id="methode-trace-un-rayon-transmis-quelconque">
+<h2>Méthode: Tracé un rayon transmis quelconque.<a class="headerlink" href="#methode-trace-un-rayon-transmis-quelconque" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère un rayon arrivant sur la lentille ci-dessous. Représenter le rayon transmis.</p>
+<div class="figure align-center" id="l-rayon-exo">
+<a class="reference internal image-reference" href="../_images/lentille_cv_rayon.png"><img alt="../_images/lentille_cv_rayon.png" src="../_images/lentille_cv_rayon.png" style="width: 50%;" /></a>
+</div>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Méthode<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Le principe de construction est le suivant: deux rayons incidents parallèles ressortent en se croisant dans le plan focal image. On va donc:</p>
+<ol class="simple">
+<li><p class="card-text">tracer un rayon utile parallèle au rayon qui nous intéresse. Ici, on a tracé (pointillés rouges) le rayon passant par le centre optique qui ressort non dévié).</p></li>
+<li><p class="card-text">chercher sont intersection avec le plan focal image (point D)</p></li>
+<li><p class="card-text">le rayon sortant qui nous intéresse passant par D, il ne reste plus qu’à le tracer.</p></li>
+</ol>
+<div class="figure align-center" id="l-rayon-corr">
+<a class="reference internal image-reference" href="../_images/lentille_cv_rayon_2.png"><img alt="../_images/lentille_cv_rayon_2.png" src="../_images/lentille_cv_rayon_2.png" style="width: 50%;" /></a>
+</div>
+</div>
+</details></div>
+<div class="section" id="methode-determiner-un-point-image">
+<h2>Méthode: Déterminer un point image.<a class="headerlink" href="#methode-determiner-un-point-image" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère un point B hors de l’axe optique. Déterminer graphiquement son image B’ par la lentille ci-dessous.</p>
+<div class="figure align-center" id="l-objet-exo">
+<a class="reference internal image-reference" href="../_images/lentille_cv_obj_ha.png"><img alt="../_images/lentille_cv_obj_ha.png" src="../_images/lentille_cv_obj_ha.png" style="width: 50%;" /></a>
+</div>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Méthode<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Puisqu’on est dans les conditions de Gauss, on considère le stigmatisme réalisé. On va donc tracer deux rayons et chercher l’intersection des deux rayons transmis. Ce sera l’image B’. On a le choix entre les trois rayons utiles.</p>
+<p class="card-text">Ici, <strong>on a tracé les 3 mais deux suffisent</strong>, on a représenté les 3 à titre d’entraînement.</p>
+<div class="figure align-center" id="l-objet-corr">
+<a class="reference internal image-reference" href="../_images/lentille_cv_obj_ha_2.png"><img alt="../_images/lentille_cv_obj_ha_2.png" src="../_images/lentille_cv_obj_ha_2.png" style="width: 50%;" /></a>
+</div>
+</div>
+</details><div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère un point A sur l’axe optique. Déterminer graphiquement son image A’ par la lentille ci-dessous.</p>
+<div class="figure align-center" id="l-objet-a-exo">
+<a class="reference internal image-reference" href="../_images/lentille_cv_obj_sa.png"><img alt="../_images/lentille_cv_obj_sa.png" src="../_images/lentille_cv_obj_sa.png" style="width: 50%;" /></a>
+</div>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Méthode<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Cette fois, on ne peut tracer directement deux rayons utiles (les 3 sont le même: l’axe optique). Par contre, on peut utiliser l’aplanétisme: un point hors de l’axe optique (B) mais dans le plan frontal de A aura une image B’ dans le même plan frontal que A’.</p>
+<p class="card-text">Une fois B placé, on cherche son image comme précédemment et on la projette sur l’axe optique pour obtenir A’.</p>
+<p class="card-text">Ici, <strong>on a tracé les 3 mais deux suffisent</strong>, on a représenté les 3 à titre d’entraînement.</p>
+<div class="figure align-center" id="l-objet-a-corr">
+<a class="reference internal image-reference" href="../_images/lentille_cv_obj_sa_2.png"><img alt="../_images/lentille_cv_obj_sa_2.png" src="../_images/lentille_cv_obj_sa_2.png" style="width: 50%;" /></a>
+</div>
+</div>
+</details></div>
+<div class="section" id="methode-trace-un-faisceau-transmis">
+<h2>Méthode: Tracé un faisceau transmis<a class="headerlink" href="#methode-trace-un-faisceau-transmis" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère le faisceau suivant arrivant sur une lentille convergente. Tracer le faisceau sortant correspondant.</p>
+<div class="figure align-center" id="l-cv-faisceau">
+<a class="reference internal image-reference" href="../_images/lentille_cv_faisceau.png"><img alt="../_images/lentille_cv_faisceau.png" src="../_images/lentille_cv_faisceau.png" style="width: 50%;" /></a>
+</div>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Méthode<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Il existe deux méthodes pour obtenir le tracé du faisceau sortant: on passe par un point objet ou l’on trace les rayons sortants extrêmes.</p>
+<p class="card-text"><strong>Méthode 1.</strong> : Le principe est le suivant: le faisceau entrant concourent en un point (ici C). Le faisceau sortant va donc concourir en un point C’ qui sera l’image de C par la lentille. On va chercher la position de C’ puis on tracera les rayons extrêmes (qui passent par C’ donc) pour obtenir le faisceau sortant.</p>
+<p class="card-text">On a réalisé la construction ci-dessous en utilisant deux rayons: l’un passant par C et le centre optique, l’autre par C et le foyer principal objet. Le faisceau sortant est hachuré vert.</p>
+<div class="figure align-center" id="l-cv-faisceau-corr">
+<a class="reference internal image-reference" href="../_images/lentille_cv_faisceau_2.png"><img alt="../_images/lentille_cv_faisceau_2.png" src="../_images/lentille_cv_faisceau_2.png" style="width: 50%;" /></a>
+</div>
+<p class="card-text"><strong>Méthode 2.</strong> : On utilise cette fois les méthodes vues pour tracer le devenir d’un rayon quelconque. On a, sur la figure ci-dessous, tracé deux rayons: chacun est parallèle à un rayon extrême et passe par le centre optique. On cherche leurs intersections avec le plan focal image: les deux rayons extrêmes doivent passer par ces intersections. On a donc le faisceau sortant.</p>
+<div class="figure align-center" id="l-cv-faisceau-corr-2">
+<a class="reference internal image-reference" href="../_images/lentille_cv_faisceau_3.png"><img alt="../_images/lentille_cv_faisceau_3.png" src="../_images/lentille_cv_faisceau_3.png" style="width: 50%;" /></a>
+</div>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="lent_pres.html" title="previous page">Lentilles minces: Présentation</a>
+    <a class='right-next' id="next-link" href="ex_app_lent_g.html" title="next page">Application: recherche d’antécédent</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
