@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zones d’espaces conjuguées &#8212; Optique géométrique</title>
+    <title>Etude de systèmes optiques multilentilles &#8212; Optique géométrique</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,12 +49,14 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/l_meth_esp.html" />
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/microscope.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Projection" href="l_meth_proj.html" />
-    <link rel="prev" title="Activités méthodes" href="l_meth.html" />
+    <link rel="next" title="Lentilles minces - Approches graphiques" href="lentilles_g.html" />
+    <link rel="prev" title="TD Optique 2a: Systèmes centrés" href="td_s_cen.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -127,16 +129,16 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="sys_centres.html">
    Systèmes centrés
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="s_cen_gene.html">
      Systèmes centrées: présentation générales
@@ -162,18 +164,18 @@
      Eléments principaux des systèmes centrés
     </a>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2 current active has-children">
     <a class="reference internal" href="td_s_cen.html">
      TD Optique 2a: Systèmes centrés
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
     <label for="toctree-checkbox-3">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="microscope.html">
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        Etude de systèmes optiques multilentilles
       </a>
      </li>
@@ -213,16 +215,16 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="lentilles_an.html">
    Lentilles minces - Relations
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="l_relations.html">
      Relations des lentilles minces
@@ -238,18 +240,18 @@
      Application: démonstration de la relation de conjugaison
     </a>
    </li>
-   <li class="toctree-l2 current active has-children">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="l_meth.html">
      Activités méthodes
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
     <label for="toctree-checkbox-6">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul class="current">
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_esp.html">
        Zones d’espaces conjuguées
       </a>
      </li>
@@ -355,14 +357,11 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/notebook/l_meth_esp.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/l_meth_esp.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notebook/microscope.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -385,7 +384,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/l_meth_esp.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/microscope.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -402,6 +401,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#position-du-probleme">
+   Position du problème
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modelisation-sous-python">
+   Modélisation sous Python
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -410,61 +427,49 @@
         
               <div>
                 
-  <div class="section" id="zones-d-espaces-conjuguees">
-<h1>Zones d’espaces conjuguées<a class="headerlink" href="#zones-d-espaces-conjuguees" title="Permalink to this headline">¶</a></h1>
-<p>On veut ici relier des zones d’espaces dans lesquelles l’objet et l’image conjugué seront du même type: par exemple une zone où l’on aura toujours un objet réel donnant une image virtuelle (attention la zone de l’objet ne sera pas la même que la zone de l’image.</p>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>On considère une lentille convergente. Déterminer les zones objets correspondant aux configuration suivantes:</p>
+  <div class="section" id="etude-de-systemes-optiques-multilentilles">
+<h1>Etude de systèmes optiques multilentilles<a class="headerlink" href="#etude-de-systemes-optiques-multilentilles" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="position-du-probleme">
+<h2>Position du problème<a class="headerlink" href="#position-du-probleme" title="Permalink to this headline">¶</a></h2>
+<p>On considère un microscope constitué :</p>
+<ul class="simple">
+<li><p>d’un objectif réalisé par une lentille mince de distance focale <span class="math notranslate nohighlight">\(f_{obj} = 4mm\)</span> placé au point O.</p></li>
+<li><p>d’un oculaire dit de Ramsden constitué de deux lentilles minces de même distance focale de distance focale <span class="math notranslate nohighlight">\(f_2 = f_3 = 3cm\)</span> distantes de <span class="math notranslate nohighlight">\(\overline{O_2 O_3} = {2 \over 3}f_3\)</span></p></li>
+<li><p>la distance entre l’objectif et la première lentille de l’oculaire est <span class="math notranslate nohighlight">\(\Delta = 18cm\)</span> (on l’appellera <em>intervale optique</em>).</p></li>
+</ul>
+<p>Le but de l’exercice est de trouver par simulation numérique, puis par le calcul où placer un objet (de taille 1U.A.) pour que l’image finale soit à l’infini.</p>
+<p>On place l’origine de l’axe optique à l’emplacement de l’objectif et on suppose que le systèmes vérifient les conditions de Gauss.</p>
+</div>
+<div class="section" id="modelisation-sous-python">
+<h2>Modélisation sous Python<a class="headerlink" href="#modelisation-sous-python" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>On va modéliser un objet (ou une image) par une liste de deux éléments <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">d]</span></code> correspondant à sa position <span class="math notranslate nohighlight">\(x\)</span> sur l’axe optique et sa taille transverse <span class="math notranslate nohighlight">\(d\)</span>.</p>
+<ul>
+<li><p>Dans la suite, si on utilie comme argument d’une fonction un objet (donc une liste de deux éléments), il sera appelé <code class="docutils literal notranslate"><span class="pre">obj</span></code> ou <code class="docutils literal notranslate"><span class="pre">obj1,</span> <span class="pre">obj2,</span> <span class="pre">...</span></code>.</p></li>
+</ul>
+</li>
+<li><p>On va modéliser une lentille mince par une liste de deux éléments <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">f]</span></code> correspondant à sa position <span class="math notranslate nohighlight">\(x\)</span> sur l’axe optique et sa distance focale <span class="math notranslate nohighlight">\(f'\)</span>.</p>
+<ul>
+<li><p>Dans la suite, si on utilie comme arguments d’une fonction une lentille (donc une liste de deux éléments), il sera appelé <code class="docutils literal notranslate"><span class="pre">L</span></code> ou <code class="docutils literal notranslate"><span class="pre">L1,</span> <span class="pre">L2,</span> <span class="pre">...</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p><strong>Exercice :</strong></p>
 <ol class="simple">
-<li><p>l’objet est réel et l’image est virtuelle.</p></li>
-<li><p>l’objet est réel et l’image est réelle.</p></li>
-<li><p>l’objet est virtuel et l’image est virtuelle.</p></li>
-<li><p>l’objet est virtuel et l’image est réelle.</p></li>
+<li><p>Comment appelle-t-on le point sur l’axe optique où doit être placé l’objet?</p></li>
+<li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">image(L,</span> <span class="pre">obj)</span></code> qui renvoie les caractéristiques d’une image (liste à deux éléments) d’un objet <code class="docutils literal notranslate"><span class="pre">obj</span></code> par une lentille <code class="docutils literal notranslate"><span class="pre">L</span></code>.</p></li>
+<li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">microscope(fobj,</span> <span class="pre">f2,</span> <span class="pre">Delta,</span> <span class="pre">obj)</span></code> qui renvoie les caractéristiques d’une image (liste à deux éléments) d’un objet <code class="docutils literal notranslate"><span class="pre">obj</span></code> par un microscope dont la focale de l’objectif est <code class="docutils literal notranslate"><span class="pre">fobj</span></code>, celle des lentilles de l’oculaire <code class="docutils literal notranslate"><span class="pre">f2</span></code> et l’intervale optique <code class="docutils literal notranslate"><span class="pre">Delta</span></code></p></li>
+<li><p>Pour des objets situé entre l’objectif et 2cm en amont de l’objectif, tracer deux graphiques donnant l’un la position de l’image finale en fonction de la position de l’objet et la taille de l’image finale en fonction de la taille de l’objet. En déduire visuellement où placer l’objet. (Ne pas hésiter à “zoomer”).</p></li>
+<li><p>*Pour déterminer numériquement la position de l’objet, réaliser une recherche de 0 (par dichotomie à <span class="math notranslate nohighlight">\(10^{-6} cm\)</span> près sur la position de l’objet) sur la fonction <span class="math notranslate nohighlight">\(Y(x_{obj}\)</span> où <span class="math notranslate nohighlight">\(x_{obj}\)</span> est la position de l’objet et <span class="math notranslate nohighlight">\(Y\)</span> l’inverse de la position de l’image.</p></li>
+<li><p>Déterminer analytiquement la position de l’objet en déterminant successivement : la position du foyer principal objet de l’oculaire seule puis la position de l’objet.</p></li>
 </ol>
-<p>Dans chaque configuration, on déterminera aussi:</p>
+</div></blockquote>
+<p><em>Indications utiles</em> :</p>
 <ul class="simple">
-<li><p>la zone image correspondante</p></li>
-<li><p>si l’image est droite ou renversée</p></li>
-<li><p>si l’image est grandit, rétrécie ou si elle peut-être les deux.</p></li>
+<li><p>Faire attention à ne pas confondre la position absolue sur un axe et une distance relative entre deux éléments.</p></li>
+<li><p>Il faudra peut-être tracer <span class="math notranslate nohighlight">\(Y(x_{obj})\)</span> pour choisir l’intervalle pour la dichotomie.</p></li>
 </ul>
-<p>Reprendre le même exercice pour une lentille divergente.</p>
-</div>
-<div class="important dropdown admonition">
-<p class="admonition-title">Bilan à retenir - Ce n’est PAS la correction.</p>
-<p>On retiendra que pour un lentille convergente, on peut obtenir les 3 configurations suivantes:</p>
-<ul class="simple">
-<li><p>objet réel avant le foyer objet et image réelle après le foyer image. L’image est alors renversée et elle peut être agrandie ou rétrécie.</p></li>
-<li><p>objet réel entre F et O et image virtuelle. L’image est droite et toujours plus grande que l’objet.</p></li>
-<li><p>objet virtuel et image réelle entre O et F’. L’image est droite et toujours plus petite que l’objet.</p></li>
-</ul>
-</div>
-<div class="important dropdown admonition">
-<p class="admonition-title">Bilan à retenir - Ce n’est PAS la correction.</p>
-<p>On retiendra que pour un lentille divergente, on peut obtenir les 3 configurations suivantes:</p>
-<ul class="simple">
-<li><p>objet réel et image virtuelle entre F’ et O. L’image est alors droite et elle est toujours plus petite que l’objet.</p></li>
-<li><p>objet virtuel entre O et F et image réelle. L’image est droite et toujours plus grande que l’objet.</p></li>
-<li><p>objet virtuel après F et image virtuelle avant F’. L’image est renversée et elle peut être agrandie ou rétrécie.</p></li>
-</ul>
-</div>
-<div class="figure align-center" id="espaces-conjugues">
-<img alt="../_images/optique_espaces_conjugues.jpg" src="../_images/optique_espaces_conjugues.jpg" />
-<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Les couleurs donnent la correspondance entre les zones objets et images</span><a class="headerlink" href="#espaces-conjugues" title="Permalink to this image">¶</a></p>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text"><strong>Points principaux</strong> On remarquera que les points qui délimitent les zones d’espaces conjugués sont des points importants pour l’objet (l’infini, le foyer <strong>objet</strong>, le centre optique) ou pour l’image (l’infini, le foyer <strong>image</strong>, le centre optique).</p>
-</div>
-</details><div class="hint dropdown admonition">
-<p class="admonition-title">Tracé graphique</p>
-<p>Il est <strong>très vivement</strong> conseillé de s’entraîner à déterminer l’image d’un point objet dans chaque zone objet pour chaque type de lentille puis de faire l’inverse: déterminer l’antécédent d’un point image dans chaque zone image pour chaque type de lentille.</p>
-<p>Vous serez alors à même de vous débrouiller dans chaque situation.</p>
 </div>
 </div>
 
@@ -493,8 +498,8 @@ Remarque<div class="summary-down docutils">
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="l_meth.html" title="previous page">Activités méthodes</a>
-    <a class='right-next' id="next-link" href="l_meth_proj.html" title="next page">Projection</a>
+    <a class='left-prev' id="prev-link" href="td_s_cen.html" title="previous page">TD Optique 2a: Systèmes centrés</a>
+    <a class='right-next' id="next-link" href="lentilles_g.html" title="next page">Lentilles minces - Approches graphiques</a>
 
         </div>
         
