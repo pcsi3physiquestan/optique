@@ -51,7 +51,7 @@ Une impulsion lumineuse (une information) arrive à t = 0 au point O sous la for
 * $n_2 < n_1$
 * 90\% puis 0.1\%
 * $\theta_a = \arcsin{\sqrt{n_1^2 - n_2^2}}$
-* $sin \theta_a = n_1 \sqrt{2 \Delta = 0.2}$
-* $\Delta t = \frac{n_1 l}{c} \left ( \frac{1}{\sqrt{1 - \frac{\sin \theta_i}{n_1}}}\right)$
+* $sin \theta_a = n_1 \sqrt{2 \Delta} = 0.2$
+* $\Delta t = \frac{n_1 l}{c} \left ( \frac{1}{\sqrt{1 - {\left(\frac{\sin \theta_i}{n_1}}\right)}^2} - 1\right)$
 * $\Delta t = 50 \rm{\mu s} $
 ````
