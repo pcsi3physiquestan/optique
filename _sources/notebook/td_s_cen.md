@@ -57,7 +57,7 @@ On étudie un dioptre hémisphérique (une lentille) de rayon R et d'indice n pl
 :class: attention
 
 1. On considère un rayon du faisceau de lumière à une distance d de l'axe optique. Établir la relation donnant CA en fonction de R = CS, et des angles i et r.
-2. Montrer que quand on se place dans l'approximation de Gauss ($d \ll R$), on peut considérer que tous les rayons coupent l'axe optique en un même point F' dont on déterminer la distance à C. F' est donc l'image de A dans les conditions de Gauss.
+2. Montrer que quand on se place dans l'approximation de Gauss ($d \ll R$), on peut considérer que tous les rayons coupent l'axe optique en un même point F' dont on déterminer la distance à C. F' est donc l'image de B dans les conditions de Gauss.
 3. Comment appelle-t-on F'?
 4. On n'est plus dans les conditions de Gauss. Quelle est la valeur $d_0$ limite de d max du faisceau incident si l'on veut que tous les rayons du faisceau incident ressortent de la lentille?
 5. Faire l'application numérique pour n = 1,5, R = 5cm.
