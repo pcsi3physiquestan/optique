@@ -17,14 +17,12 @@ kernelspec:
 
 ## Systèmes centrées: définition
 
-````{admonition} Définition : Système optique centré
-:class: tip
+````{important} __Définition : Système optique centré__
 
 Un système centré est un système optique - c'est-à-dire une série de dioptre (et de surfaces réfléchissantes) - possédant un axe de révolution.
 ````
 
-````{admonition} Définition : Axe optique et plans frontaux
-:class: tip
+````{important} __Définition : Axe optique et plans frontaux__
 
 L'axe de révolution d'un système optique centré est appelé __axe optique__.
 
@@ -38,16 +36,14 @@ Tout plan perpendiculaire à l'axe optique est appelé __plan frontal.__
 
 ## Rayons entrants et sortants
 
-````{admonition} Définition : Rayons entrants (ou incidents)
-:class: tip
+````{important} __Définition : Rayons entrants (ou incidents)__
 
 Les rayons qui arrivent sur le système optique sont appelés __rayons entrants ou rayons incidents__.
 
 La portion réellement parcourue par le rayon est appelé rayon réel. Son prolongement est appelé rayon virtuel.
 ````
 
-````{admonition} Définition : Rayons sortants (ou transmis)
-:class: tip
+````{important} __Définition : Rayons sortants (ou transmis)__
 
 Les rayons qui sortent du système optique sont appelés __rayons sortants ou rayons transmis__.
 
@@ -62,8 +58,7 @@ La portion réellement parcourue par le rayon est appelé rayon réel. Son prolo
 
 ## Objets réels et virtuels
 
-````{admonition} Définition : Objet ponctuel
-:class: tip
+````{important} __Définition : Objet ponctuel__
 
 Lorsque les rayons entrants concourent en un point, on appelle ce point, __point objet (ou objet)__.
 ````
@@ -89,8 +84,7 @@ Un objet n'est pas nécessairement matériel (source primaire ou secondaire), il
 Exemple: Un oeil humaine utilise un télescope. Le téléscope vise une étoile (qui est un objet pour le téléscope) et en donne une image (grossie normalement). C'est cette image qui est vue par l'oeil. Elle est donc l'objet pour système optique {oeil} (plus exactement le cristalin).
 ````
 
-````{admonition} Définition : Objet réel et virtuel
-:class: tip
+````{important} __Définition : Objet réel et virtuel__
 
 Si le point objet est le concours des rayons réels, alors on dit que l'objet est réel (comme $A_1$ sur la figure ci-dessous).
 

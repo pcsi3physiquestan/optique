@@ -26,8 +26,7 @@ On rappelle qu'une onde se propage à une vitesse - une célérité - donnée qu
 Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera toujours inférieure à c.
 
 
-````{admonition} Définition : Indice de réfraction
-:class: tip
+````{important} __Définition : Indice de réfraction__
 On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}}$.
 
 n est toujours supérieur ou égale à 1.
@@ -42,8 +41,7 @@ n est toujours supérieur ou égale à 1.
 * Les liquides ont aussi des indices de réfraction qui varie en fonction de leur nature et parfois en fonction de la concentration de certaines espèces. L'analyse de l'indice de réfraction d'un liquide - la réfractométrie - est une méthode d'analyse en chimie.
 ````
 
-````{admonition} Définition : Milieu dispersif
-:class: tip
+````{important} __Définition : Milieu dispersif__
 Un milieu est dit __dispersif__ si son indice de réfraction dépend de la longueur d'onde.
 ````
 
@@ -54,8 +52,7 @@ C'est le cas de nombreux verre (utilisé dans les prismes) mais aussi de l'eau (
 
 ## Relation entre célérité et longueur d'onde
 
-````{admonition} Fondamental : Relation fréquence-longueur d'onde
-:class: important
+````{important} __Fondamental : Relation fréquence-longueur d'onde__
 On rappelle (Terminale) que pour une onde monochromatique de fréquence $\nu$, de longueur d'onde $\lambda$ et de célérité $c_0$, on la relation :
 
 \begin{equation}

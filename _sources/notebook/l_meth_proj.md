@@ -41,8 +41,7 @@ On s'impose que:
 ````{dropdown} Correction
  
 
-````{admonition} Bilan à retenir - Ce n'est PAS la correction.
-:class: important, dropdown
+````{important} Bilan à retenir - Ce n'est PAS la correction., dropdown
 
 On retiendra que:
 * pour pouvoir projeter un objet sur un écran situé à une distance D, il faut __une lentille convergente__ dont la distance focale satisfait __la condition de projection__ $D > 4f'$__

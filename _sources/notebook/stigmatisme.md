@@ -35,8 +35,7 @@ Ci dessous l'exemple du miroir plan où le faisceau issu du point $A_1$ donne un
 ```
 ````
 
-````{admonition} Définition : Stigmatisme rigoureux
-:class: tip
+````{important} __Définition : Stigmatisme rigoureux__
 
 Un système optique est dit __rigoureusement stigmatique__ pour deux points (A ;A') si l'ensemble des rayons lumineux issus du premier point A et traversant le système forment d'autres rayons lumineux dont les supports passent par le second point A'.
 
@@ -45,8 +44,7 @@ Le premier point A est appelé point objet, le second point image A'. On dit que
 
 ## Images réelles et virtuelles
 
-````{admonition} Définition : Image ponctuelle
-:class: tip
+````{important} __Définition : Image ponctuelle__
 
 Lorsque le stigmatisme est réalisé, le faisceau incident issu d'un point objet A ressort du système optique en concourant en un point $A_1$ appelé image de l'objet __$A_1$__.
 
@@ -55,8 +53,7 @@ On dit que A et $A_1$ sont __conjugués.__
 On parlera par extension de l'image d'un objet étendu.
 ````
 
-````{admonition} Définition : Image réelles et virtuelles.
-:class: tip
+````{important} __Définition : Image réelles et virtuelles.__
 
 Lorsque le point image est au concours des rayons réels, on dit que l'image est réelle (comme $A'_1$ dans l'image ci-dessous). En pratique, il s'agit d'une image formée en aval du système optique. On peut y placer un écran et observer l'image sur l'écran.
 

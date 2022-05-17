@@ -18,8 +18,7 @@ kernelspec:
 
 ## Eléments principaux: foyers
 
-````{admonition} Définition : Foyers principaux objets et images
-:class: tip
+````{important} __Définition : Foyers principaux objets et images__
 
 On définit le foyer principal objet comme le point où tout rayon __incident__ passant par le foyer principal objet ressort du système optique (__rayon transmis)__ en étant parallèle à l'axe optique.
 
@@ -37,15 +36,13 @@ Foyer principal image (gauche) et objet (droite)
 
 ````
 
-````{admonition} Définition : Plan principaux image et objets
-:class: tip
+````{important} __Définition : Plan principaux image et objets__
 
 Les plans focaux objet et image sont respectivement les plans frontaux contenant les foyers principaux objet ou image.
 
 ````
 
-````{admonition} Définition : Foyers secondaires objets et images
-:class: tip, dropdown
+````{important} __Définition : Foyers secondaires objets et images, dropdown__
 
 Les foyers secondaires objet et image sont les points respectivement du plan focal objet ou image n'étant pas sur l'axe optique.
 
@@ -56,8 +53,7 @@ Un foyer secondaire image a pour antécédent un point à l'infini __hors de l'a
 
 ## Eléments principaux: Centre optique et distance focale
 
-````{admonition} Définition : Centre optique
-:class: tip
+````{important} __Définition : Centre optique__
 
 Le __centre optique__ est le point de l'axe optique où tout rayon incident pointant vers ce point ressort sans être dévié.
 ````
@@ -67,8 +63,7 @@ Pour un système optique quelconque, le centre optique n'existe pas forcément. 
 ````
 
 
-````{admonition} Définition : Distance focale objet et image
-:class: tip
+````{important} __Définition : Distance focale objet et image__
 
 Lorsque le centre optique existe, on définit la distance focale objet f comme la distance __algébrique__ entre le centre optique O et le foyer principal objet F: $f = \overline{OF}$
 

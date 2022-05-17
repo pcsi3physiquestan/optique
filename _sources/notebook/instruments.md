@@ -42,8 +42,7 @@ Conséquence: On cherchera à placer l'image finale __à l'infini.__. On étudie
 En général, les instruments sont analysés par le constructeur dans le cadre canonique précédent (on parle de caractéristiques "commerciales"). Mais une bonne partie des instruments proposent un réglage (l'oculaire - cf. suite) permettant d'adapter l'appareil à un utilisateur myope.
 ````
 
-````{admonition} Définition : Système afocal
-:class: tip
+````{important} __Définition : Système afocal__
 Un système __afocal__ est un système donnant d'un objet à l'infini une image finale à l'infini.
 ````
 
@@ -52,8 +51,7 @@ Un système __afocal__ est un système donnant d'un objet à l'infini une image 
 Les systèmes afocaux sont très courants, notamment en astronomie car ils permettent de visualiser de manière grossie (dans le cadre canonique évoqué précédemment) des objets très lointains (étoiles, planètes... ).
 ````
 
-````{admonition} Définition : Autres systèmes.
-:class: tip
+````{important} __Définition : Autres systèmes.__
 Il est bien évident qu'il existe d'autres systèmes visant des objets à distance finie: loupe, microscope, viseurs... 
 
 Dans le cadre d'utilisation canonique, ces instruments renvoient néanmoins l'image finale à l'infini.
@@ -98,8 +96,7 @@ En effet, pour une image non ponctuelle à l'infini, sa taille est en générale
 
 Dans ces conditions, on utilisera plutôt le concept de grossissement basé sur les __angles__ apparent, c'est-à-dire l'angle sous lequel on voit l'objet (on traitera toujours des objets à 2D).
 
-````{admonition} Définition : Grossissement
-:class: tip
+````{important} __Définition : Grossissement__
 
 On définit le __grossissement__ d'un instrument d'optique comme le rapport (en valeur absolue) de l'angle sous lequel on voit l'objet à travers l'instrument d'optique sur l'angle sous lequel on voit l'objet à l'oeil nu.
 ````
@@ -112,8 +109,7 @@ C'est pourquoi, on utilisera le grossissement principalement __pour les instrume
 Comme nous allons le voir, pour les instruments visant un objets à distance finie, les constructeurs donnent une donnée commercial dans une utilisation canonique: on calcule ou mesure le grossissement dans des conditions optimales: l'image finale sera à l'infini et l'angle à l'oeil nu est le plus grand possible, d'où la définition:
 ````
 
-````{admonition} Définition : Grossissement commercial
-:class: tip
+````{important} __Définition : Grossissement commercial__
 On définit le __grossissement commercial__ d'un instrument d'optique comme le rapport (en valeur absolue) de l'angle sous lequel on voit l'objet à travers l'instrument d'optique __lorsque l'image finale est à l'infini__ sur l'angle sous lequel on voit l'objet à l'oeil nu __lorsque l'objet est placé au Punctum Proximum de l'oeil soit à d=25cm__ (soit l'angle maximal sous lequel on peut voir l'objet à l’oeil nu).
 ````
 

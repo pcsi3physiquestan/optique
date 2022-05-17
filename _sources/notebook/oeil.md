@@ -35,8 +35,7 @@ D'un point de vue optique, on distingue plusieurs éléments de l'oeil (cette li
 :align: center
 ```
 
-````{admonition} Fondamental : Modélisation optique de l'oeil
-:class: important
+````{important} __Fondamental : Modélisation optique de l'oeil__
 
 Du point de vue de l'optique géométrique, on peut modéliser l'oeil comme une lentille (le cristallin) diaphragmée (par la pupille) - celle-ci ne sera pas toujours représentée. La lentille est située en amont d'un écran (la rétine) situé à une distance d (en général d=2.5cm pour un oeil emmétrope - oeil normal).
 
@@ -48,16 +47,14 @@ Du point de vue de l'optique géométrique, on peut modéliser l'oeil comme une 
 
 ### L'oeil: Accomodation
 
-````{admonition} Fondamental : Principe d'accomodation
-:class: important
+````{important} __Fondamental : Principe d'accomodation__
 
 Lorsque l'oeil vise un objet, il doit adapter sa distance focale pour former nettement l'image de l'objet visé sur la rétine. On parle __d'accomodation.__
 
 L'accomodation de l'oeil se fait grâce à des muscles qui vont déformer le cristallin et changer sa distance focale.
 ````
 
-````{admonition} Définition : Punctum Remotum
-:class: tip
+````{important} __Définition : Punctum Remotum__
 
 L'oeil ne peut voir plus loin qu'un point appelé __Punctum Remotum__. Lorsqu'il vise ce point, les muscles de l'oeil sont relâché et ne se fatiguent pas. On dit que __l'oeil est au repos__.
 ````
@@ -66,8 +63,7 @@ L'oeil ne peut voir plus loin qu'un point appelé __Punctum Remotum__. Lorsqu'il
 On pourra compléter la remarque précédente en remarquant que plus l'objet se rapproche de l'oeil, plus les muscles doivent bomber le cristallin ce qui occasionne une fatigue oculaire d'autant plus grande.
 ````
 
-````{admonition} Définition : Punctum Proximum
-:class: tip
+````{important} __Définition : Punctum Proximum__
 L'oeil ne peut voir plus près qu'un point appelé __Punctum Proximum__ (car c'est la configuration où le cristallin est bombé au maximum).
 ````
 
@@ -105,8 +101,7 @@ L'astigmatie est un défaut dans la symétrie axiale de l'oeil qui conduit à do
 
 ### Caractéristiques de l'oeil: champ angulaire
 
-````{admonition} Définition : Champ angulaire
-:class: tip, dropdown
+````{important} __Définition : Champ angulaire, dropdown__
 On définit le champ angulaire de l’oeil (ou d'un instrument d'optique) comme l'angle d'observation maximale.
 ````
 
@@ -161,8 +156,7 @@ Dans ce cas là aussi, cela permet d'avoir une profondeur de champ. Ceux qui ont
 
 ### Oeil au repos et instruments d'optique
 
-````{admonition} Fondamental : Principe de construction et d'étude d'un instrument d'optique
-:class: important
+````{important} __Fondamental : Principe de construction et d'étude d'un instrument d'optique__
 
 Lorsqu'un fabricant va construire un instrument d'optique, il va chercher à assurer un confort visuel. Pour celà, il va faire en sorte que l'image finale soit au Punctum Remotum pour l'utilisateur.
 ````

@@ -18,8 +18,7 @@ kernelspec:
 
 ## Lentilles minces: définition
 
-````{admonition} Définition : Lentille sphérique mince
-:class: tip
+````{important} __Définition : Lentille sphérique mince__
 
 Une lentille sphérique est un système optique centré composé d'un milieu transparent taillé suivant deux dioptres sphériques. On a repéré ici les centres et sommets respectifs des deux faces: $C_1, C_2, S_1$ et $S_2$.
 
@@ -34,8 +33,7 @@ Dans ces conditions, on peut confondre les sommets $S_1$ et $S_2$. Ce point sera
 
 ## Lentilles minces: typologie
 
-````{admonition} Définition : Lentilles divergente et convergente
-:class: tip
+````{important} __Définition : Lentilles divergente et convergente__
 
 Si la distance focale image est positive, on dit que la lentille est __convergente__.
 
@@ -57,13 +55,11 @@ On peut associer le nom des types de lentilles au comportement des faisceaux qui
 
 ## Lentilles minces: Schématisation de Gauss
 
-````{admonition} Stigmatisme approché
-:class: important
+````{important} Stigmatisme approché
 Dans le cadre des conditions de Gauss, une lentille mince réalise un stigmatisme approché.
 ````
 
-````{admonition} Fondamental : Schématisation de Gauss d'une lentille convergente
-:class: important
+````{important} __Fondamental : Schématisation de Gauss d'une lentille convergente__
 
 ```{figure} ./images/optique_gauss_convergente.jpg
 :name: gauss_cv

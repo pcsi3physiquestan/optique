@@ -30,8 +30,7 @@ On définit la normale au dioptre (n) au point d'incidence I où le rayon incide
 ````
 
 
-````{admonition} Fondamental : Lois de Snell-Descartes (Admis)
-:class: important
+````{important} __Fondamental : Lois de Snell-Descartes (Admis)__
 
 Lorsqu'un rayon lumineux (appelé __rayon incident__) se propageant dans un milieu d'indice $n_1$ arrive sur un __dioptre__, ce rayon sépare énergétiquement en deux rayons __tous deux contenus dans le plan d'incidence__:
 
@@ -100,8 +99,7 @@ On considère le cas où $n_1 < n_2 $.
 >Plus précisément, les gammes valeurs atteintes sont $i_2 \in [-\arcsin\left ( \frac{n_1}{n_2}\right); \arcsin\left ( \frac{n_1}{n_2}\right)]$
 ````
 
-````{admonition} Fondamental : Bilan
-:class: important
+````{important} __Fondamental : Bilan__
 On retiendra que lors du passage d'un milieu moins réfringent à un milieu plus réfringent:
 
 * le rayon réfracté __se rapproche de la normale__ par rapport au rayon incident
@@ -134,8 +132,7 @@ On considère le cas où $n_2 < n_1 $.
 >Si l'angle d'incidence est supérieure à $i_0$, on observe expérimentalement qu'il n'y a pas de rayon réfracté. On parle de __réflexion totale__: toute la lumière est réfléchie.
 ````
 
-````{admonition} Fondamental : Bilan
-:class: important
+````{important} __Fondamental : Bilan__
 On retiendra que lors du passage d'un milieu plus réfringent à un milieu moins réfringent:
 
 * le rayon réfracté __s'éloigne de la normale__ par rapport au rayon incident

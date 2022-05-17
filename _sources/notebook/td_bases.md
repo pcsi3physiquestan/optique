@@ -47,7 +47,7 @@ Arc-en-ciel
 4. ... 
 5. $a = 4 \arcsin\frac{\sin i}{n} - 2 i$
 6. $\frac{\rm{d}a}{\rm{di}} = 4 \frac{\frac{\cos i}{n}}{\sqrt{1 - \frac{\sin^2 i}{n^2}}} - 2$
-7. $i_{\max} = \arccos\sqrt{ \frac{n^2-1}{3}} = 1.34 \rm{rad}$ et $a_{\max} = 0.71 \rm{rad}$
+7. $i_{\max} = \arccos\sqrt{ \frac{n^2-1}{3}} = 1.07 \rm{rad}$ et $a_{\max} = 0.82 \rm{rad}$
 
 Cet observateur ne verra alors les gouttes "briller" que sur un cône d'axe de révolution (observateur-direction des rayons provenant du soleil) et de demi-angle au sommet (qui est l'observateur) $a_{\max}$. Généralement l'horizon empêche d'observer complètement le cône.
 ````

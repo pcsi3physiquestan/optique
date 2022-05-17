@@ -20,8 +20,7 @@ kernelspec:
 
 ### Lentilles minces: Relation de conjugaison (Enoncé)
 
-````{admonition} Fondamental : Relation de conjugaison d'une lentille mince.
-:class: important
+````{important} __Fondamental : Relation de conjugaison d'une lentille mince.__
 
 Soit une lentille mince de centre optique O, de foyer objet F, de foyer image F' et de distance focale image f'. Soit un point objet A sur l'axe optique conjugué avec un point image A'. On a les relations suivantes:
 
@@ -40,8 +39,7 @@ Relation de Newton:
 
 ### Lentilles minces: Relations de conjugaison (Démonstration)
 
-````{admonition} Fondamental : Démonstration
-:class: important
+````{important} __Fondamental : Démonstration__
 La démonstration passe par plusieurs étapes:
 
 1. Réaliser un schéma clair avec des rayons utiles mettant en avant des triangles semblables
@@ -104,8 +102,7 @@ En divisant par le produit $\overline{OA}\cdot \overline{OA'}\cdot \overline{FO}
 
 ## Lentilles minces: Relations de grandissement
 
-````{admonition} Fondamental : Relation de grandissement pour une lentille mince
-:class: important
+````{important} __Fondamental : Relation de grandissement pour une lentille mince__
 Soit une lentille mince de centre optique O, de foyer objet F, de foyer image F' et de distance focale image f'. Soit un  objet AB dans un plan frontal conjugué avec une  image A'B'. On a les relations dites de grandissement suivantes:
 
 \begin{align*}

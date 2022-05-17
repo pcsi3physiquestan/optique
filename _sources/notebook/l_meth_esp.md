@@ -37,8 +37,7 @@ Dans chaque configuration, on déterminera aussi:
 Reprendre le même exercice pour une lentille divergente.
 ````
 
-````{admonition} Bilan à retenir - Ce n'est PAS la correction.
-:class: important, dropdown
+````{important} Bilan à retenir - Ce n'est PAS la correction., dropdown
 On retiendra que pour un lentille convergente, on peut obtenir les 3 configurations suivantes:
 
 * objet réel avant le foyer objet et image réelle après le foyer image. L'image est alors renversée et elle peut être agrandie ou rétrécie.
@@ -46,8 +45,7 @@ On retiendra que pour un lentille convergente, on peut obtenir les 3 configurati
 * objet virtuel et image réelle entre O et F'. L'image est droite et toujours plus petite que l'objet.
 ````
 
-````{admonition} Bilan à retenir - Ce n'est PAS la correction.
-:class: important, dropdown
+````{important} Bilan à retenir - Ce n'est PAS la correction., dropdown
 
 On retiendra que pour un lentille divergente, on peut obtenir les 3 configurations suivantes:
 

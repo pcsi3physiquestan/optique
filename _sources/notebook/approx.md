@@ -18,8 +18,7 @@ kernelspec:
 
 ## Source lumineuse
 
-````{admonition} Définition : Source lumineuse
-:class: tip
+````{important} __Définition : Source lumineuse__
 
 Une source lumineuse est un objet qui émet de la lumière.
 
@@ -32,8 +31,7 @@ On distingue les sources lumineuses __primaires__ qui produisent leurs propres l
 * Sources secondaires: être humain, livre, Lune, planètes... 
 ````
 
-````{admonition} Définition : Sources étendues et sources ponctuelles
-:class: tip, dropdown
+````{important} __Définition : Sources étendues et sources ponctuelles, dropdown__
 
 Une source lumineuse ponctuelle est une source lumineuse assimilable à un point. Il s'agit d'un modèle théorique mais qu'on peut considérer acceptable pour des sources lointaines (étoiles) ou pour des sources rendues très petites par un diaphragme [^diaphragme] très fin.
 
@@ -43,22 +41,19 @@ Une source lumineuse ponctuelle est une source lumineuse assimilable à un point
 Une source étendue est constituée d'un ensemble de sources ponctuelles. La majorité des sources que nous utilisons sont des sources étendues (lampes, soleil, lune, source secondaire sur terre... ).
 ````
 
-````{admonition} Définition : Sources monochromatiques
-:class: tip
+````{important} __Définition : Sources monochromatiques__
 
 Une source monochromatique est une source qui n'émet qu'une seule longueur d'onde.
 ````
 
 ## Faisceau lumineux et rayon lumineux
 
-````{admonition} Définition : Rayon lumineux
-:class: tip
+````{important} __Définition : Rayon lumineux__
 
 Un __rayon lumineux__ est défini comme la direction de propagation de l'onde électromagnétique.
 ````
 
-````{admonition} Fondamental : Propagation de la lumière en milieu homogène (Admis)
-:class: important
+````{important} __Fondamental : Propagation de la lumière en milieu homogène (Admis)__
 
 Dans un milieu homogène, transparent, et isotrope (MHTI), les ondes électromagnétiques __se propagent en ligne droite__. Les rayons lumineux sont donc des droites.
 ````
@@ -71,8 +66,7 @@ On définit les termes suivants:
 * Isotrope: Les caractéristiques du milieu sont les mêmes dans les différentes directions de l'espace (par exemple la vitesse de la lumière est la même dans toutes les directions de l'espace).
 ```
 
-````{admonition} Définition : Faisceau lumineux
-:class: tip
+````{important} __Définition : Faisceau lumineux__
 
 Un __faisceau lumineux__ est l'étendue de lumière issue d'un objet et - en général - passant par un diaphragme.
 
@@ -95,8 +89,7 @@ On peut voir un rayon lumineux comme un faisceau de  section ponctuelle (donc nu
 Celà permet d'avoir une vision de l'esprit de ce qu'est un rayon. En pratique, on peut chercher à le diaphragmer avec une section très très faible, mais... 
 
 
-````{admonition} Fondamental : Phénomène de diffraction
-:class: important
+````{important} __Fondamental : Phénomène de diffraction__
 
 Lorsqu'on essaie d'isoler un rayon lumineux comme précédemment et qu'on atteint une taille de diaphragme de l'ordre du micromètre (pour le visible - c'est-à-dire qu'elle devient de __l'ordre de la longueur d'onde__), la tâche augmente et l'on voit apparaître des anneaux autour de la tâche.
 
@@ -113,16 +106,14 @@ Isoler un rayon lumineux
 
 ## Approximation de l'optique géométrique
 
-````{admonition} Définition : Cadre de l'optique géométrique
-:class: tip
+````{important} __Définition : Cadre de l'optique géométrique__
 
 On considère qu'on se place dans le cadre d'étude de __l'optique géométrique__ si l'on peut traiter un faisceau lumineux comme un ensemble de rayons lumineux.
 
 Dans ce cadre, les rayons lumineux dans un milieu homogène, transparent et isotrope sont des lignes droites.
 ````
 
-````{admonition} Fondamental : Approximation de l'optique géométrique (Admis)
-:class: important
+````{important} __Fondamental : Approximation de l'optique géométrique (Admis)__
 
 On peut se placer dans le cadre de l'optique géométrique si les phénomènes de diffraction sont négligeable c'est-à-dire si __les caractéristiques du milieu (indice de réfraction) varient sur des distances grandes devant la longueur d'onde du milieu__ (ou ne varient pas).
 
@@ -136,20 +127,17 @@ Dans ce genre de systèmes, on peut alors s'intéresser à une distance "caract�
 
 ## Propriétés dans le cadre de l'optique géométrique
 
-````{admonition} Fondamental : Propagation rectiligne en MTHI
-:class: important
+````{important} __Fondamental : Propagation rectiligne en MTHI__
 
 On rappelle que dans un milieu homogène transparent et isotrope, les rayons lumineux se propagent en ligne droite.
 ````
 
-````{admonition} Fondamental : Indépendance des rayons
-:class: important
+````{important} __Fondamental : Indépendance des rayons__
 
 Les rayons lumineux sont indépendants, c'est-à-dire que la propagation de l'un n'influe pas sur la propagation l'autre, même quand ils se croisent.
 ````
 
-````{admonition} Fondamental : Principe de retour inverse
-:class: important
+````{important} __Fondamental : Principe de retour inverse__
 
 Si pour aller d'un point A à un point B, la lumière emprunte un chemin S. Alors pour aller du point B au point A, elle empruntera le chemin S en sens inverse.
 ````

@@ -55,8 +55,7 @@ C'est en sélectionnant les rayons qu'on pourra s'approcher du stigmatisme et do
 
 ### Stigmatisme approché: sélection des rayons
 
-````{admonition} Définition : Stigmatisme approché
-:class: tip
+````{important} __Définition : Stigmatisme approché__
 
 On dit qu'un système réalise un stigmatisme approché pour un couple de points (A;A') si tous les rayons lumineux du faisceau issu du point A et traversant le système optique ressortent __au voisinage__ du point A'.
 
@@ -90,8 +89,7 @@ On utilisera ici un miroir sphérique pour réaliser la simulation du tracé des
 
 ### Condition de Gauss: Présentation
 
-````{admonition} Définition : Conditions de Gauss
-:class: tip
+````{important} __Définition : Conditions de Gauss__
 
 Les conditions de Gauss (ou condition des rayons paraxiaux) sont un cadre théorique et expérimental dans lequel on sélectionne uniquement les rayons sont satisfont aux deux conditions:
 
@@ -99,8 +97,7 @@ Les conditions de Gauss (ou condition des rayons paraxiaux) sont un cadre théor
 * ils doivent entrer dans le système optique en un point proche de l'axe optique.
 ````
 
-````{admonition} Fondamental : Conditions de Gauss et Stigmatisme (admis)
-:class: important
+````{important} __Fondamental : Conditions de Gauss et Stigmatisme (admis)__
 
 Un système centré placé dans les conditions de Gauss réalise un stigmatisme approché.
 ````
@@ -122,8 +119,7 @@ En pratique, on va réaliser les conditions de Gauss en:
 
 ### Condition de Gauss: Utilisation analytique
 
-````{admonition} Fondamental : Approximations aux petits angles
-:class: important
+````{important} __Fondamental : Approximations aux petits angles__
 Dans le cadre des conditions de Gauss, il vient que les angles avec l'axe optique sont petits. On utilisera alors l'approximation des petites angles sur les fonctions trigonométriques (attention pour les applications numériques, les valeurs des angles doivent être en radians).
 
 Des détails sur l'approximation des fonctions par des polynômes seront données plus tard. Pour l'instant, on retiendra qu'aux petits angles, on peut approchées les fonctions trigonométriques de la manière suivante:

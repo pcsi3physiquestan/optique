@@ -25,8 +25,7 @@ On doit donc utiliser d'autres méthodes pour construire la position d'une image
 Nous allons présenter ici les 4 rayons (plutôt 3 rayons et une propriété particulière) qui peuvent être utiles pour les études présentées ci-dessus. Ils utilisent les éléments principaux de la lentille.
 
 
-````{admonition} Fondamental : Rayons utiles
-:class: important
+````{important} __Fondamental : Rayons utiles__
 ```{figure} ./images/optique_rayon_entrant_para.jpg
 :name: l_rayon_entrant
 :align: center

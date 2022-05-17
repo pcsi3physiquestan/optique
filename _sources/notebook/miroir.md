@@ -16,14 +16,12 @@ kernelspec:
 
 # Miroir plan: Présentation et relation
 
-````{admonition} Définition : Miroir plan
-:class: tip
+````{important} __Définition : Miroir plan__
 
 Un miroir plan est une surface plane parfaitement réfléchissante.
 ````
 
-````{admonition} Fondamental : Relation de conjugaison et stigmatisme.
-:class: important
+````{important} __Fondamental : Relation de conjugaison et stigmatisme.__
 
 Un miroir plan réalise un stigmatisme rigoureux.
 
