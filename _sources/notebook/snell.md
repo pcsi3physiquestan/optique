@@ -18,19 +18,21 @@ kernelspec:
 
 Les lois de Snell-Descartes permettent de traiter le cas où l'on passe brusquement d'un milieu d'indice de réfraction $n_1$ à un milieu d'indice $n_2$.
 
+````{margin}
 On remarquera que localement, l'approximation de l'optique géométrique n'est plus valable. Cela explique que les propriétés précédentes ne suffisent plus à étudier le comportement des rayons lumineux.
+````
 
 ## Lois de Snell-Descartes: Enoncé
 
 
-````{dropdown} Définitions préalables
+````{topic} Définitions préalables
 On considère un rayon lumineux, appelé __rayon incident__ qui se propage dans un milieu d'indice $n_1$ et qui arrive à la frontière - le __dioptre__ avec un milieu d'indice $n_2$ différent de $n_1$.
 
 On définit la normale au dioptre (n) au point d'incidence I où le rayon incident intersecte le dioptre et on appelle __plan d'incidence__ le plan formé par le rayon incident et la normale (n) au dioptre.
 ````
 
 
-````{important} __Fondamental : Lois de Snell-Descartes (Admis)__
+````{important} __Lois de Snell-Descartes (Admis)__
 
 Lorsqu'un rayon lumineux (appelé __rayon incident__) se propageant dans un milieu d'indice $n_1$ arrive sur un __dioptre__, ce rayon sépare énergétiquement en deux rayons __tous deux contenus dans le plan d'incidence__:
 
@@ -55,7 +57,7 @@ n_1 \sin i_1 &= n_2 \sin i_2
 \end{align*}
 ````
 
-````{admonition} Complément - Séparation énergétique
+````{sidebar} Complément - Séparation énergétique
 :class: dropdown
 La loi de Snell-Descartes permet d'étudier géométriquement l'existence des deux rayons. Mais il faut préciser qu'il s'opère un division de l'énergie entre deux parts (transmise et réfléchie) __qui ne sont pas forcément égales__.
 
