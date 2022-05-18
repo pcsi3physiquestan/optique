@@ -32,8 +32,7 @@ On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}
 n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de lalumière dans le vide.
 ````
 
-````{topic} Exemple - Indices de réfraction : valeurs
-:class: dropdown
+````{topic} __Exemples__
 
 | Milieu | Indice | Remarques |
 |:-|:-:|:-|
