@@ -14,7 +14,7 @@ kernelspec:
   name: python3
 ---
 
-# Je connais et comprends
+# Approximation de l'optique géométrique
 
 ````{admonition} Compétences
 :class: tip
