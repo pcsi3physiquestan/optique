@@ -36,6 +36,7 @@ n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la 
 :class: dropdown
 
 | Milieu | Indice | Remarques |
+|:-|:-:|:-|
 | Air | $\approx 1$ | Varie très légèrement suivant sa température, sa densité (mirage) et sa composition (utilisé dans des détecteurs de monoxyde de carbone) |
 | Eau liquide | $\approx 1,3$ | Entre $0 ^{\circ} C$ et $100 ^{\circ} C$. Diminue avec la température |
 | Verre | (1,5) 1,4 -- 1,7 | Vérie fortement suivant le verre. |
