@@ -23,13 +23,13 @@ On rappelle que les expériences réalisées en physique classique (principaleme
 
 Une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.
 
+````{sidebar} Célérité et milieu
+Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera donc toujours inférieure à c.
+````
 ````{important} __Définition : Indice de réfraction__
 On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}}$.
 
 n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de lalumière dans le vide.
-````
-````{sidebar} Célérité et milieu
-Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera donc toujours inférieure à c.
 ````
 
 ````{admonition} Exemple - Indices de réfraction : valeurs
