@@ -24,7 +24,7 @@ On rappelle que les expériences réalisées en physique classique (principaleme
 Une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.
 
 ````{sidebar} Célérité et milieu
-Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera donc toujours inférieure à c.
+Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. __Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera donc toujours inférieure à c__.
 ````
 ````{important} __Indice de réfraction et milieu dispersif.__
 
@@ -47,15 +47,14 @@ On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}
 
 ## Relation entre célérité et longueur d'onde
 
-````{sidebar} La fréquence ne varie pas
+<!-- ````{sidebar} La fréquence ne varie pas
 Pour un signal monochromatique donné, la fréquence ne varie pas lorsque le signal passe d'un milieu à un autre.
 
-Conséquence : Puisque la célérité varie, la longueur d'onde aussi. Si le signal possède une longueur d'onde $\lambda_0$ dans le vide, dans un milieu d'indice de réfraction n, la célérité est ainsi $\frac{c}{n}$ et la longueur d'onde est donc $\lambda = \frac{\lambda_0}{n}$.
-
-Lorsqu'on veut étudier la propriété d'un signal lumineux (type de rayonnement, couleur), les données référencées concernant __la longueur d'onde dans le vide__.
+* Conséquence : Puisque la célérité varie, la longueur d'onde aussi. Si le signal possède une longueur d'onde $\lambda_0$ dans le vide, dans un milieu d'indice de réfraction n, la célérité est ainsi $\frac{c}{n}$ et la longueur d'onde est donc $\lambda = \frac{\lambda_0}{n}$.
+* Lorsqu'on veut étudier la propriété d'un signal lumineux (type de rayonnement, couleur), les données référencées concernant __la longueur d'onde dans le vide__.
 
 Exemple : les longueurs d'onde du visible données $400nm ;800nm$ sont des longueurs d'onde dans le vide.
-````
+```` -->
 ````{important} __Relation fréquence-longueur d'onde__
 On rappelle (Terminale) que pour une onde monochromatique de fréquence $\nu$, de longueur d'onde $\lambda$ et de célérité $c_0$, on la relation :
 
