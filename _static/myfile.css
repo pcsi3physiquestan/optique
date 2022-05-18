@@ -6,4 +6,6 @@ div.sidebar:not(.margin){
 
 div.topic{
 	background-color: #f7f7ff;
+	font-size: 0.85em;
+	padding: 0 20px 0 20px;
 }
