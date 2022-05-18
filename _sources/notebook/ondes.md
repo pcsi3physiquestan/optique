@@ -24,7 +24,6 @@ On rappelle que les expériences réalisées en physique classique (principaleme
 Une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.
 
 ````{important} __Définition : Indice de réfraction__
-:class: full-width
 On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}}$.
 
 n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de lalumière dans le vide.
