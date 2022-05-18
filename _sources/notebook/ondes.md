@@ -21,12 +21,13 @@ On rappelle que les expériences réalisées en physique classique (principaleme
 
 ## Célérité et indice de réfraction
 
-Une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.
-
 ````{sidebar} Célérité et milieu
 Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. __Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera donc toujours inférieure à c__.
 ````
+Une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.
+
 ````{important} __Indice de réfraction et milieu dispersif.__
+:class: full-width
 
 On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}}$.
 
@@ -41,7 +42,7 @@ On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}
 |:-|:-:|:-|
 | Air | $\approx 1$ | Varie très légèrement suivant sa température, sa densité (mirage) et sa composition (utilisé dans des détecteurs de monoxyde de carbone). Peu dispersif. |
 | Eau liquide | $\approx 1,3$ | Entre $0 ^{\circ} C$ et $100 ^{\circ} C$. Diminue avec la température. Dispersif (arc-en-ciel). |
-| Verre | (1,5) 1,4 -- 1,7 | Vérie fortement suivant le verre. Dispersif.|
+| Verre | (1,5) 1,4 -- 1,7 | Varie fortement suivant le verre. Dispersif.|
 | Liquide | | Variables suivant leur nature. Utile pour la réfractométrie en chimie. Dispersif.|
 ````
 
