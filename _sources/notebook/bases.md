@@ -16,7 +16,7 @@ kernelspec:
 
 # Approximation de l'optique géométrique - Bases
 
-````{admonition} Objectifs
+````{admonition} Compétences
 :class: tip
 * Relier la longueur d'onde dans le vide à la longueur d'onde dans le milieu.
 * Définir le modèle de l'optique géométrique et indiquer ses limites.

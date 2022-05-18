@@ -15,21 +15,26 @@ kernelspec:
 ---
 # La lumière est une onde
 
-## La lumière est une onde
-
+````{margin}
 On rappelle que les expériences réalisées en physique classique (principalement les phénomènes de diffraction et d'interférences) poussent à traiter la lumière comme une onde.
+````
 
 ## Célérité et indice de réfraction
 
-On rappelle qu'une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.
+````{topic}
+Une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.
+````
 
+````{sidebar} Célérité et milieu
 Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera toujours inférieure à c.
+````
 
 
 ````{important} __Définition : Indice de réfraction__
+:class: full-width
 On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}}$.
 
-n est toujours supérieur ou égale à 1.
+n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de lalumière dans le vide.
 ````
 
 ````{admonition} Exemple - Indices de réfraction : valeurs
