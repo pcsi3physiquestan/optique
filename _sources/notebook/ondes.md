@@ -35,10 +35,11 @@ n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la 
 ````{topic} Exemple - Indices de réfraction : valeurs
 :class: dropdown
 
-* L'indice de l'air est à peu près égal à 1. Il peut varier légèrement suivant la température et la densité (c'est la cause de mirage) et sa composition (propriété utilisée dans certains détecteurs de monoxyde de carbone).
-* L'indice de l'eau liquide est d'environ 1,3 à température ambiante. Il a tendance à diminuer avec la température (mais la valeur donnée reste correcte entre 0$\circ$C et 100$\circ$C).
-* L'indice du verre varie fortement en fonction de la nature du matériau. Il varie entre 1,4 et 1,7 (on peut monter à 1,8 pour certains verres ophtalmiques). En général, on prend comme moyenne 1,5 quand on n'a pas d'information.
-* Les liquides ont aussi des indices de réfraction qui varie en fonction de leur nature et parfois en fonction de la concentration de certaines espèces. L'analyse de l'indice de réfraction d'un liquide - la réfractométrie - est une méthode d'analyse en chimie.
+| Milieu | Indice | Remarques |
+| Air | $\approx 1$ | Varie très légèrement suivant sa température, sa densité (mirage) et sa composition (utilisé dans des détecteurs de monoxyde de carbone) |
+| Eau liquide | $\approx 1,3$ | Entre $0 ^{\circ} C$ et $100 ^{\circ} C$. Diminue avec la température |
+| Verre | (1,5) 1,4 -- 1,7 | Vérie fortement suivant le verre. |
+| Liquide | | Variables suivant leur nature. Utile pour la réfractométrie en chimie |
 ````
 
 ````{important} __Définition : Milieu dispersif__
