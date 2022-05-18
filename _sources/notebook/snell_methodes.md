@@ -117,7 +117,7 @@ Si l'abus de langage est à connaître surtout pour ne pas se tromper face à un
 ## Exemple : Utilisation des lois de Snell-Descartes
 _La correction est en ligne._
 
-````{admonition} Exercice 
+````{topic} Exercice 
 :class: attention
 
 ```{figure} ./images/exo_casserole.png
@@ -136,7 +136,7 @@ L'oeil d'un observateur se trouve à la verticale de centre de la pièce à une 
 ````
 
 ````{topic} Correction
->1. __Mise en équation__
+>__Mise en équation__
 >
 >Notons le point I, le point d'incidence sur le dioptre air-eau pour le rayon extrême du faisceau issu de O et entrant dans la pupille. On note $i_1$ et $i_2$ les angles respectivement d'incidence et de réfraction. On a les relations :
 >
@@ -153,40 +153,40 @@ L'oeil d'un observateur se trouve à la verticale de centre de la pièce à une 
 >
 >Les grandeurs $H_0, H_1, R_1$ et les indices sont des grandeurs connues qu'on va garder.
 >
->__Equation pour l'angle__
+>_Equation pour l'angle:_
 >Les deux dernières équations permettent d'écrire: $IJ = H_0 \tan i_1$ et $ IL = R_1 - H_0 \tan i_1$ d'où le système:
 >
 >\begin{align*}
 	n_{eau} \sin i_1 &= n_{air} \sin i_2\\
 	\frac{R_1}{\tan i_2} - H_0 \frac{\tan i_1}{\tan i_2}&= H_1
 \end{align*}
->soit en éliminant $i_2$ (on a directement utilisant $n_{air} = 1$ -  on peut se le permettre car l'indice de réfraction est sans dimension: le changer par sa valeur numérique n'impacte pas l'analyse dimensionnelle):
+>soit en éliminant $i_2$ (_on a directement utilisant $n_{air} = 1$ -  on peut se le permettre car l'indice de réfraction est sans dimension: le changer par sa valeur numérique n'impacte pas l'analyse dimensionnelle_):
 >
 >\begin{equation}
 \left ( R_1 - H_0 \tan i_1 \right )\sqrt{1 - n_{eau}^2 \sin^2 i_1} = H_1 n_{eau} \sin i_1
 \end{equation}
 >
 >On rappelle que $\theta_0 = i_1$
-
-2. Résolution aux petits angles
-
-Nous allons faire une approximation pour résoudre cette équation (sans quoi la résolution devient TRÈS délicate). En effet, la taille de la pupille est de l'ordre du mm (on prendra $R_1 = 1\rm{mm}$) et la hauteur de la casserole est de l'ordre de la dizaine de cm. (on prendre $R_0 = 5\rm{cm}$). Il vient que les angles à la normale seront nécessairement petit.
-
-On peut avoir un ordre de grandeur en considérant que $\theta_0 \sim \arctan\frac{R_0}{2H_0} \sim 10^{-2} \rm{rad}$. En pratique, la propagation n'est pas rectiligne mais les angles $i_1$ et $i_2$ sont nécessairement du même ordre de grandeur que $\theta_0$.
-
-Or si $\theta_0 << 1$, on __peut faire les approximations dites des petits angles :__
-
-\begin{align*}
+>
+>__Résolution aux petits angles__
+>
+>Nous allons faire une approximation pour résoudre cette équation (sans quoi la résolution devient TRÈS délicate). En effet, la taille de la pupille est de l'ordre du mm (on prendra $R_1 = 1\rm{mm}$) et la hauteur de la casserole est de l'ordre de la dizaine de cm. (on prendre $R_0 = 5\rm{cm}$). Il vient que les angles à la normale seront nécessairement petit.
+>
+>On peut avoir un ordre de grandeur en considérant que $\theta_0 \sim \arctan\frac{R_0}{2H_0} \sim 10^{-2} \rm{rad}$. En pratique, la propagation n'est pas rectiligne mais les angles $i_1$ et $i_2$ sont nécessairement du même ordre de grandeur que $\theta_0$.
+>
+>Or si $\theta_0 << 1$, on __peut faire les approximations dites des petits angles :__
+>
+>\begin{align*}
 	\sin i &\approx i\\
 	\tan i &\approx i\\
 	\cos i &\approx 1\\
 \end{align*}
-
-On ne conservera pas aussi les puissances au carré des petits angles (on parle d'approximation à l'ordre 1), des précisions seront données sur cette approximation dans des cours ultérieurs. On essaiera déjà d'appréhender la méthode d'utilisation de cette approximation.
-
-Ici l'équation devient :
-
-\begin{equation}
+>
+>On ne conservera pas aussi les puissances au carré des petits angles (on parle d'approximation à l'ordre 1), des précisions seront données sur cette approximation dans des cours ultérieurs. On essaiera déjà d'appréhender la méthode d'utilisation de cette approximation.
+>
+>Ici l'équation devient :
+>
+>\begin{equation}
 \left ( R_1 - H_0 i_1 \right ) = H_1 n_{eau} i_1 \Longrightarrow \theta_0 = i_1 \approx \frac{R_1}{H_0 + H_1} = 10^{-2}  \rm{rad}
 \end{equation}
 ````

@@ -506,8 +506,8 @@ On retiendra que lors du passage d’un milieu plus réfringent à un milieu moi
 <li><p>si l’angle d’incidence devient trop grand, il y a phénomène de <strong>réflexion totale</strong>, c’est-à-dire que toute la lumière est réfléchie.</p></li>
 </ul>
 <p>L’angle d’incidence limite permettant la réfraction se calcule en cherchant un angle réfracté de <span class="math notranslate nohighlight">\(\pm \pi/2\)</span>. On obtient:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e1bd6c77-53f6-4abc-bdb3-7995febd2174">
-<span class="eqno">(2)<a class="headerlink" href="#equation-e1bd6c77-53f6-4abc-bdb3-7995febd2174" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f3db20ff-4904-4ea7-9e7f-274e784b1e7c">
+<span class="eqno">(2)<a class="headerlink" href="#equation-f3db20ff-4904-4ea7-9e7f-274e784b1e7c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)
 \end{equation}\]</div>
 </div>
@@ -524,8 +524,8 @@ i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)
 <div class="section" id="exemple-utilisation-des-lois-de-snell-descartes">
 <h2>Exemple : Utilisation des lois de Snell-Descartes<a class="headerlink" href="#exemple-utilisation-des-lois-de-snell-descartes" title="Permalink to this headline">¶</a></h2>
 <p><em>La correction est en ligne.</em></p>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
+<div class="attention topic">
+<p class="topic-title">Exercice</p>
 <div class="figure align-center" id="casserole">
 <a class="reference internal image-reference" href="../_images/exo_casserole.png"><img alt="../_images/exo_casserole.png" src="../_images/exo_casserole.png" style="width: 40%;" /></a>
 </div>
@@ -539,9 +539,7 @@ i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)
 <div class="topic">
 <p class="topic-title">Correction</p>
 <blockquote>
-<div><ol class="simple">
-<li><p><strong>Mise en équation</strong></p></li>
-</ol>
+<div><p><strong>Mise en équation</strong></p>
 <p>Notons le point I, le point d’incidence sur le dioptre air-eau pour le rayon extrême du faisceau issu de O et entrant dans la pupille. On note <span class="math notranslate nohighlight">\(i_1\)</span> et <span class="math notranslate nohighlight">\(i_2\)</span> les angles respectivement d’incidence et de réfraction. On a les relations :</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -553,23 +551,20 @@ i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)
 <p>On a 4 inconnues (IL, IJ, <span class="math notranslate nohighlight">\(i_1\)</span> et <span class="math notranslate nohighlight">\(i_2\)</span>) et quatre inconnues, on peut donc résoudre le système.</p>
 <p>Il est important de voir que la résolution complète ne nous intéresse pas. On veut <span class="math notranslate nohighlight">\(i_1\)</span> qui représente l’ouverture angulaire. On va donc chercher à <strong>garder <strong><strong><span class="math notranslate nohighlight">\(i_1\)</span></strong></strong> et éliminer les autres inconnues.</strong></p>
 <p>Les grandeurs <span class="math notranslate nohighlight">\(H_0, H_1, R_1\)</span> et les indices sont des grandeurs connues qu’on va garder.</p>
-<p><strong>Equation pour l’angle</strong>
+<p><em>Equation pour l’angle:</em>
 Les deux dernières équations permettent d’écrire: <span class="math notranslate nohighlight">\(IJ = H_0 \tan i_1\)</span> et <span class="math notranslate nohighlight">\( IL = R_1 - H_0 \tan i_1\)</span> d’où le système:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 	n_{eau} \sin i_1 &amp;= n_{air} \sin i_2\\
 	\frac{R_1}{\tan i_2} - H_0 \frac{\tan i_1}{\tan i_2}&amp;= H_1
 \end{align*}\]</div>
-<p>soit en éliminant <span class="math notranslate nohighlight">\(i_2\)</span> (on a directement utilisant <span class="math notranslate nohighlight">\(n_{air} = 1\)</span> -  on peut se le permettre car l’indice de réfraction est sans dimension: le changer par sa valeur numérique n’impacte pas l’analyse dimensionnelle):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-128e753f-2295-4193-8efd-0f4e1e6dc9b1">
-<span class="eqno">(3)<a class="headerlink" href="#equation-128e753f-2295-4193-8efd-0f4e1e6dc9b1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<p>soit en éliminant <span class="math notranslate nohighlight">\(i_2\)</span> (<em>on a directement utilisant <span class="math notranslate nohighlight">\(n_{air} = 1\)</span> -  on peut se le permettre car l’indice de réfraction est sans dimension: le changer par sa valeur numérique n’impacte pas l’analyse dimensionnelle</em>):</p>
+<div class="amsmath math notranslate nohighlight" id="equation-82aa6096-42f3-43b3-9d72-639b4b2db349">
+<span class="eqno">(3)<a class="headerlink" href="#equation-82aa6096-42f3-43b3-9d72-639b4b2db349" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \left ( R_1 - H_0 \tan i_1 \right )\sqrt{1 - n_{eau}^2 \sin^2 i_1} = H_1 n_{eau} \sin i_1
 \end{equation}\]</div>
 <p>On rappelle que <span class="math notranslate nohighlight">\(\theta_0 = i_1\)</span></p>
-</div></blockquote>
-<ol class="simple">
-<li><p>Résolution aux petits angles</p></li>
-</ol>
+<p><strong>Résolution aux petits angles</strong></p>
 <p>Nous allons faire une approximation pour résoudre cette équation (sans quoi la résolution devient TRÈS délicate). En effet, la taille de la pupille est de l’ordre du mm (on prendra <span class="math notranslate nohighlight">\(R_1 = 1\rm{mm}\)</span>) et la hauteur de la casserole est de l’ordre de la dizaine de cm. (on prendre <span class="math notranslate nohighlight">\(R_0 = 5\rm{cm}\)</span>). Il vient que les angles à la normale seront nécessairement petit.</p>
 <p>On peut avoir un ordre de grandeur en considérant que <span class="math notranslate nohighlight">\(\theta_0 \sim \arctan\frac{R_0}{2H_0} \sim 10^{-2} \rm{rad}\)</span>. En pratique, la propagation n’est pas rectiligne mais les angles <span class="math notranslate nohighlight">\(i_1\)</span> et <span class="math notranslate nohighlight">\(i_2\)</span> sont nécessairement du même ordre de grandeur que <span class="math notranslate nohighlight">\(\theta_0\)</span>.</p>
 <p>Or si <span class="math notranslate nohighlight">\(\theta_0 &lt;&lt; 1\)</span>, on <strong>peut faire les approximations dites des petits angles :</strong></p>
@@ -581,10 +576,11 @@ Les deux dernières équations permettent d’écrire: <span class="math notrans
 \end{align*}\]</div>
 <p>On ne conservera pas aussi les puissances au carré des petits angles (on parle d’approximation à l’ordre 1), des précisions seront données sur cette approximation dans des cours ultérieurs. On essaiera déjà d’appréhender la méthode d’utilisation de cette approximation.</p>
 <p>Ici l’équation devient :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-62ca9eb3-4c6b-4347-b6df-83f12e5f32c6">
-<span class="eqno">(4)<a class="headerlink" href="#equation-62ca9eb3-4c6b-4347-b6df-83f12e5f32c6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9603f4eb-a14a-4cf2-b093-76319a4b143d">
+<span class="eqno">(4)<a class="headerlink" href="#equation-9603f4eb-a14a-4cf2-b093-76319a4b143d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \left ( R_1 - H_0 i_1 \right ) = H_1 n_{eau} i_1 \Longrightarrow \theta_0 = i_1 \approx \frac{R_1}{H_0 + H_1} = 10^{-2}  \rm{rad}
 \end{equation}\]</div>
+</div></blockquote>
 </div>
 </div>
 </div>
