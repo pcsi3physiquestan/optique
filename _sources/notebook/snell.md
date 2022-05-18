@@ -58,7 +58,6 @@ n_1 \sin i_1 &= n_2 \sin i_2
 ````
 
 ````{sidebar} Complément - Séparation énergétique
-:class: dropdown
 La loi de Snell-Descartes permet d'étudier géométriquement l'existence des deux rayons. Mais il faut préciser qu'il s'opère un division de l'énergie entre deux parts (transmise et réfléchie) __qui ne sont pas forcément égales__.
 
 Le théorie électromagnétique (HP) permet de prévoir la répartition énergétique. On retiendra simplement qu'il n'y a pas séparation en deux parts égales et que celle-ci peut varier en fonction de l'angle d'incidence (dans certaines conditions, on peut même annuler la puissance réfléchie ou la puissance transmise).
