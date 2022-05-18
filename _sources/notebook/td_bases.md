@@ -14,7 +14,7 @@ kernelspec:
   name: python3
 ---
 
-# TD Optique 1 : Les bases
+# Travaux dirigées
 
 _Ces exercices seront traités en classe._
 
@@ -47,7 +47,7 @@ Une impulsion lumineuse (une information) arrive à t = 0 au point O sous la for
 6. En déduire quelle quantité d'information cette fibre peut transmettre en une seconde. A.N.: $l=10km,\theta_i=8^{\circ},n_1=1,5$
 ````
 
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 * $n_2 < n_1$
 * 90\% puis 0.1\%
 * $\theta_a = \arcsin{\sqrt{n_1^2 - n_2^2}}$
@@ -78,7 +78,7 @@ Arc-en-ciel
 7. Montrer qu'il existe un angle $i_{\max}$ pour lequel $\widehat{a}$ est maximal. Calculer $i_{\max}$ et $a_{\max}$.
 8. Montrer que si un observateur regarde haut dans le ciel avec un angle $\widehat{a}$ qu'on précisera, il recevra un maximum de lumière (il y aura accumulation des rayons lumineux).
 ````
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 1. ...
 2. $[-\pi/2;\pi/2]$
 3. Non
@@ -99,7 +99,7 @@ On explique le phénomène de l'arc-en-ciel par les propriétés dispersives de 
 9. Déterminer les valeurs maximum de a pour le rouge (n=1,331) et pour le violet (n=1,337) et en déduire quelle couleur fera l'extérieur de l'arc-en-ciel (c'est-à-dire la partie la plus haute). Que vaut l'ouverture angulaire $\Delta\alpha$ de l'arc-en-ciel?
 ````
 
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 Soleil dans le dos, sous un angle $a_{\max} - \alpha$
 ````
 
