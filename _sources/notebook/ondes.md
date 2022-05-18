@@ -21,11 +21,11 @@ On rappelle que les expériences réalisées en physique classique (principaleme
 
 ## Célérité et indice de réfraction
 
-````{topic}
+````{topic} Célérité et milieu
 Une onde se propage à une vitesse - une célérité - donnée qui dépend du milieu dans lequel elle se déplace.
 ````
 
-````{sidebar} Célérité et milieu
+````{sidebar}
 Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera toujours inférieure à c.
 ````
 
