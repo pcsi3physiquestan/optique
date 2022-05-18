@@ -26,42 +26,28 @@ Une onde se propage à une vitesse - une célérité - donnée qui dépend du mi
 ````{sidebar} Célérité et milieu
 Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1}$. Dans un autre milieu, la célérité de l'onde $c_{milieu}$ sera donc toujours inférieure à c.
 ````
-````{important} __Définition : Indice de réfraction__
+````{important} __Indice de réfraction et milieu dispersif.__
+
 On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}}$.
 
-n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de lalumière dans le vide.
+* n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de lalumière dans le vide.
+
+* Un milieu est dit __dispersif__ si son indice de réfraction dépend de la longueur d'onde.
 ````
 
 ````{topic} __Exemples__
-
+:class: full-width
 | Milieu | Indice | Remarques |
 |:-|:-:|:-|
-| Air | $\approx 1$ | Varie très légèrement suivant sa température, sa densité (mirage) et sa composition (utilisé dans des détecteurs de monoxyde de carbone) |
-| Eau liquide | $\approx 1,3$ | Entre $0 ^{\circ} C$ et $100 ^{\circ} C$. Diminue avec la température |
-| Verre | (1,5) 1,4 -- 1,7 | Vérie fortement suivant le verre. |
-| Liquide | | Variables suivant leur nature. Utile pour la réfractométrie en chimie |
-````
-
-````{important} __Définition : Milieu dispersif__
-Un milieu est dit __dispersif__ si son indice de réfraction dépend de la longueur d'onde.
-````
-
-````{admonition} Exemple - Exemple de milieux dispersifs.
-:class: note, dropdown
-C'est le cas de nombreux verre (utilisé dans les prismes) mais aussi de l'eau (principe de l'arc-en-ciel) - son indice de réfraction varie de 1,37 à 1,31 entre 200 et 1000nm.
+| Air | $\approx 1$ | Varie très légèrement suivant sa température, sa densité (mirage) et sa composition (utilisé dans des détecteurs de monoxyde de carbone). Peu dispersif. |
+| Eau liquide | $\approx 1,3$ | Entre $0 ^{\circ} C$ et $100 ^{\circ} C$. Diminue avec la température. Dispersif (arc-en-ciel). |
+| Verre | (1,5) 1,4 -- 1,7 | Vérie fortement suivant le verre. Dispersif.|
+| Liquide | | Variables suivant leur nature. Utile pour la réfractométrie en chimie. Dispersif.|
 ````
 
 ## Relation entre célérité et longueur d'onde
 
-````{important} __Fondamental : Relation fréquence-longueur d'onde__
-On rappelle (Terminale) que pour une onde monochromatique de fréquence $\nu$, de longueur d'onde $\lambda$ et de célérité $c_0$, on la relation :
-
-\begin{equation}
-\lambda \nu = c_0
-\end{equation}
-````
-
-````{dropdown} La fréquence ne varie pas
+````{sidebar} La fréquence ne varie pas
 Pour un signal monochromatique donné, la fréquence ne varie pas lorsque le signal passe d'un milieu à un autre.
 
 Conséquence : Puisque la célérité varie, la longueur d'onde aussi. Si le signal possède une longueur d'onde $\lambda_0$ dans le vide, dans un milieu d'indice de réfraction n, la célérité est ainsi $\frac{c}{n}$ et la longueur d'onde est donc $\lambda = \frac{\lambda_0}{n}$.
@@ -70,4 +56,12 @@ Lorsqu'on veut étudier la propriété d'un signal lumineux (type de rayonnement
 
 Exemple : les longueurs d'onde du visible données $400nm ;800nm$ sont des longueurs d'onde dans le vide.
 ````
+````{important} __Relation fréquence-longueur d'onde__
+On rappelle (Terminale) que pour une onde monochromatique de fréquence $\nu$, de longueur d'onde $\lambda$ et de célérité $c_0$, on la relation :
+
+\begin{equation}
+\lambda \nu = c_0
+\end{equation}
+````
+
 
