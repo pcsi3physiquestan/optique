@@ -32,8 +32,8 @@ On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}
 n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de lalumière dans le vide.
 ````
 
-````{admonition} Exemple - Indices de réfraction : valeurs
-:class: note, dropdown
+````{topic} Exemple - Indices de réfraction : valeurs
+:class: dropdown
 
 * L'indice de l'air est à peu près égal à 1. Il peut varier légèrement suivant la température et la densité (c'est la cause de mirage) et sa composition (propriété utilisée dans certains détecteurs de monoxyde de carbone).
 * L'indice de l'eau liquide est d'environ 1,3 à température ambiante. Il a tendance à diminuer avec la température (mais la valeur donnée reste correcte entre 0$\circ$C et 100$\circ$C).
