@@ -58,6 +58,7 @@ Pour un signal monochromatique donné, la fréquence ne varie pas lorsque le sig
 Exemple : les longueurs d'onde du visible données $400nm ;800nm$ sont des longueurs d'onde dans le vide.
 ```` -->
 ````{important} __Relation fréquence-longueur d'onde__
+:class: full-width
 On rappelle (Terminale) que pour une onde monochromatique de fréquence $\nu$, de longueur d'onde $\lambda$ et de célérité $c_0$, on la relation :
 
 \begin{equation}

@@ -18,32 +18,21 @@ kernelspec:
 
 ## Source lumineuse
 
-````{important} __Définition : Source lumineuse__
+````{important} __Source lumineuse__
+:class: full-width
 
-Une source lumineuse est un objet qui émet de la lumière.
+Une __source lumineuse__ est un objet qui émet de la lumière.
 
-On distingue les sources lumineuses __primaires__ qui produisent leurs propres lumières et les sources lumineuses __secondaires__ qui réémettent la lumière (ou une partie de la lumière) qu'ils reçoivent.
+* On distingue les sources lumineuses _primaires_ qui produisent leurs propres lumières et les sources lumineuses _secondaires_ qui réémettent la lumière (ou une partie de la lumière) qu'ils reçoivent.
+* Une __source lumineuse ponctuelle__ est une source lumineuse assimilable à un point. Il s'agit d'un modèle théorique mais qu'on peut considérer acceptable pour des sources lointaines (étoiles) ou pour des sources rendues très petites par un diaphragme [^diaphragme] très fin.
+[^diaphragme]: Un diaphragme est un dispositif mécanique qui limitent l'étendue d'un faisceau lumineux. On peut le caractériser par sa forme et sa taille.
+    * Une _source étendue_ est constituée d'un ensemble de sources ponctuelles. La majorité des sources que nous utilisons sont des sources étendues (lampes, soleil, lune, source secondaire sur terre... ).
+* Une __source monochromatique__ est une source qui n'émet qu'une seule longueur d'onde.
 ````
 
-````{admonition} Exemple - Exemples de sources
-:class: note, dropdown
+````{sidebar} Exemples de sources
 * Sources primaires: lampes, étoile, feu... 
 * Sources secondaires: être humain, livre, Lune, planètes... 
-````
-
-````{important} __Définition : Sources étendues et sources ponctuelles, dropdown__
-
-Une source lumineuse ponctuelle est une source lumineuse assimilable à un point. Il s'agit d'un modèle théorique mais qu'on peut considérer acceptable pour des sources lointaines (étoiles) ou pour des sources rendues très petites par un diaphragme [^diaphragme] très fin.
-
-[^diaphragme]: Un diaphragme est un dispositif mécanique qui limitent l'étendue d'un faisceau lumineux. On peut le caractériser par sa forme et sa taille.
-
-
-Une source étendue est constituée d'un ensemble de sources ponctuelles. La majorité des sources que nous utilisons sont des sources étendues (lampes, soleil, lune, source secondaire sur terre... ).
-````
-
-````{important} __Définition : Sources monochromatiques__
-
-Une source monochromatique est une source qui n'émet qu'une seule longueur d'onde.
 ````
 
 ## Faisceau lumineux et rayon lumineux
