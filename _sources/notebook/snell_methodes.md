@@ -55,6 +55,7 @@ On considère le cas où $n_1 < n_2 $.
 ````
 
 ````{important} __Bilan__
+:class: full-width
 On retiendra que lors du passage d'un milieu moins réfringent à un milieu plus réfringent:
 
 * le rayon réfracté __se rapproche de la normale__ par rapport au rayon incident
@@ -88,6 +89,7 @@ On considère le cas où $n_2 < n_1 $.
 ````
 
 ````{important} __Bilan__
+:class: full-width
 On retiendra que lors du passage d'un milieu plus réfringent à un milieu moins réfringent:
 
 * le rayon réfracté __s'éloigne de la normale__ par rapport au rayon incident

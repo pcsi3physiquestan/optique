@@ -38,6 +38,7 @@ Une __source lumineuse__ est un objet qui émet de la lumière.
 ## Faisceau lumineux et rayon lumineux
 
 ````{important} __Rayon et faisceau lumineux__
+:class: full-width
 
 Un __rayon lumineux__ est défini comme la direction de propagation de l'onde électromagnétique.
 
@@ -69,7 +70,7 @@ On définit les termes suivants:
 On peut voir un rayon lumineux comme un faisceau de  section ponctuelle (donc nulle). Une idée pour isoler un rayon lumineux est donc d'utiliser un diaphragme de section ponctuelle (donc nulle). Celà permet d'avoir une vision de l'esprit de ce qu'est un rayon. En pratique, on peut chercher à le diaphragmer avec une section très très faible, mais... 
 
 ````{margin}
-Le rayon lumineux est uniquement une _vision théorique_ (par la pensée) pour décrire le trajet de la lumière.
+Le rayon lumineux est donc uniquement une _vision théorique_ (par la pensée) pour décrire le trajet de la lumière.
 ````
 ````{important} __Phénomène de diffraction__
 
@@ -110,7 +111,7 @@ Dans ce genre de systèmes, on peut alors s'intéresser à une distance "caract�
 ## Propriétés dans le cadre de l'optique géométrique
 
 ````{important} __Propriétés des rayons__
-
+:class: full-width
 * Propagation rectiligne : On rappelle que dans un milieu homogène transparent et isotrope, les rayons lumineux se propagent en ligne droite.
 * Indépendance des rayons : Les rayons lumineux sont indépendants, c'est-à-dire que la propagation de l'un n'influe pas sur la propagation l'autre, même quand ils se croisent.
 * __Principe de retour inverse__ : Si pour aller d'un point A à un point B, la lumière emprunte un chemin S. Alors pour aller du point B au point A, elle empruntera le chemin S en sens inverse.
