@@ -119,7 +119,8 @@ Si l'abus de langage est à connaître surtout pour ne pas se tromper face à un
 ## Exemple : Utilisation des lois de Snell-Descartes
 _La correction est en ligne._
 
-````{topic} Exercice 
+````{admonition} Exercice 
+:class: attention
 :class: attention
 
 ```{figure} ./images/exo_casserole.png

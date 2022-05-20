@@ -47,6 +47,7 @@ On peut définir les angles __orientés__ pour chaque rayon:
 
 ```{figure} ./images/optique_descartes_plus_refringent.jpg
 :name: descartes
+:width: 25%
 :align: center
 ```
 On a alors les relations géométriques suivantes:
