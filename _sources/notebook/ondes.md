@@ -24,7 +24,7 @@ On rappelle que les expériences réalisées en physique classique (principaleme
 ```
 
 ```{code-cell}
-%%tikz
+%% tikz
 \draw (0,0) -- (0,1);
 
 ````
