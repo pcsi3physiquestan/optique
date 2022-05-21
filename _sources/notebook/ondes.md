@@ -16,7 +16,7 @@ kernelspec:
 # La lumière est une onde 
 ```{code-cell}
 :tags: [remove-output,remove-input]
-%load_ext itikz
+%load_ext tikzmagic
 ```
 
 ````{margin}
@@ -24,7 +24,7 @@ On rappelle que les expériences réalisées en physique classique (principaleme
 ```
 
 ```{code-cell}
-%%itikz
+%%tikz
 \draw (0,0) -- (0,1);
 
 ````
