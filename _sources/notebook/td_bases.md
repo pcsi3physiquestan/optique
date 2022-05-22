@@ -36,7 +36,7 @@ La perte en transmission (ou atténuation) $X$ s'exprime par $X_{dB}=10\log(\fra
 ````{admonition} Exercice 
 :class: attention
 
-1. Quelle condition doit-on imposer à $n_2$ et $n_1$ pour pouvoir confiner la lumière dans la fibre (c'est-à-dire pour qu'il y ait réflexion totale)?
+1. Quelle condition doit-on imposer à $n_2$ et $n_1$ pour pouvoir confiner la lumière dans la fibre (c'est-à-dire pour qu'il y ait réflexion totale) ?
 2. Sachant qu'en 1970, l'atténuation était de $-10\rm{dB.km^{-1}}$ et qu'actuellement elle est de $-0.005\rm{dB.km^{-1}}$, déterminer dans les deux cas les pertes en puissance en \% au bout d'un km.
 3. Un rayon lumineux arrive en I avec un angle $\theta_i$. Montrer que si $\theta_i$ est inférieur à un angle $\theta_a$, un rayon peut être guidé à travers le coeur. Pour une fibre cylindrique, justifier le terme de __cône d'acceptance.__
 4. On appelle ouverture numérique (O.N.) la grandeur $\sin(\theta_a)$. Donner l'expression de O.N. en fonction de $n_1$ et de $\Delta=\frac{n_1^2-n_2^2}{2n_1^2}$. A.N.: $\Delta=10^{-2},n_1=1,5$.

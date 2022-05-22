@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemples d’études &#8212; Optique géométrique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,26 +32,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/l_exemple.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -59,7 +59,10 @@
     <link rel="next" title="Application: démonstration de la relation de conjugaison" href="ex_app_lent_an.html" />
     <link rel="prev" title="Relations des lentilles minces" href="l_relations.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -77,13 +80,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Optique géométrique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -408,7 +412,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#lentille-convergente">
@@ -431,7 +435,7 @@
         
               <div>
                 
-  <div class="section" id="exemples-d-etudes">
+  <div class="tex2jax_ignore mathjax_ignore section" id="exemples-d-etudes">
 <h1>Exemples d’études<a class="headerlink" href="#exemples-d-etudes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="lentille-convergente">
 <h2>Lentille convergente<a class="headerlink" href="#lentille-convergente" title="Permalink to this headline">¶</a></h2>
@@ -456,18 +460,18 @@ Méthode<div class="summary-down docutils">
 <li><p class="card-text">la relation de conjugaison - il faudra en choisir une en fonction de ce qu’on veut trouver. On va ici déterminer les distances au centre optique, on utilisera la relation de Descartes.</p></li>
 </ul>
 <p class="card-text"><strong>Relation de conjugaison:</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-e6150338-74fc-46fc-93a1-2c78b2464040">
-<span class="eqno">(10)<a class="headerlink" href="#equation-e6150338-74fc-46fc-93a1-2c78b2464040" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-62c27681-d483-44b2-9f9b-1892b095331a">
+<span class="eqno">(10)<a class="headerlink" href="#equation-62c27681-d483-44b2-9f9b-1892b095331a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{1}{\overline{OH'}} - \frac{1}{\overline{OH}} = \frac{1}{f'}
 \end{equation}\]</div>
 <p class="card-text"><strong>Relation de grandissement:</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-a4a53df7-8413-4f2b-8e32-a6a99777d401">
-<span class="eqno">(11)<a class="headerlink" href="#equation-a4a53df7-8413-4f2b-8e32-a6a99777d401" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-762624d4-01c8-4d46-b4a5-b3e07bf35630">
+<span class="eqno">(11)<a class="headerlink" href="#equation-762624d4-01c8-4d46-b4a5-b3e07bf35630" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{\overline{A'B'}}{\overline{AB}} = \frac{\overline{OH'}}{\overline{OH}} = -1 \Longrightarrow \overline{OH'} = - \overline{OH}
 \end{equation}\]</div>
 <p class="card-text">Il suffit de remplacer <span class="math notranslate nohighlight">\(\overline{OH'}\)</span> dans la relation de conjugaison</p>
-<div class="amsmath math notranslate nohighlight" id="equation-82b5a079-fa52-4b06-9517-1e719857f56d">
-<span class="eqno">(12)<a class="headerlink" href="#equation-82b5a079-fa52-4b06-9517-1e719857f56d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2267eeb2-0fca-4654-be89-070ea7ef44d4">
+<span class="eqno">(12)<a class="headerlink" href="#equation-2267eeb2-0fca-4654-be89-070ea7ef44d4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 - \frac{1}{\overline{OH}} - \frac{1}{\overline{OH}} = \frac{1}{f'} \Longrightarrow \boxed{\overline{OH} = - 2 f' = - \overline{OH'}}
 \end{equation}\]</div>
 </div>
@@ -539,13 +543,13 @@ Correction - Analytique<div class="summary-down docutils">
 <p class="card-text">On va maintenant utiliser les relations de conjugaison pour déterminer la position de l’image puis une relation de grandissement pour déterminer sa taille.</p>
 <p class="card-text">Choix de la relation de conjugaison: la grandeur connue est la distance objet-foyer principal objet (ici <span class="math notranslate nohighlight">\(\overline{FA} = - d\)</span>). Donc on va plutôt utiliser la relation de Newton et chercher la distance <span class="math notranslate nohighlight">\(\overline{F'A'}\)</span>.</p>
 <p class="card-text">On a donc:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b177a732-8547-42d4-b22c-bf48382d5a1c">
-<span class="eqno">(13)<a class="headerlink" href="#equation-b177a732-8547-42d4-b22c-bf48382d5a1c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-04481756-467d-4367-bcab-0ae5490b4e0b">
+<span class="eqno">(13)<a class="headerlink" href="#equation-04481756-467d-4367-bcab-0ae5490b4e0b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overline{FA} \cdot \overline{F'A'} = - f'^2 \Longrightarrow \boxed{\overline{F'A'} = \frac{f'^2}{d} = 5\rm{cm}}
 \end{equation}\]</div>
 <p class="card-text">Il reste à utiliser une relation de grandissement (ici celle faisant intervenir <span class="math notranslate nohighlight">\(\overline{FA}\)</span>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6e306c70-df05-4a26-b2a7-34c8c4db960c">
-<span class="eqno">(14)<a class="headerlink" href="#equation-6e306c70-df05-4a26-b2a7-34c8c4db960c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1722fbf2-2ffa-430a-a08e-4dac252fd521">
+<span class="eqno">(14)<a class="headerlink" href="#equation-1722fbf2-2ffa-430a-a08e-4dac252fd521" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{\overline{A'B'}}{\overline{AB}} = \frac{f'}{\overline{FA}} \Longrightarrow \boxed{\overline{A'B'} = - \frac{f'}{d}\overline{AB} = 1 \rm{cm}}
 \end{equation}\]</div>
 </div>
@@ -594,16 +598,27 @@ On a essayé au maximum dans les exercices d’utiliser les noms caractéristiqu
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="l_relations.html" title="previous page">Relations des lentilles minces</a>
-    <a class='right-next' id="next-link" href="ex_app_lent_an.html" title="next page">Application: démonstration de la relation de conjugaison</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="l_relations.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Relations des lentilles minces</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="ex_app_lent_an.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Application: démonstration de la relation de conjugaison</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -619,8 +634,7 @@ On a essayé au maximum dans les exercices d’utiliser les noms caractéristiqu
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

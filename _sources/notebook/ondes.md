@@ -14,19 +14,9 @@ kernelspec:
   name: python3
 ---
 # La lumière est une onde 
-```{code-cell}
-:tags: [remove-output,remove-input]
-%load_ext tikzmagic
-```
 
 ````{margin}
 On rappelle que les expériences réalisées en physique classique (principalement les phénomènes de diffraction et d'interférences) poussent à traiter la lumière comme une onde.
-```
-
-```{code-cell}
-%% tikz
-\draw (0,0) -- (0,1);
-
 ````
 
 ## Célérité et indice de réfraction

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemple d’étude: la loupe &#8212; Optique géométrique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,26 +32,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/instr_loupe.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -59,7 +59,10 @@
     <link rel="next" title="Activités méthodes" href="instr_meth.html" />
     <link rel="prev" title="Instruments d’optique" href="instruments.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -77,13 +80,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Optique géométrique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -408,7 +412,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#la-loupe-principe">
@@ -431,7 +435,7 @@
         
               <div>
                 
-  <div class="section" id="exemple-d-etude-la-loupe">
+  <div class="tex2jax_ignore mathjax_ignore section" id="exemple-d-etude-la-loupe">
 <h1>Exemple d’étude: la loupe<a class="headerlink" href="#exemple-d-etude-la-loupe" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="la-loupe-principe">
 <h2>La loupe: Principe<a class="headerlink" href="#la-loupe-principe" title="Permalink to this headline">¶</a></h2>
@@ -467,8 +471,8 @@ Correction<div class="summary-down docutils">
 <p class="card-text">L’antécédent du Punctum Remotum - qui est à l’infini - est évidemment le foyer principal objet de la loupe donc <span class="math notranslate nohighlight">\(\overline{FA_{PR}} = 0\)</span></p>
 <p class="card-text">On cherche l’antécédent du Punctum Proximum positionné tel que <span class="math notranslate nohighlight">\(\overline{F'A'_{PP}} = - d_{min}\)</span>.</p>
 <p class="card-text">Puisque qu’on a déjà la distance au foyer image, on va utiliser la relation de Newton:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9a290f57-b384-4a80-a169-165dc4514556">
-<span class="eqno">(15)<a class="headerlink" href="#equation-9a290f57-b384-4a80-a169-165dc4514556" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-df67edc8-688e-4a7b-a964-5f682c612cde">
+<span class="eqno">(15)<a class="headerlink" href="#equation-df67edc8-688e-4a7b-a964-5f682c612cde" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overline{FA_{PP}} \times \underbrace{\overline{FA'_{PP}}}{-d_{\min}} = - f'^2 \Longrightarrow \boxed{\overline{FA_{PP}} = \frac{f'^2}{d_{\min}}}
 \end{equation}\]</div>
 <p class="card-text">Application numérique: la largeur de l’intervalle est 4mm.</p>
@@ -481,15 +485,15 @@ Correction<div class="summary-down docutils">
 <p class="card-text">Il vient <span class="math notranslate nohighlight">\(\alpha' \approx \tan \alpha ' = -\frac{\overline{AB}}{f'}\)</span></p>
 <p class="card-text"><strong>Calcul de l’angle à l’oeil nu</strong>. Il vient directement <span class="math notranslate nohighlight">\(\alpha \approx \tan \alpha = -\frac{\overline{AB}}{d_{\min}}\)</span></p>
 <p class="card-text">On obtient le grossissement:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-eb20ed87-aba0-48c2-b0da-d06ebc0282c7">
-<span class="eqno">(16)<a class="headerlink" href="#equation-eb20ed87-aba0-48c2-b0da-d06ebc0282c7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-cdc65b1b-ee65-4c2d-aa3b-3963b152e247">
+<span class="eqno">(16)<a class="headerlink" href="#equation-cdc65b1b-ee65-4c2d-aa3b-3963b152e247" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 G_c = \left\vert \frac{\alpha'}{\alpha} \right\vert = \frac{d_{\min}}{f'}
 \end{equation}\]</div>
 <p class="card-text">Application numérique: <span class="math notranslate nohighlight">\(G_c = \times 25\)</span></p>
 <p class="card-text"><strong>Q3. Plus petit objet distinguable.</strong>
 On peut reprendre les formules précédentes:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4fcc34c-870e-468f-9a93-c87aa2514178">
-<span class="eqno">(17)<a class="headerlink" href="#equation-c4fcc34c-870e-468f-9a93-c87aa2514178" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a9830d8b-3930-45e2-9cab-020aef88bf66">
+<span class="eqno">(17)<a class="headerlink" href="#equation-a9830d8b-3930-45e2-9cab-020aef88bf66" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 AB = f' \tan \theta \approx \theta f' \approx 3 \times 10^{-6} \rm{rad}
 \end{equation}\]</div>
 </div>
@@ -531,16 +535,27 @@ Remarque<div class="summary-down docutils">
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="instruments.html" title="previous page">Instruments d’optique</a>
-    <a class='right-next' id="next-link" href="instr_meth.html" title="next page">Activités méthodes</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="instruments.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Instruments d’optique</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="instr_meth.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Activités méthodes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -556,8 +571,7 @@ Remarque<div class="summary-down docutils">
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>
