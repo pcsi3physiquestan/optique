@@ -15,7 +15,7 @@ kernelspec:
 ---
 
 # Systèmes centrés
-````{admonition} Objectifs
+````{admonition} Compétences
 :class: tip
 * Construire l'image d'un objet et identifier sa nature réelle ou virtuelle.
 * Enoncer les conditions permettant un stigmatisme approché et les relier aux caractéristiques d'un détecteur.

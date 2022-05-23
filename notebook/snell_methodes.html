@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lois de Snell-Descartes - Méthodes &#8212; Optique géométrique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,26 +32,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/snell_methodes.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -59,10 +59,7 @@
     <link rel="next" title="Travaux dirigées" href="td_bases.html" />
     <link rel="prev" title="Lois de Snell-Descartes" href="snell.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -80,14 +77,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Optique géométrique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -412,7 +408,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#methode-trace-qualitatif-du-rayon-refracte">
@@ -435,7 +431,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="lois-de-snell-descartes-methodes">
+  <div class="section" id="lois-de-snell-descartes-methodes">
 <h1>Lois de Snell-Descartes - Méthodes<a class="headerlink" href="#lois-de-snell-descartes-methodes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="methode-trace-qualitatif-du-rayon-refracte">
 <h2>Méthode: Tracé qualitatif du rayon réfracté.<a class="headerlink" href="#methode-trace-qualitatif-du-rayon-refracte" title="Permalink to this headline">¶</a></h2>
@@ -451,7 +447,7 @@
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>Tracé qualitatif du rayon réfracté</strong></p>
 </div></blockquote>
@@ -484,7 +480,7 @@
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>Tracé qualitatif du rayon réfracté</strong></p>
 <p>Remarquons que <span class="math notranslate nohighlight">\(\frac{\sin i_1}{\sin i_2} = \frac{n_2}{n_1} &lt; 1\)</span>. Or sur <span class="math notranslate nohighlight">\([-\pi;\pi/2]\)</span>, la fonction sinus est croissante donc <span class="math notranslate nohighlight">\(i_1 &lt; i_2\)</span>.</p>
@@ -503,8 +499,8 @@
 <li><p>si l’angle d’incidence devient trop grand, il y a phénomène de <strong>réflexion totale</strong>, c’est-à-dire que toute la lumière est réfléchie.</p></li>
 </ul>
 <p>L’angle d’incidence limite permettant la réfraction se calcule en cherchant un angle réfracté de <span class="math notranslate nohighlight">\(\pm \pi/2\)</span>. On obtient:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c1619634-f0cb-47d3-9679-015b1496695f">
-<span class="eqno">(2)<a class="headerlink" href="#equation-c1619634-f0cb-47d3-9679-015b1496695f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-db0aa77e-aba8-4f25-82a7-746fc8e3ed9e">
+<span class="eqno">(2)<a class="headerlink" href="#equation-db0aa77e-aba8-4f25-82a7-746fc8e3ed9e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)
 \end{equation}\]</div>
 </div>
@@ -534,7 +530,7 @@ i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>Mise en équation</strong></p>
 <p>Notons le point I, le point d’incidence sur le dioptre air-eau pour le rayon extrême du faisceau issu de O et entrant dans la pupille. On note <span class="math notranslate nohighlight">\(i_1\)</span> et <span class="math notranslate nohighlight">\(i_2\)</span> les angles respectivement d’incidence et de réfraction. On a les relations :</p>
@@ -556,8 +552,8 @@ Les deux dernières équations permettent d’écrire: <span class="math notrans
 	\frac{R_1}{\tan i_2} - H_0 \frac{\tan i_1}{\tan i_2}&amp;= H_1
 \end{align*}\]</div>
 <p>soit en éliminant <span class="math notranslate nohighlight">\(i_2\)</span> (<em>on a directement utilisant <span class="math notranslate nohighlight">\(n_{air} = 1\)</span> -  on peut se le permettre car l’indice de réfraction est sans dimension: le changer par sa valeur numérique n’impacte pas l’analyse dimensionnelle</em>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5b5301b5-ff6f-465a-82b5-1e2260ef44fd">
-<span class="eqno">(3)<a class="headerlink" href="#equation-5b5301b5-ff6f-465a-82b5-1e2260ef44fd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7c41f17d-891d-437e-a7e1-a2339d708608">
+<span class="eqno">(3)<a class="headerlink" href="#equation-7c41f17d-891d-437e-a7e1-a2339d708608" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \left ( R_1 - H_0 \tan i_1 \right )\sqrt{1 - n_{eau}^2 \sin^2 i_1} = H_1 n_{eau} \sin i_1
 \end{equation}\]</div>
 <p>On rappelle que <span class="math notranslate nohighlight">\(\theta_0 = i_1\)</span></p>
@@ -573,8 +569,8 @@ Les deux dernières équations permettent d’écrire: <span class="math notrans
 \end{align*}\]</div>
 <p>On ne conservera pas aussi les puissances au carré des petits angles (on parle d’approximation à l’ordre 1), des précisions seront données sur cette approximation dans des cours ultérieurs. On essaiera déjà d’appréhender la méthode d’utilisation de cette approximation.</p>
 <p>Ici l’équation devient :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bb1172ce-fbe6-4a15-8169-ceba3876137b">
-<span class="eqno">(4)<a class="headerlink" href="#equation-bb1172ce-fbe6-4a15-8169-ceba3876137b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9f5cc096-011d-4923-a13d-e9e7a9165e66">
+<span class="eqno">(4)<a class="headerlink" href="#equation-9f5cc096-011d-4923-a13d-e9e7a9165e66" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \left ( R_1 - H_0 i_1 \right ) = H_1 n_{eau} i_1 \Longrightarrow \theta_0 = i_1 \approx \frac{R_1}{H_0 + H_1} = 10^{-2}  \rm{rad}
 \end{equation}\]</div>
 </div></blockquote>
@@ -605,27 +601,16 @@ Les deux dernières équations permettent d’écrire: <span class="math notrans
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="snell.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Lois de Snell-Descartes</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="snell.html" title="previous page">Lois de Snell-Descartes</a>
+    <a class='right-next' id="next-link" href="td_bases.html" title="next page">Travaux dirigées</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="td_bases.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Travaux dirigées</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -641,7 +626,8 @@ Les deux dernières équations permettent d’écrire: <span class="math notrans
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>
