@@ -59,7 +59,13 @@ Lorsque les rayons entrants concourent en un point, on appelle ce point, __point
 
 * Si le point objet est le concours des rayons réels, alors on dit que l'objet est réel (comme $A_1$ sur la figure ci-dessous).
 * Si le point objet est le concours du prolongements des rayons réels (rayons virtuels), on dit que l'objet est virtuel (comme $A_2$). Un objet virtuel est nécessairement formé par un système optique en amont.
+
 ````
+
+```{figure} ./images/optique_objet_virtuel_reel.jpg
+:name: virtuel_reel
+:align: center
+```
 
 ````{topic} Repérage d'un objet
 On repérera un point objet par:
@@ -80,21 +86,4 @@ Un objet n'est pas nécessairement matériel (source primaire ou secondaire), il
 
 Exemple: Un oeil humaine utilise un télescope. Le téléscope vise une étoile (qui est un objet pour le téléscope) et en donne une image (grossie normalement). C'est cette image qui est vue par l'oeil. Elle est donc l'objet pour système optique {oeil} (plus exactement le cristalin).
 ```
-````
-
-
-````{important} __Définition : Objet réel et virtuel__
-
-
-```{figure} ./images/optique_objet_virtuel_reel.jpg
-:name: virtuel_reel
-:align: center
-```
-````
-
-````{admonition} Objet ponctuel et objet étendu
-:class: note, dropdown
-Comme pour les sources, les objets peuvent être ponctuels ou étendus - c'est-à-dire composé d'un ensemble de point objet où concourrent des faisceaux différents.
-
-En général, on traite des objets étendus à 1 dimensions (un trait) contenus dans un plan frontal. L'invariance par rotation permet de travailler avec des traits et non des surfaces.
 ````
