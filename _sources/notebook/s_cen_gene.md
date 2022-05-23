@@ -57,8 +57,8 @@ On parle aussi de rayon _réfléchi_ pour un rayon sortant d'un système optique
 ````{important} __Définition : Objet ponctuel__
 Lorsque les rayons entrants concourent en un point, on appelle ce point, __point objet (ou objet)__.
 
-* Si le point objet est le concours des rayons réels, alors on dit que l'objet est réel (comme $A_1$ sur la figure ci-dessous).
-* Si le point objet est le concours du prolongements des rayons réels (rayons virtuels), on dit que l'objet est virtuel (comme $A_2$). Un objet virtuel est nécessairement formé par un système optique en amont.
+* Si le point objet est le concours des rayons réels, alors on dit que l'__objet est réel__ (comme $A_1$ sur la figure ci-dessous).
+* Si le point objet est le concours du prolongements des rayons réels (rayons virtuels), on dit que l'__objet est virtuel__ (comme $A_2$). Un objet virtuel est nécessairement formé par un système optique en amont.
 
 ````
 
@@ -85,5 +85,9 @@ __Nature de l'objet__
 Un objet n'est pas nécessairement matériel (source primaire ou secondaire), il peut être aussi formé au concours de rayons transmis par un premier système optique (on dira qu'il est l'image - cf. suite - donnée par le premier système optique) avant d'entrée dans le second système optique (dont il est donc l'objet).
 
 Exemple: Un oeil humaine utilise un télescope. Le téléscope vise une étoile (qui est un objet pour le téléscope) et en donne une image (grossie normalement). C'est cette image qui est vue par l'oeil. Elle est donc l'objet pour système optique {oeil} (plus exactement le cristalin).
+
+\begin{equation}
+\textrm{Objet : Etoile} \underbrace{\longrightarrow}_{Lunette astronomique} \underbrace{\textrm{Image intermédiaire}}_{\textrm{Image pour la lunette/Objet pour l'oeil}} \underbrace{\longrightarrow}_{\textrm{Cristallin de l'oeil}} \textrm{Image finale sur la rétine}
+\end{equation}
 ```
 ````
