@@ -40,6 +40,7 @@ Du point de vue de l'optique géométrique, on peut modéliser l'oeil comme une 
 ```{figure} ./images/optique_oeil_modele.jpg
 :name: oeil_modele
 :align: center
+:width: 40%
 ```
 ````
 
