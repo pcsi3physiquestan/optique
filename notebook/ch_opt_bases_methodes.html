@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemples : Lois de Snell-Descartes &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/ch_opt_bases_methodes.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TD : Bases de l’optique" href="ch_opt_bases_td.html" />
+    <link rel="prev" title="Maitriser les méthodes" href="ch_opt_bases_ex.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ch_opt_bases.html">
+   Bases de l’optique géométrique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="ch_opt_bases_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ch_opt_bases_ondes.html">
+       La lumière est une onde
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ch_opt_bases_approx.html">
+       Approximation de l’optique géométrique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ch_opt_bases_snell.html">
+       Lois de Snell-Descartes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="ch_opt_bases_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Exemples : Lois de Snell-Descartes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ch_opt_bases_td.html">
+       TD : Bases de l’optique
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sys_centres.html">
+   Systèmes centrés
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="s_cen_gene.html">
+     Systèmes centrées: présentation générales
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stigmatisme.html">
+     Stigmatisme rigoureux. Notion d’images.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="miroir.html">
+     Miroir plan: Présentation et relation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gauss.html">
+     Stigmatisme approché et condition de Gauss
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="elements.html">
+     Eléments principaux des systèmes centrés
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_s_cen.html">
+     TD Optique 2a: Systèmes centrés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_g.html">
+   Lentilles minces - Approches graphiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_pres.html">
+     Lentilles minces: Présentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lent_rayons.html">
+     Lentilles minces: tracés des rayons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_g.html">
+     Application: recherche d’antécédent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_g.html">
+     TD Optique 2b: Lentilles minces - Construction graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lentilles_an.html">
+   Lentilles minces - Relations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_relations.html">
+     Relations des lentilles minces
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="l_exemple.html">
+     Exemples d’études
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_app_lent_an.html">
+     Application: démonstration de la relation de conjugaison
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="l_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_esp.html">
+       Zones d’espaces conjuguées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="l_meth_proj.html">
+       Projection
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_lentilles_an.html">
+     TD : Lentilles minces - Relations mathématiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oeil.html">
+   L’oeil et ses défauts
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="instruments.html">
+   Instruments d’optique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="instr_loupe.html">
+     Exemple d’étude: la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="instr_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="instr_meth_lunette.html">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="td_instr.html">
+     TD Optique 4: Instruments d’optique
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="microscope.html">
+       Etude de systèmes optiques multilentilles
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/ch_opt_bases_methodes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/ch_opt_bases_methodes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ch_opt_bases_methodes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-trace-qualitatif-du-rayon-refracte">
+   Méthode: Tracé qualitatif du rayon réfracté.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemple-utilisation-des-lois-de-snell-descartes">
+   Exemple : Utilisation des lois de Snell-Descartes
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="exemples-lois-de-snell-descartes">
+<h1>Exemples : Lois de Snell-Descartes<a class="headerlink" href="#exemples-lois-de-snell-descartes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="methode-trace-qualitatif-du-rayon-refracte">
+<h2>Méthode: Tracé qualitatif du rayon réfracté.<a class="headerlink" href="#methode-trace-qualitatif-du-rayon-refracte" title="Permalink to this headline">¶</a></h2>
+<p>Le tracé du rayon réfléchi s’obtient par simple symétrie quel que soient les valeurs des indices. Nous allons plutôt ici voir comment on peut prévoir semi-qualitativement le tracé du rayon réfracté et nous obtiendrons plus informations très importantes. Nous travaillerons dans le plan d’incidence.</p>
+<p><strong>Les conclusions obtenues ici sont à connaître autant qu’à savoir retrouver.</strong></p>
+<p>Il est <strong>vivement</strong> conseillé de réfléchir aux exercices <strong>avant</strong> de regarder les réponses (en ligne).</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère le cas où <span class="math notranslate nohighlight">\(n_1 &lt; n_2 \)</span>.</p>
+<ol class="simple">
+<li><p>Le rayon réfracté s’éloigne-t-il ou se rapproche-t-il de la normale?</p></li>
+<li><p>Justifier que l’angle réfracté ne peut prendre qu’une gamme de valeur limitée dans le plan d’incidence.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>Tracé qualitatif du rayon réfracté</strong></p>
+</div></blockquote>
+<div class="figure align-center" id="plus-refringent">
+<img alt="../_images/optique_descartes_plus_refringent.jpg" src="../_images/optique_descartes_plus_refringent.jpg" />
+</div>
+<blockquote>
+<div><p>Remarquons que <span class="math notranslate nohighlight">\(\frac{\sin i_1}{\sin i_2} = \frac{n_2}{n_1} &gt; 1\)</span>. Or sur <span class="math notranslate nohighlight">\([-\pi;\pi/2]\)</span>, la fonction sinus est croissante donc <span class="math notranslate nohighlight">\(i_1&gt; i_2\)</span>.</p>
+<p>Il vient qu’au passage d’un milieu moins réfringent à un milieu plus réfringent, le rayon réfracté se rapproche de la normale.</p>
+<p><strong>Gamme d’angle</strong></p>
+<p>L’étude précédente montre que quand l’angle d’incidence atteint <span class="math notranslate nohighlight">\(\pi/2\)</span> (on parle <strong>d’incidence rasante</strong>), l’angle réfracté est encore inférieur l’angle droit. Il apparaît que les gammes d’angles en sortie sont limitées. On atteint pas toutes les valeurs entre <span class="math notranslate nohighlight">\(-\pi/2\)</span> et <span class="math notranslate nohighlight">\(\pi/2\)</span>.</p>
+<p>Plus précisément, les gammes valeurs atteintes sont <span class="math notranslate nohighlight">\(i_2 \in [-\arcsin\left ( \frac{n_1}{n_2}\right); \arcsin\left ( \frac{n_1}{n_2}\right)]\)</span></p>
+</div></blockquote>
+</div>
+<div class="full-width admonition important">
+<p class="admonition-title">Important</p>
+<p>On retiendra que lors du passage d’un milieu moins réfringent à un milieu plus réfringent:</p>
+<ul class="simple">
+<li><p>le rayon réfracté <strong>se rapproche de la normale</strong> par rapport au rayon incident</p></li>
+<li><p>le rayon réfracté va avoir une gamme limitée de valeur. La valeur limite <span class="math notranslate nohighlight">\(i_2 =\arcsin\left ( \frac{n_1}{n_2}\right)\)</span> est appelée <strong>angle de réfraction limite.</strong></p></li>
+</ul>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère le cas où <span class="math notranslate nohighlight">\(n_2 &lt; n_1 \)</span>.</p>
+<ol class="simple">
+<li><p>Le rayon réfracté s’éloigne-t-il ou se rapproche-t-il de la normale?</p></li>
+<li><p>Justifier que l’angle réfracté va atteinte une réfraction rasante (égale à <span class="math notranslate nohighlight">\(\pm \pi/2\)</span> pour un angle d’incidence strictement inférieure à <span class="math notranslate nohighlight">\(\pm \pi/2\)</span> (en valeur absolue). On notera <span class="math notranslate nohighlight">\(i_0\)</span> la valeur limite de l’angle d’incidence.</p></li>
+<li><p>Que se passe-t-il si l’angle d’incidence est supérieure à <span class="math notranslate nohighlight">\(i_0\)</span> ?</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>Tracé qualitatif du rayon réfracté</strong></p>
+<p>Remarquons que <span class="math notranslate nohighlight">\(\frac{\sin i_1}{\sin i_2} = \frac{n_2}{n_1} &lt; 1\)</span>. Or sur <span class="math notranslate nohighlight">\([-\pi;\pi/2]\)</span>, la fonction sinus est croissante donc <span class="math notranslate nohighlight">\(i_1 &lt; i_2\)</span>.</p>
+<p>Il vient qu’au passage d’un milieu moins réfringent à un milieu plus réfringent, le rayon réfracté s’éloigne de la normale</p>
+<p><strong>Gamme d’angle</strong></p>
+<p>L’étude précédente montre que quand l’angle de réfraction atteint <span class="math notranslate nohighlight">\(\pm \pi/2\)</span>, l’angle d’incidence est encore inférieur l’angle droit. L’angle limite d’incidence est <span class="math notranslate nohighlight">\(i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)\)</span>.</p>
+<p><strong>Réflexion totale</strong></p>
+<p>Si l’angle d’incidence est supérieure à <span class="math notranslate nohighlight">\(i_0\)</span>, on observe expérimentalement qu’il n’y a pas de rayon réfracté. On parle de <strong>réflexion totale</strong>: toute la lumière est réfléchie.</p>
+</div></blockquote>
+</div>
+<div class="full-width admonition important">
+<p class="admonition-title">Important</p>
+<p>On retiendra que lors du passage d’un milieu plus réfringent à un milieu moins réfringent:</p>
+<ul class="simple">
+<li><p>le rayon réfracté <strong>s’éloigne de la normale</strong> par rapport au rayon incident</p></li>
+<li><p>si l’angle d’incidence devient trop grand, il y a phénomène de <strong>réflexion totale</strong>, c’est-à-dire que toute la lumière est réfléchie.</p></li>
+</ul>
+<p>L’angle d’incidence limite permettant la réfraction se calcule en cherchant un angle réfracté de <span class="math notranslate nohighlight">\(\pm \pi/2\)</span>. On obtient:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-4ef2e592-6c0a-42b8-955a-e5c3579a000d">
+<span class="eqno">(2)<a class="headerlink" href="#equation-4ef2e592-6c0a-42b8-955a-e5c3579a000d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)
+\end{equation}\]</div>
+</div>
+<div class="sidebar">
+<p class="sidebar-title">Angle de réfraction limite.</p>
+<p>Dans le cas où <span class="math notranslate nohighlight">\(n_1 &gt; n_2\)</span>, on devrait parler pour désigner <span class="math notranslate nohighlight">\(i_0\)</span> d’angle d’incidence limite (sous-entendu permettant la réfraction).</p>
+<p>Ce n’est pas le cas. On l’appelle…  <strong>angle de réfraction limite</strong>.</p>
+<p>…  C’est un peu dérangeant car il s’agit bien de la valeur de l’angle d’incidence et non de l’angle de réfraction…</p>
+<p>Pourquoi cette confusion ? A cause du <strong>principe de retour inverse</strong>. En effet, on pourra remarquer que les deux <span class="math notranslate nohighlight">\(i_0\)</span> introduit dans les deux exercices sont identiques en inversant les indices <span class="math notranslate nohighlight">\(n_1\)</span> et <span class="math notranslate nohighlight">\(n_2\)</span>, soit en réalisant une propagation de la lumière…  en sens inverse !</p>
+<p>Et le principe de retour inverse nous indique que si du milieu d’indice <span class="math notranslate nohighlight">\(n_1\)</span> vers le milieu d’indice <span class="math notranslate nohighlight">\(n_2\)</span> un angle d’incidence <span class="math notranslate nohighlight">\(i_0\)</span> donne un angle de réfraction <span class="math notranslate nohighlight">\(\pi/2\)</span>, alors en passant du milieu d’indice <span class="math notranslate nohighlight">\(n_2\)</span> vers le milieu d’indice <span class="math notranslate nohighlight">\(n_1\)</span> avec un angle d’incidence de <span class="math notranslate nohighlight">\(\pi/2\)</span>, l’angle de réfraction sera de <span class="math notranslate nohighlight">\(i_0\)</span>: c’est bien le même angle !</p>
+<p>Si l’abus de langage est à connaître surtout pour ne pas se tromper face à un énoncé, la réflexion sur le principe de retour inverse et son utilisation est fondamental. <strong>Essayez de bien le comprendre et même de faire un dessin pour visualiser ce principe.</strong></p>
+</div>
+</div>
+<div class="section" id="exemple-utilisation-des-lois-de-snell-descartes">
+<h2>Exemple : Utilisation des lois de Snell-Descartes<a class="headerlink" href="#exemple-utilisation-des-lois-de-snell-descartes" title="Permalink to this headline">¶</a></h2>
+<p><em>La correction est en ligne.</em></p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<div class="figure align-center" id="casserole">
+<a class="reference internal image-reference" href="../_images/exo_casserole.png"><img alt="../_images/exo_casserole.png" src="../_images/exo_casserole.png" style="width: 40%;" /></a>
+</div>
+<p>On considère une pièce de monnaie de rayon <span class="math notranslate nohighlight">\(R_0\)</span> dont on négligera l’épaisseur posée au fond d’une casserole de hauteur <span class="math notranslate nohighlight">\(H_0\)</span> remplie à ras bord d’eau.</p>
+<p>L’oeil d’un observateur se trouve à la verticale de centre de la pièce à une hauteur <span class="math notranslate nohighlight">\(H_1\)</span>.</p>
+<ol class="simple">
+<li><p>On appelle O le centre de la pièce. Déterminer l’équation que vérifie l’ouverture angulaire <span class="math notranslate nohighlight">\(\theta_0\)</span> du faisceau issu du point O et qui entre dans l’oeil en fonction du rayon de la pupille <span class="math notranslate nohighlight">\(R_1\)</span>.</p></li>
+<li><p>**Faire l’application numérique pour <span class="math notranslate nohighlight">\(H_0 = H_1\)</span> en choisissant  des valeurs numériques plausibles. On sera amener à simplifier l’équation précédente AVANT de la résoudre en justifiant les simplification réalisée par des ordres de grandeurs.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>Mise en équation</strong></p>
+<p>Notons le point I, le point d’incidence sur le dioptre air-eau pour le rayon extrême du faisceau issu de O et entrant dans la pupille. On note <span class="math notranslate nohighlight">\(i_1\)</span> et <span class="math notranslate nohighlight">\(i_2\)</span> les angles respectivement d’incidence et de réfraction. On a les relations :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	n_{eau} \sin i_1 &amp;= n_{air} \sin i_2\\
+	\frac{IL}{\tan i_2} &amp;= H_1\\
+	IL + IJ &amp;= R_1\\
+	\tan i_1 &amp;= \frac{IJ}{H_0}
+\end{align*}\]</div>
+<p>On a 4 inconnues (IL, IJ, <span class="math notranslate nohighlight">\(i_1\)</span> et <span class="math notranslate nohighlight">\(i_2\)</span>) et quatre inconnues, on peut donc résoudre le système.</p>
+<p>Il est important de voir que la résolution complète ne nous intéresse pas. On veut <span class="math notranslate nohighlight">\(i_1\)</span> qui représente l’ouverture angulaire. On va donc chercher à <strong>garder <strong><strong><span class="math notranslate nohighlight">\(i_1\)</span></strong></strong> et éliminer les autres inconnues.</strong></p>
+<p>Les grandeurs <span class="math notranslate nohighlight">\(H_0, H_1, R_1\)</span> et les indices sont des grandeurs connues qu’on va garder.</p>
+<p><em>Equation pour l’angle:</em>
+Les deux dernières équations permettent d’écrire: <span class="math notranslate nohighlight">\(IJ = H_0 \tan i_1\)</span> et <span class="math notranslate nohighlight">\( IL = R_1 - H_0 \tan i_1\)</span> d’où le système:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	n_{eau} \sin i_1 &amp;= n_{air} \sin i_2\\
+	\frac{R_1}{\tan i_2} - H_0 \frac{\tan i_1}{\tan i_2}&amp;= H_1
+\end{align*}\]</div>
+<p>soit en éliminant <span class="math notranslate nohighlight">\(i_2\)</span> (<em>on a directement utilisant <span class="math notranslate nohighlight">\(n_{air} = 1\)</span> -  on peut se le permettre car l’indice de réfraction est sans dimension: le changer par sa valeur numérique n’impacte pas l’analyse dimensionnelle</em>):</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0acade95-da72-4f40-9678-ee976db711c1">
+<span class="eqno">(3)<a class="headerlink" href="#equation-0acade95-da72-4f40-9678-ee976db711c1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\left ( R_1 - H_0 \tan i_1 \right )\sqrt{1 - n_{eau}^2 \sin^2 i_1} = H_1 n_{eau} \sin i_1
+\end{equation}\]</div>
+<p>On rappelle que <span class="math notranslate nohighlight">\(\theta_0 = i_1\)</span></p>
+<p><strong>Résolution aux petits angles</strong></p>
+<p>Nous allons faire une approximation pour résoudre cette équation (sans quoi la résolution devient TRÈS délicate). En effet, la taille de la pupille est de l’ordre du mm (on prendra <span class="math notranslate nohighlight">\(R_1 = 1\rm{mm}\)</span>) et la hauteur de la casserole est de l’ordre de la dizaine de cm. (on prendre <span class="math notranslate nohighlight">\(R_0 = 5\rm{cm}\)</span>). Il vient que les angles à la normale seront nécessairement petit.</p>
+<p>On peut avoir un ordre de grandeur en considérant que <span class="math notranslate nohighlight">\(\theta_0 \sim \arctan\frac{R_0}{2H_0} \sim 10^{-2} \rm{rad}\)</span>. En pratique, la propagation n’est pas rectiligne mais les angles <span class="math notranslate nohighlight">\(i_1\)</span> et <span class="math notranslate nohighlight">\(i_2\)</span> sont nécessairement du même ordre de grandeur que <span class="math notranslate nohighlight">\(\theta_0\)</span>.</p>
+<p>Or si <span class="math notranslate nohighlight">\(\theta_0 &lt;&lt; 1\)</span>, on <strong>peut faire les approximations dites des petits angles :</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\sin i &amp;\approx i\\
+	\tan i &amp;\approx i\\
+	\cos i &amp;\approx 1\\
+\end{align*}\]</div>
+<p>On ne conservera pas aussi les puissances au carré des petits angles (on parle d’approximation à l’ordre 1), des précisions seront données sur cette approximation dans des cours ultérieurs. On essaiera déjà d’appréhender la méthode d’utilisation de cette approximation.</p>
+<p>Ici l’équation devient :</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d3804419-1104-49ea-81aa-fea432a6dbe7">
+<span class="eqno">(4)<a class="headerlink" href="#equation-d3804419-1104-49ea-81aa-fea432a6dbe7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\left ( R_1 - H_0 i_1 \right ) = H_1 n_{eau} i_1 \Longrightarrow \theta_0 = i_1 \approx \frac{R_1}{H_0 + H_1} = 10^{-2}  \rm{rad}
+\end{equation}\]</div>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch_opt_bases_ex.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Maitriser les méthodes</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch_opt_bases_td.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">TD : Bases de l’optique</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

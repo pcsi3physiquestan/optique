@@ -13,7 +13,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# TD Optique 2c: Lentilles minces - Relations mathématiques
+# TD : Lentilles minces - Relations mathématiques
 _Ces exercices seront traités en classe._
 
 ## Étude graphique d'un doublet
@@ -26,7 +26,7 @@ On reprend le doublet de lentille {$L_1, L_2$} de distance focale image respecti
 2. Déterminer par le calcul la position du foyer image.
 ````
 
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 
 1. $\overline{F_1 A} = \frac{a}{2}$
 2. $\overline{F'_2 A'} = - \frac{9a}{2}$

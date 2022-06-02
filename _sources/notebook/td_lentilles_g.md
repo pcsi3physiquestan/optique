@@ -14,7 +14,7 @@ kernelspec:
   name: python3
 ---
 # TD Optique 2b: Lentilles minces - Construction graphique
-_Ces exercices seront traités en classe._
+_Ces exercices seront traités en classe, individuellement ou en groupe._
 
 ## Etude graphique d'une lentille divergente
 On considère une lentille divergente. Déterminer les images (il est conseillé de refaire des dessins à chaque fois pour des questions de clarté):
@@ -58,7 +58,7 @@ On considère un doublet de lentille, c'est-à-dire deux lentilles $L_1$ et $L_2
 2. Déterminer graphiquement la position du foyer image.
 ````
 
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 1. $\overline{F_1 A} = \frac{a}{2}$
 2. $\overline{F'_2 A'} = - \frac{9a}{2}$
 ````

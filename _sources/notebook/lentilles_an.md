@@ -15,7 +15,7 @@ kernelspec:
 ---
 # Lentilles minces - Relations
 
-````{admonition} Objectifs
+````{admonition} Compétences
 :class: tip
 * Exploiter les formule de conjugaison et de grandissement transversal (Descartes, Newton)
 * Choisir de façon pertinente dans un contexte donné la formulation (Descartes ou Newton) la plus adaptée.

@@ -1,0 +1,677 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrainement : Bases de l’optique &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/opt_bases_td.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Systèmes centrés" href="opt_centres.html" />
+    <link rel="prev" title="Application" href="opt_bases_app.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="opt_bases.html">
+   Bases de l’optique géométrique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_bases_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_ondes.html">
+       La lumière est une onde
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_approx.html">
+       Approximation de l’optique géométrique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_snell.html">
+       Lois de Snell-Descartes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="opt_bases_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_methodes.html">
+       Activité
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_exemples.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Entrainement : Bases de l’optique
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_centres.html">
+   Systèmes centrés
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_centres_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_gene.html">
+       Présentation générale
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_stigmatisme.html">
+       Stigmatisme rigoureux. Notion d’images.
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_miroir.html">
+       Miroir plan: Présentation et relation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_gauss.html">
+       Stigmatisme approché et condition de Gauss
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_elements.html">
+       Eléments principaux des systèmes centrés
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_centres_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_meth.html">
+       Méthode : Recherche des éléments principaux
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_td.html">
+       Entrainement : Systèmes centrés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_lentilles.html">
+   Lentilles minces
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_lentilles_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_pres.html">
+       Lentilles minces: Présentation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_rayons.html">
+       Lentilles minces: tracés des rayons
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_relations.html">
+       Relations des lentilles minces
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_oeil.html">
+       L’oeil et ses défauts
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_lentilles_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_ex_rayons.html">
+       Méthodes : Tracés graphiques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_exemple.html">
+       Méthodes : Etude qualitatives
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="opt_lentilles_meth.html">
+       Activités
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_accole.html">
+         Activités : Lentilles accolées
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_esp.html">
+         Activités : Zones d’espaces conjuguées
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_proj.html">
+         Activité : Projection
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_td.html">
+       Entrainement : Lentilles minces
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_instru.html">
+   Instruments d’optique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_loupe.html">
+     Méthode : la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_instru_meth.html">
+     Activités
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_instru_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_instru_meth_lunette.html">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_td.html">
+     Entrainement : Instruments d’optique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_num.html">
+     Numérique : Systèmes optiques multilentilles
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/opt_bases_td.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/opt_bases_td.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/opt_bases_td.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fibre-optique-a-saut-d-indice">
+   Fibre optique à saut d’indice
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-arc-en-ciel">
+   TD: Arc-en-ciel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#la-deviation-par-le-prisme">
+   La déviation par le prisme
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="entrainement-bases-de-l-optique">
+<h1>Entrainement : Bases de l’optique<a class="headerlink" href="#entrainement-bases-de-l-optique" title="Permalink to this headline">¶</a></h1>
+<p><em>Ces exercices seront traités en classe.</em></p>
+<div class="section" id="fibre-optique-a-saut-d-indice">
+<h2>Fibre optique à saut d’indice<a class="headerlink" href="#fibre-optique-a-saut-d-indice" title="Permalink to this headline">¶</a></h2>
+<p><strong>Objectifs:</strong> Établir les expressions du cône d’acceptance et de la dispersion intermodale d’une fibre à saut d’indice.</p>
+<p>Une fibre optique à saut d’indice est constituée d’un coeur en silice d’indice <span class="math notranslate nohighlight">\(n_1\)</span> entouré d’une gaine d’indice <span class="math notranslate nohighlight">\(n_2\)</span>. Le tout est à symétrie cylindrique. Elle permet de transporter des informations par modulation d’amplitude d’un faisceau lumineux confiné à l’intérieur de la fibre par réflexion totale.</p>
+<div class="figure align-center" id="fibre">
+<a class="reference internal image-reference" href="../_images/fibre_optique.jpg"><img alt="../_images/fibre_optique.jpg" src="../_images/fibre_optique.jpg" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Fibre optique</span><a class="headerlink" href="#fibre" title="Permalink to this image">¶</a></p>
+</div>
+<p>La perte en transmission (ou atténuation) <span class="math notranslate nohighlight">\(X\)</span> s’exprime par <span class="math notranslate nohighlight">\(X_{dB}=10\log(\frac{P_2}{P_1})\)</span> avec <span class="math notranslate nohighlight">\(P_1\)</span> la puissance lumineuse à l’entrée de la fibre et <span class="math notranslate nohighlight">\(P_2\)</span> la puissance lumineuse au bout d’un kilomètre dans la fibre. On l’exprime en <span class="math notranslate nohighlight">\(\rm{dB.km^{-1}}\)</span></p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Quelle condition doit-on imposer à <span class="math notranslate nohighlight">\(n_2\)</span> et <span class="math notranslate nohighlight">\(n_1\)</span> pour pouvoir confiner la lumière dans la fibre (c’est-à-dire pour qu’il y ait réflexion totale) ?</p></li>
+<li><p>Sachant qu’en 1970, l’atténuation était de <span class="math notranslate nohighlight">\(-10\rm{dB.km^{-1}}\)</span> et qu’actuellement elle est de <span class="math notranslate nohighlight">\(-0.005\rm{dB.km^{-1}}\)</span>, déterminer dans les deux cas les pertes en puissance en % au bout d’un km.</p></li>
+<li><p>Un rayon lumineux arrive en I avec un angle <span class="math notranslate nohighlight">\(\theta_i\)</span>. Montrer que si <span class="math notranslate nohighlight">\(\theta_i\)</span> est inférieur à un angle <span class="math notranslate nohighlight">\(\theta_a\)</span>, un rayon peut être guidé à travers le coeur. Pour une fibre cylindrique, justifier le terme de <strong>cône d’acceptance.</strong></p></li>
+<li><p>On appelle ouverture numérique (O.N.) la grandeur <span class="math notranslate nohighlight">\(\sin(\theta_a)\)</span>. Donner l’expression de O.N. en fonction de <span class="math notranslate nohighlight">\(n_1\)</span> et de <span class="math notranslate nohighlight">\(\Delta=\frac{n_1^2-n_2^2}{2n_1^2}\)</span>. A.N.: <span class="math notranslate nohighlight">\(\Delta=10^{-2},n_1=1,5\)</span>.</p></li>
+</ol>
+<p>Une impulsion lumineuse (une information) arrive à t = 0 au point O sous la forme d’un faisceau conique de demi-angle au sommet (O) <span class="math notranslate nohighlight">\(\theta_i\)</span> (<span class="math notranslate nohighlight">\(\theta_i&lt;\theta_a\)</span>).</p>
+<ol class="simple">
+<li><p>Pour une fibre de longueur l, calculer l’élargissement temporel (ou <strong>dispersion intermodale</strong>) <span class="math notranslate nohighlight">\(\Delta t\)</span> à la sortie de la fibre, c’est-à-dire le temps écoulé entre la sortie du premier rayon et celle du dernier. On l’exprimera en fonction de <span class="math notranslate nohighlight">\(l, n_1, c\)</span> et <span class="math notranslate nohighlight">\(\theta_i\)</span>.</p></li>
+<li><p>En déduire quelle quantité d’information cette fibre peut transmettre en une seconde. A.N.: <span class="math notranslate nohighlight">\(l=10km,\theta_i=8^{\circ},n_1=1,5\)</span></p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title">Eléments de réponse (sans justification)</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n_2 &lt; n_1\)</span></p></li>
+<li><p>90% puis 0.1%</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta_a = \arcsin{\sqrt{n_1^2 - n_2^2}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(sin \theta_a = n_1 \sqrt{2 \Delta} = 0.2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta t = \frac{n_1 l}{c} \left( \frac{1}{\sqrt{1 - {\left(\frac{\sin \theta_i}{n_1}\right)}}^2} - 1 \right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta t = 50 \rm{\mu s} \)</span></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="td-arc-en-ciel">
+<h2>TD: Arc-en-ciel<a class="headerlink" href="#td-arc-en-ciel" title="Permalink to this headline">¶</a></h2>
+<p>On désire étudier le phénomène de l’arc-en-ciel au moyen d’un modèle simple. On suppose ici que les gouttes d’eau sont assimilables à des sphères de rayon R, de centre O et d’indice de réfraction homogène n = 1,3 baignant dans l’air.</p>
+<p>La sphère est éclairée par un faisceau de lumière parallèle, dont un rayon atteint la sphère en A. Après réfraction, le rayon retouche le dioptre eau-air en B. Le rayon alors réfléchi recoupe la sphère en C où un rayon refracté ressort avec une angle <span class="math notranslate nohighlight">\(\widehat{a}\)</span> par rapport à l’axe Ox. On pose <span class="math notranslate nohighlight">\(\widehat{i}\)</span> l’angle incident au point A et <span class="math notranslate nohighlight">\(\widehat{r}\)</span> l’angle réfracté au même point A (c’est-à-dire l’angle <span class="math notranslate nohighlight">\(\widehat{OAB}\)</span>). On supposera que <span class="math notranslate nohighlight">\(\widehat{a} \in [0;\pi/2 ]\)</span>.</p>
+<div class="figure align-center" id="label-image">
+<a class="reference internal image-reference" href="../_images/arc_en_ciel.jpg"><img alt="../_images/arc_en_ciel.jpg" src="../_images/arc_en_ciel.jpg" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Arc-en-ciel</span><a class="headerlink" href="#label-image" title="Permalink to this image">¶</a></p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Pourquoi suppose-t-on que le faisceau incident est un faisceau de rayons parallèles ? Quelle est sa direction ?</p></li>
+<li><p>Quelles sont alors les valeurs possibles de l’angle <span class="math notranslate nohighlight">\(\widehat{i}\)</span> ?</p></li>
+<li><p>Peut-il y avoir réflexion totale en B?</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(\widehat{a}=4\widehat{r}-2\widehat{i}\)</span>.</p></li>
+<li><p>En déduire <span class="math notranslate nohighlight">\(\widehat{a}\)</span> en fonction de <span class="math notranslate nohighlight">\(\widehat{i}\)</span> seulement.</p></li>
+<li><p>Calculer <span class="math notranslate nohighlight">\(\frac{d\widehat{a}}{d\widehat{i}}\)</span></p></li>
+<li><p>Montrer qu’il existe un angle <span class="math notranslate nohighlight">\(i_{\max}\)</span> pour lequel <span class="math notranslate nohighlight">\(\widehat{a}\)</span> est maximal. Calculer <span class="math notranslate nohighlight">\(i_{\max}\)</span> et <span class="math notranslate nohighlight">\(a_{\max}\)</span>.</p></li>
+<li><p>Montrer que si un observateur regarde haut dans le ciel avec un angle <span class="math notranslate nohighlight">\(\widehat{a}\)</span> qu’on précisera, il recevra un maximum de lumière (il y aura accumulation des rayons lumineux).</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title">Eléments de réponse (sans justification)</p>
+<ol class="simple">
+<li><p>…</p></li>
+<li><p><span class="math notranslate nohighlight">\([-\pi/2;\pi/2]\)</span></p></li>
+<li><p>Non</p></li>
+<li><p>…</p></li>
+<li><p><span class="math notranslate nohighlight">\(a = 4 \arcsin\frac{\sin i}{n} - 2 i\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\rm{d}a}{\rm{di}} = 4 \frac{\frac{\cos i}{n}}{\sqrt{1 - \frac{\sin^2 i}{n^2}}} - 2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(i_{\max} = \arccos\sqrt{ \frac{n^2-1}{3}} = 1.07 \rm{rad}\)</span> et <span class="math notranslate nohighlight">\(a_{\max} = 0.82 \rm{rad}\)</span></p></li>
+</ol>
+<p>Cet observateur ne verra alors les gouttes “briller” que sur un cône d’axe de révolution (observateur-direction des rayons provenant du soleil) et de demi-angle au sommet (qui est l’observateur) <span class="math notranslate nohighlight">\(a_{\max}\)</span>. Généralement l’horizon empêche d’observer complètement le cône.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Dans des conditions telles que le soleil soit à l’ouest, incliné de <span class="math notranslate nohighlight">\(10^{\circ}\)</span> au-dessus de l’horizon. De quel côté faut-il regarder pour observer un arc-en-ciel? Préciser la hauteur angulaire maximale <span class="math notranslate nohighlight">\(\alpha\)</span> au-dessus de l’horizon et les circonstances météorologiques nécessaires à l’observation.</p></li>
+</ol>
+<p>On explique le phénomène de l’arc-en-ciel par les propriétés dispersives de l’eau, c’est-à-dire que l’indice de réfraction de l’eau varie en fonction de la longueur d’onde de la lumière.</p>
+<ol class="simple">
+<li><p>Déterminer les valeurs maximum de a pour le rouge (n=1,331) et pour le violet (n=1,337) et en déduire quelle couleur fera l’extérieur de l’arc-en-ciel (c’est-à-dire la partie la plus haute). Que vaut l’ouverture angulaire <span class="math notranslate nohighlight">\(\Delta\alpha\)</span> de l’arc-en-ciel?</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title">Eléments de réponse (sans justification)</p>
+<p>Soleil dans le dos, sous un angle <span class="math notranslate nohighlight">\(a_{\max} - \alpha\)</span></p>
+</div>
+</div>
+<div class="section" id="la-deviation-par-le-prisme">
+<h2>La déviation par le prisme<a class="headerlink" href="#la-deviation-par-le-prisme" title="Permalink to this headline">¶</a></h2>
+<p>Il s’agit d’une activité d’approfondissement permettant d’essayer de s’entraîner sur un exercice plus difficile. Certains points pourront être utiles plus tard en Travaux Pratiques.</p>
+<p>Principe général: On considère un prisme triangulaire d’angle au sommet A dont la base est posée horizontalement sur un socle. On envoie un faisceau lumineux constitué de rayon parallèle sur une des face et on observe les rayons sortant par l’autre face (les deux faces constituant l’angle A). Ce seront les deux faces utiles du prisme. Le faisceau étant parallèle l’angle que font les rayons avec la première face du prisme est toujours la même, on note cet angle i. Il vient par les lois de Descartes que les angles formées par les différents rayons réfractés seront les mêmes quelques soit le rayon considéré. On va donc considéré un seul rayon pour l’étude.</p>
+<p>But: On désire étudier la déviation du rayon lumineux D en fonction de l’angle d’incidence i. L’air extérieur est considéré comme un milieu d’indice 1.</p>
+<div class="figure align-center" id="prisme">
+<a class="reference internal image-reference" href="../_images/optique_prisme_deviation.jpg"><img alt="../_images/optique_prisme_deviation.jpg" src="../_images/optique_prisme_deviation.jpg" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Déviation par le prisme</span><a class="headerlink" href="#prisme" title="Permalink to this image">¶</a></p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Etablir une relation entre i,r et n puis entre i’, r’ et n.</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(A=r+r'\)</span> et <span class="math notranslate nohighlight">\(D=i+i'-A\)</span>.</p></li>
+<li><p>Existence d’un rayon dévié.</p>
+<ol class="simple">
+<li><p>*Quelles sont les valeurs de i telles qu’on observe effectivement un rayon sortant du prisme? On ne tiendra pas compte des limitations géométriques du prisme. Déterminer cette gamme pour <span class="math notranslate nohighlight">\(n=1,5\)</span> et <span class="math notranslate nohighlight">\(A=60^{\circ}\)</span>. On notera <span class="math notranslate nohighlight">\(i_0\)</span>, l’angle limite qui apparaî dans le raisonnement.</p></li>
+<li><p>Que se passe-t-il si l’angle du prisme est trop grand (<span class="math notranslate nohighlight">\(90^{\circ}\)</span> par exemple)?</p></li>
+<li><p>Faire un tracé des rayons et déterminer l’angle de déviation D pour les cas <span class="math notranslate nohighlight">\(i=i_0\)</span> et <span class="math notranslate nohighlight">\(i=\pi/2\)</span>. Commenter.</p></li>
+</ol>
+</li>
+<li><p>Déduire de la question précédente que la fonction <span class="math notranslate nohighlight">\(D(i)\)</span> passe par au moins un extremum. L’expérience montre qu’il y en a qu’un seul et que c’est un minimum de déviation. On notera <span class="math notranslate nohighlight">\(D_m\)</span> le minimum de déviation.</p></li>
+<li><p>*Retrouver le résultat de l’expérience par une étude mathématique de la fonction <span class="math notranslate nohighlight">\(D(i)\)</span>.</p></li>
+<li><p>Quelle est la relation entre <span class="math notranslate nohighlight">\(D_m\)</span>, A et n?</p></li>
+<li><p>En général, le prisme choisi est très dispersif c’est-à-dire que l’indice de réfraction n dépend fortement (tout est relatif) de la longueur d’onde du faisceau incident <span class="math notranslate nohighlight">\(\lambda\)</span>. Expliquer pourquoi un tel dispositif permet la réaliser d’un spectroscope, c’est-à-dire un appareil permettant de déterminer le spectre d’un signal lumineux.</p></li>
+<li><p>(Recherche) Expliquez comment Newton a utiliser cette méthode pour montrer que la lumière blanche était composé d’un grand nombre de radiations “élémentaires”. Commenter ce terme (et précisez le terme utilisé aujourd’hui).</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="opt_bases_app.html" title="previous page">Application</a>
+    <a class='right-next' id="next-link" href="opt_centres.html" title="next page">Systèmes centrés</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

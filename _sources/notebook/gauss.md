@@ -22,10 +22,9 @@ Pour ce faire, on doit se placer dans un cadre moins "rigoureux" mais suffisant 
 
 ## Stigmatisme approché
 
-### Absence de stigmatisme rigoureux
+### Absence de stigmatisme rigoureux (en ligne)
 
-````{admonition} Absence de stigmatisme: Cas du dioptre plan
-:class: dropdown
+````{topic} Absence de stigmatisme: Cas du dioptre plan
 On observe sur la simulation suivante où le faisceau issu du point $A_1$ ressort sans converger en un point précis. Il n'y a donc pas stigmatisme rigoureux.
 
 Nous verrons sur des simulations ultérieures que le miroir sphérique ne réalise pas non plus de stigmatisme rigoureux.
@@ -37,8 +36,7 @@ Nous verrons sur des simulations ultérieures que le miroir sphérique ne réali
 ```
 ````
 
-````{admonition} Se rapproché du stigmatisme
-:class: dropdown
+````{topic} Se rapproché du stigmatisme
 Si l'on ne peut réaliser un stigmatisme rigoureux, on peut essayer s'en rapprocher en __sélectionnant__ certains rayons qui passent tous à peu près en un même point.
 
 On peut le voir sur le cas du dioptre sur le schéma suivant. On a uniquement gardé les rayons peu inclinés et on peut considérer en première approximation qu'ils convergent en un point. Plus précisément en une tâche suffisamment petite pour que notre oeil ne puisse la distinguer d'un point.
@@ -55,9 +53,9 @@ C'est en sélectionnant les rayons qu'on pourra s'approcher du stigmatisme et do
 
 ### Stigmatisme approché: sélection des rayons
 
-````{important} __Définition : Stigmatisme approché__
-
-On dit qu'un système réalise un stigmatisme approché pour un couple de points (A;A') si tous les rayons lumineux du faisceau issu du point A et traversant le système optique ressortent __au voisinage__ du point A'.
+````{important} __Stigmatisme approché__
+:class: full-width
+On dit qu'un système réalise un stigmatisme approché pour un couple de points (A;A') si tous les rayons lumineux du faisceau issu du point A _et traversant le système optique_ ressortent __au voisinage__ du point A'.
 
 A' sera considéré comme l'image de l'objet A par le système optique et on dira que A' et A sont conjugués.
 ````
@@ -73,57 +71,55 @@ On utilisera ici un miroir sphérique pour réaliser la simulation du tracé des
 ```{figure} ./images/optique_spherique_proche_axe.jpg
 :name: spherique_axe
 :align: center
+Objet à l'infini sur l'axe optique (__pas A__). Sélection des rayons proches.
 ```
 ---
 ```{figure} ./images/optique_spherique_peu_incline.jpg
 :name: spherique_incline
 :align: center
+Objet à l'infini hors de l'axe optique (__pas A__). Sélection des rayons peu inclinés ET proches.
 ```
 
 ---
 ```{figure} ./images/optique_spherique_objet_fini.jpg
 :name: spherique_fini
 :align: center
+Objet à distance finie (point A). Sélection des rayons peu inclinés ET proches.
 ```
 ````
 
 ### Condition de Gauss: Présentation
 
-````{important} __Définition : Conditions de Gauss__
-
+````{important} __Conditions de Gauss__
+:class: full-width
 Les conditions de Gauss (ou condition des rayons paraxiaux) sont un cadre théorique et expérimental dans lequel on sélectionne uniquement les rayons sont satisfont aux deux conditions:
 
 * ils ne doivent pas être trop inclinés par rapport à l'axe optique.
 * ils doivent entrer dans le système optique en un point proche de l'axe optique.
+
+__Un système centré placé dans les conditions de Gauss réalise un stigmatisme approché.__
 ````
 
-````{important} __Fondamental : Conditions de Gauss et Stigmatisme (admis)__
-
-Un système centré placé dans les conditions de Gauss réalise un stigmatisme approché.
-````
-
-````{admonition} Complément : Aplanétisme (HP)
-:class: hint, dropdown
+```{margin}
+Si cette propriété est hors programme, on verra qu'elle sera nécessaire pour expliquer la méthode de recherche d'image par les lentilles.
+```
+````{topic} Complément : Aplanétisme (HP)
 Il n'est pas nécessaire de le retenir mais se placer dans les conditions de Gauss permet aussi de réaliser un aplanétisme approché.
 ````
 
 ### Conditions de Gauss: Réalisation expérimentale
 
-
-````{admonition} Réalisation pratique
-:class: tip, dropdown
 En pratique, on va réaliser les conditions de Gauss en:
 * mettant un diaphragme en amont du système optique pour empêcher les rayons trop éloignés d'entrer.
 * mettant un diaphragme en aval du système optique (ou à l'intérieur) pour couper le passage des rayons trop inclinés.
-````
 
 ### Condition de Gauss: Utilisation analytique
 
-````{important} __Fondamental : Approximations aux petits angles__
-Dans le cadre des conditions de Gauss, il vient que les angles avec l'axe optique sont petits. On utilisera alors l'approximation des petites angles sur les fonctions trigonométriques (attention pour les applications numériques, les valeurs des angles doivent être en radians).
-
-Des détails sur l'approximation des fonctions par des polynômes seront données plus tard. Pour l'instant, on retiendra qu'aux petits angles, on peut approchées les fonctions trigonométriques de la manière suivante:
-
+```{margin}
+Attention pour les applications numériques, les valeurs des angles __doivent être en radians__.
+```
+````{important} __Approximations aux petits angles__
+Dans le cadre des conditions de Gauss, il vient que les angles avec l'axe optique sont petits. On utilisera alors l'approximation des petites angles sur les fonctions trigonométriques:
 \begin{align*}
 	\sin i &\approx i\\
 	\tan i &\approx i\\

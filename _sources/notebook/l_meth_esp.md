@@ -15,7 +15,7 @@ kernelspec:
 ---
 
 # Zones d'espaces conjuguées
-On veut ici relier des zones d'espaces dans lesquelles l'objet et l'image conjugué seront du même type: par exemple une zone où l'on aura toujours un objet réel donnant une image virtuelle (attention la zone de l'objet ne sera pas la même que la zone de l'image.
+On veut ici relier des zones d'espaces dans lesquelles l'objet et l'image conjugué seront d'un type donnée : par exemple une zone où l'on aura toujours un objet réel donnant une image virtuelle (attention la zone de l'objet ne sera pas la même que la zone de l'image).
 
 
 ````{admonition} Exercice 
@@ -37,7 +37,8 @@ Dans chaque configuration, on déterminera aussi:
 Reprendre le même exercice pour une lentille divergente.
 ````
 
-````{important} Bilan à retenir - Ce n'est PAS la correction., dropdown
+````{important} Bilan à retenir - Ce n'est PAS la correction
+:class: full-width
 On retiendra que pour un lentille convergente, on peut obtenir les 3 configurations suivantes:
 
 * objet réel avant le foyer objet et image réelle après le foyer image. L'image est alors renversée et elle peut être agrandie ou rétrécie.
@@ -45,8 +46,8 @@ On retiendra que pour un lentille convergente, on peut obtenir les 3 configurati
 * objet virtuel et image réelle entre O et F'. L'image est droite et toujours plus petite que l'objet.
 ````
 
-````{important} Bilan à retenir - Ce n'est PAS la correction., dropdown
-
+````{important} Bilan à retenir - Ce n'est PAS la correction
+:class: full-width
 On retiendra que pour un lentille divergente, on peut obtenir les 3 configurations suivantes:
 
 * objet réel et image virtuelle entre F' et O. L'image est alors droite et elle est toujours plus petite que l'objet.
@@ -68,8 +69,7 @@ __Points principaux__ On remarquera que les points qui délimitent les zones d'e
 ````
 
 
-````{admonition} Tracé graphique
-:class: hint, dropdown
+````{sidebar} Tracé graphique
 Il est __très vivement__ conseillé de s'entraîner à déterminer l'image d'un point objet dans chaque zone objet pour chaque type de lentille puis de faire l'inverse: déterminer l'antécédent d'un point image dans chaque zone image pour chaque type de lentille.
 
 Vous serez alors à même de vous débrouiller dans chaque situation.

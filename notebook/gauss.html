@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stigmatisme approché et condition de Gauss &#8212; Optique géométrique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,26 +32,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/gauss.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -59,7 +59,10 @@
     <link rel="next" title="Eléments principaux des systèmes centrés" href="elements.html" />
     <link rel="prev" title="Miroir plan: Présentation et relation" href="miroir.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -77,13 +80,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Optique géométrique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -408,7 +412,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#stigmatisme-approche">
@@ -416,8 +420,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#absence-de-stigmatisme-rigoureux">
-     Absence de stigmatisme rigoureux
+    <a class="reference internal nav-link" href="#absence-de-stigmatisme-rigoureux-en-ligne">
+     Absence de stigmatisme rigoureux (en ligne)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -470,24 +474,24 @@
         
               <div>
                 
-  <div class="section" id="stigmatisme-approche-et-condition-de-gauss">
+  <div class="tex2jax_ignore mathjax_ignore section" id="stigmatisme-approche-et-condition-de-gauss">
 <h1>Stigmatisme approché et condition de Gauss<a class="headerlink" href="#stigmatisme-approche-et-condition-de-gauss" title="Permalink to this headline">¶</a></h1>
 <p>Comme nous l’avons précisé précédemment, seul le miroir plan permet de réaliser un stigmatisme rigoureux. Mais on utilise pourtant des miroirs sphériques, des lentilles…  Et l’on arrive à voir des images nettes.</p>
 <p>Pour ce faire, on doit se placer dans un cadre moins “rigoureux” mais suffisant à cause des “imperfections” de notre oeil: le <strong>stigmatisme approché</strong>.</p>
 <div class="section" id="stigmatisme-approche">
 <h2>Stigmatisme approché<a class="headerlink" href="#stigmatisme-approche" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="absence-de-stigmatisme-rigoureux">
-<h3>Absence de stigmatisme rigoureux<a class="headerlink" href="#absence-de-stigmatisme-rigoureux" title="Permalink to this headline">¶</a></h3>
-<div class="dropdown admonition">
-<p class="admonition-title">Absence de stigmatisme: Cas du dioptre plan</p>
+<div class="section" id="absence-de-stigmatisme-rigoureux-en-ligne">
+<h3>Absence de stigmatisme rigoureux (en ligne)<a class="headerlink" href="#absence-de-stigmatisme-rigoureux-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Absence de stigmatisme: Cas du dioptre plan</p>
 <p>On observe sur la simulation suivante où le faisceau issu du point <span class="math notranslate nohighlight">\(A_1\)</span> ressort sans converger en un point précis. Il n’y a donc pas stigmatisme rigoureux.</p>
 <p>Nous verrons sur des simulations ultérieures que le miroir sphérique ne réalise pas non plus de stigmatisme rigoureux.</p>
 <div class="figure align-center" id="plan-aberration">
 <a class="reference internal image-reference" href="../_images/optique_dioptre_aberration.jpg"><img alt="../_images/optique_dioptre_aberration.jpg" src="../_images/optique_dioptre_aberration.jpg" style="width: 50%;" /></a>
 </div>
 </div>
-<div class="dropdown admonition">
-<p class="admonition-title">Se rapproché du stigmatisme</p>
+<div class="topic">
+<p class="topic-title first">Se rapproché du stigmatisme</p>
 <p>Si l’on ne peut réaliser un stigmatisme rigoureux, on peut essayer s’en rapprocher en <strong>sélectionnant</strong> certains rayons qui passent tous à peu près en un même point.</p>
 <p>On peut le voir sur le cas du dioptre sur le schéma suivant. On a uniquement gardé les rayons peu inclinés et on peut considérer en première approximation qu’ils convergent en un point. Plus précisément en une tâche suffisamment petite pour que notre oeil ne puisse la distinguer d’un point.</p>
 <div class="figure align-center" id="plan-diaphragme">
@@ -498,10 +502,9 @@
 </div>
 <div class="section" id="stigmatisme-approche-selection-des-rayons">
 <h3>Stigmatisme approché: sélection des rayons<a class="headerlink" href="#stigmatisme-approche-selection-des-rayons" title="Permalink to this headline">¶</a></h3>
-<div class="admonition important">
+<div class="full-width admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Stigmatisme approché</strong></p>
-<p>On dit qu’un système réalise un stigmatisme approché pour un couple de points (A;A’) si tous les rayons lumineux du faisceau issu du point A et traversant le système optique ressortent <strong>au voisinage</strong> du point A’.</p>
+<p>On dit qu’un système réalise un stigmatisme approché pour un couple de points (A;A’) si tous les rayons lumineux du faisceau issu du point A <em>et traversant le système optique</em> ressortent <strong>au voisinage</strong> du point A’.</p>
 <p>A’ sera considéré comme l’image de l’objet A par le système optique et on dira que A’ et A sont conjugués.</p>
 </div>
 </div>
@@ -518,6 +521,7 @@
 <div class="card-body docutils">
 <div class="figure align-center" id="spherique-axe">
 <img alt="../_images/optique_spherique_proche_axe.jpg" src="../_images/optique_spherique_proche_axe.jpg" />
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Objet à l’infini sur l’axe optique (<strong>pas A</strong>). Sélection des rayons proches.</span><a class="headerlink" href="#spherique-axe" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
@@ -527,6 +531,7 @@
 <div class="card-body docutils">
 <div class="figure align-center" id="spherique-incline">
 <img alt="../_images/optique_spherique_peu_incline.jpg" src="../_images/optique_spherique_peu_incline.jpg" />
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Objet à l’infini hors de l’axe optique (<strong>pas A</strong>). Sélection des rayons peu inclinés ET proches.</span><a class="headerlink" href="#spherique-incline" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
@@ -536,6 +541,7 @@
 <div class="card-body docutils">
 <div class="figure align-center" id="spherique-fini">
 <img alt="../_images/optique_spherique_objet_fini.jpg" src="../_images/optique_spherique_objet_fini.jpg" />
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Objet à distance finie (point A). Sélection des rayons peu inclinés ET proches.</span><a class="headerlink" href="#spherique-fini" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
@@ -545,43 +551,42 @@
 </div>
 <div class="section" id="condition-de-gauss-presentation">
 <h3>Condition de Gauss: Présentation<a class="headerlink" href="#condition-de-gauss-presentation" title="Permalink to this headline">¶</a></h3>
-<div class="admonition important">
+<div class="full-width admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Conditions de Gauss</strong></p>
 <p>Les conditions de Gauss (ou condition des rayons paraxiaux) sont un cadre théorique et expérimental dans lequel on sélectionne uniquement les rayons sont satisfont aux deux conditions:</p>
 <ul class="simple">
 <li><p>ils ne doivent pas être trop inclinés par rapport à l’axe optique.</p></li>
 <li><p>ils doivent entrer dans le système optique en un point proche de l’axe optique.</p></li>
 </ul>
+<p><strong>Un système centré placé dans les conditions de Gauss réalise un stigmatisme approché.</strong></p>
 </div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Fondamental : Conditions de Gauss et Stigmatisme (admis)</strong></p>
-<p>Un système centré placé dans les conditions de Gauss réalise un stigmatisme approché.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Si cette propriété est hors programme, on verra qu’elle sera nécessaire pour expliquer la méthode de recherche d’image par les lentilles.</p>
 </div>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Complément : Aplanétisme (HP)</p>
+<div class="topic">
+<p class="topic-title first">Complément : Aplanétisme (HP)</p>
 <p>Il n’est pas nécessaire de le retenir mais se placer dans les conditions de Gauss permet aussi de réaliser un aplanétisme approché.</p>
 </div>
 </div>
 <div class="section" id="conditions-de-gauss-realisation-experimentale">
 <h3>Conditions de Gauss: Réalisation expérimentale<a class="headerlink" href="#conditions-de-gauss-realisation-experimentale" title="Permalink to this headline">¶</a></h3>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Réalisation pratique</p>
 <p>En pratique, on va réaliser les conditions de Gauss en:</p>
 <ul class="simple">
 <li><p>mettant un diaphragme en amont du système optique pour empêcher les rayons trop éloignés d’entrer.</p></li>
 <li><p>mettant un diaphragme en aval du système optique (ou à l’intérieur) pour couper le passage des rayons trop inclinés.</p></li>
 </ul>
 </div>
-</div>
 <div class="section" id="condition-de-gauss-utilisation-analytique">
 <h3>Condition de Gauss: Utilisation analytique<a class="headerlink" href="#condition-de-gauss-utilisation-analytique" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Attention pour les applications numériques, les valeurs des angles <strong>doivent être en radians</strong>.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Approximations aux petits angles</strong>
-Dans le cadre des conditions de Gauss, il vient que les angles avec l’axe optique sont petits. On utilisera alors l’approximation des petites angles sur les fonctions trigonométriques (attention pour les applications numériques, les valeurs des angles doivent être en radians).</p>
-<p>Des détails sur l’approximation des fonctions par des polynômes seront données plus tard. Pour l’instant, on retiendra qu’aux petits angles, on peut approchées les fonctions trigonométriques de la manière suivante:</p>
+<p><strong>Approximations aux petits angles</strong>
+Dans le cadre des conditions de Gauss, il vient que les angles avec l’axe optique sont petits. On utilisera alors l’approximation des petites angles sur les fonctions trigonométriques:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 	\sin i &amp;\approx i\\
@@ -623,16 +628,27 @@ Dans le cadre des conditions de Gauss, il vient que les angles avec l’axe opti
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="miroir.html" title="previous page">Miroir plan: Présentation et relation</a>
-    <a class='right-next' id="next-link" href="elements.html" title="next page">Eléments principaux des systèmes centrés</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="miroir.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Miroir plan: Présentation et relation</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="elements.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Eléments principaux des systèmes centrés</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -648,8 +664,7 @@ Dans le cadre des conditions de Gauss, il vient que les angles avec l’axe opti
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

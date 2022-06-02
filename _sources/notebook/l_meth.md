@@ -16,4 +16,4 @@ kernelspec:
 
 # Activités méthodes
 
-Il s'agit d'activités méthode. Elle seront réalisés en classe sous forme de travaux dirigés mais les conclusions importantes devront être retenues.
+Il s'agit d'activités méthode. Elle seront réalisés en classe sous forme de travaux dirigés __mais les conclusions importantes devront être retenues__.

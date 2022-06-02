@@ -38,11 +38,7 @@ On s'impose que:
 	5. Comment faut-il choisir la distance focale pour obtenir un grossissement important. Quel problème celà peut-il poser?
 ````
 
-````{dropdown} Correction
- 
-
-````{important} Bilan à retenir - Ce n'est PAS la correction., dropdown
-
+````{important} Bilan à retenir - Ce n'est PAS la correction
 On retiendra que:
 * pour pouvoir projeter un objet sur un écran situé à une distance D, il faut __une lentille convergente__ dont la distance focale satisfait __la condition de projection__ $D > 4f'$__
 * pour grandir l'objet, la lentille doit se trouver plus proche de l'objet que de l'écran.

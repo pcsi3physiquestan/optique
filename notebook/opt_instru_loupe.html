@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Méthode : la loupe &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/opt_instru_loupe.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Activités" href="opt_instru_meth.html" />
+    <link rel="prev" title="Instruments d’optique" href="opt_instru.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_bases.html">
+   Bases de l’optique géométrique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_bases_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_ondes.html">
+       La lumière est une onde
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_approx.html">
+       Approximation de l’optique géométrique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_snell.html">
+       Lois de Snell-Descartes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_bases_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_methodes.html">
+       Activité
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_exemples.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_td.html">
+       Entrainement : Bases de l’optique
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_centres.html">
+   Systèmes centrés
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_centres_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_gene.html">
+       Présentation générale
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_stigmatisme.html">
+       Stigmatisme rigoureux. Notion d’images.
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_miroir.html">
+       Miroir plan: Présentation et relation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_gauss.html">
+       Stigmatisme approché et condition de Gauss
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_elements.html">
+       Eléments principaux des systèmes centrés
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_centres_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_meth.html">
+       Méthode : Recherche des éléments principaux
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_td.html">
+       Entrainement : Systèmes centrés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_lentilles.html">
+   Lentilles minces
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_lentilles_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_pres.html">
+       Lentilles minces: Présentation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_rayons.html">
+       Lentilles minces: tracés des rayons
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_relations.html">
+       Relations des lentilles minces
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_oeil.html">
+       L’oeil et ses défauts
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_lentilles_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_ex_rayons.html">
+       Méthodes : Tracés graphiques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_exemple.html">
+       Méthodes : Etude qualitatives
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="opt_lentilles_meth.html">
+       Activités
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_accole.html">
+         Activités : Lentilles accolées
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_esp.html">
+         Activités : Zones d’espaces conjuguées
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_proj.html">
+         Activité : Projection
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_td.html">
+       Entrainement : Lentilles minces
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="opt_instru.html">
+   Instruments d’optique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Méthode : la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_instru_meth.html">
+     Activités
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_instru_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_instru_meth_lunette.html">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_td.html">
+     Entrainement : Instruments d’optique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_num.html">
+     Numérique : Systèmes optiques multilentilles
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/opt_instru_loupe.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/opt_instru_loupe.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/opt_instru_loupe.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#la-loupe-principe">
+   La loupe: Principe
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#caracteristiques-d-une-loupe">
+   Caractéristiques d’une loupe
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="methode-la-loupe">
+<h1>Méthode : la loupe<a class="headerlink" href="#methode-la-loupe" title="Permalink to this headline">¶</a></h1>
+<p>On va voir sur cet exemple comment cherches les caractéristiques d’un instrument d’optique. <strong>La correction est en ligne. Ne passez pas trop de temps à traiter l’exercice sans regarder la correction, plusieurs méthodes sont nouvelles.</strong></p>
+<div class="section" id="la-loupe-principe">
+<h2>La loupe: Principe<a class="headerlink" href="#la-loupe-principe" title="Permalink to this headline">¶</a></h2>
+<p>Une loupe sert à grossir les objets. Elles composée d’une lentille (convergente).</p>
+<p>Les caractéristiques intéressantes de la loupe sont:</p>
+<ul class="simple">
+<li><p>son grossissement - plus précisément son <strong>grossissement commercial</strong>.</p></li>
+<li><p>sa latitude de mise au point: on recherchera l’intervalle de position d’objet pouvant être vue par l’oeil - on placera l’oeil au foyer image de la loupe de façon arbitraire.</p></li>
+<li><p>sa profondeur de champ et sa résolution angulaire (pour un oeil emmétrope). Nous ne calculerons ici que la résolution angulaire.</p></li>
+</ul>
+</div>
+<div class="section" id="caracteristiques-d-une-loupe">
+<h2>Caractéristiques d’une loupe<a class="headerlink" href="#caracteristiques-d-une-loupe" title="Permalink to this headline">¶</a></h2>
+<p>Vous pouvez essayer de faire l’exercice au moyen des définitions précédentes.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère une loupe constituée d’une lentille convergente de distance focale image<span class="math notranslate nohighlight">\(f'\)</span>. Pour les applications numériques, on prendra <span class="math notranslate nohighlight">\(f' = 10 mm\)</span></p>
+<ol class="simple">
+<li><p>Déterminer l’intervalle de position de l’objet permettant à un oeil emmétrope (on donne la distance du PR: <span class="math notranslate nohighlight">\(d_{min} = 25 \rm{mm}\)</span>) de voir l’image donnée par la loupe nette. On supposera que l’oeil est placé au foyer image de la loupe et que <span class="math notranslate nohighlight">\(d_{min} &gt; f'\)</span>.</p></li>
+<li><p>Déterminer le grossissement commercial de la loupe.</p></li>
+<li><p>Déterminer la taille du plus petit objet distinguable par l’oeil dans les conditions d’utilisation optimales. On donne le pouvoir de résolution de l’oeil: <span class="math notranslate nohighlight">\(\theta = 3 \times 10^{-4} \rm{rad}\)</span></p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title">Correction</p>
+<blockquote>
+<div><p><strong>Q1. Latitude de mise au point</strong></p>
+<p>On va chercher les antécédents du PR et du PP. L’intervalle entre les deux correspondra à la latitude de mise au point.</p>
+<p>L’antécédent du Punctum Remotum - qui est à l’infini - est évidemment le foyer principal objet de la loupe donc <span class="math notranslate nohighlight">\(\overline{FA_{PR}} = 0\)</span></p>
+<p>On cherche l’antécédent du Punctum Proximum positionné tel que <span class="math notranslate nohighlight">\(\overline{F'A'_{PP}} = - d_{min}\)</span>.</p>
+<p>Puisque qu’on a déjà la distance au foyer image, on va utiliser la relation de Newton:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-610de397-b22e-4244-a8d3-d7d728bf5124">
+<span class="eqno">(18)<a class="headerlink" href="#equation-610de397-b22e-4244-a8d3-d7d728bf5124" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overline{FA_{PP}} \times \underbrace{\overline{FA'_{PP}}}{-d_{\min}} = - f'^2 \Longrightarrow \boxed{\overline{FA_{PP}} = \frac{f'^2}{d_{\min}}}
+\end{equation}\]</div>
+<p>Application numérique: la largeur de l’intervalle est 4mm.</p>
+<p><strong>Q2. Grossissement commercial</strong></p>
+<p><strong>Calcul de l’angle apparent à travers la loupe.</strong> L’image finale devant être au PR d’un oeil emmétrope, donc à l’infini, son antécédent doit être au foyer principal objet.</p>
+<p>On considère un objet <span class="math notranslate nohighlight">\(\overline{AB}\)</span> placé dans le plan focal objet. On a représenté le tracé pour obtenir l’image B’ de B par la loupe. On peut ainsi déterminer l’angle sous lequel on voit l’image à travers la loupe.</p>
+</div></blockquote>
+<div class="figure align-center" id="loupe-gr">
+<a class="reference internal image-reference" href="../_images/loupe_grossissement.png"><img alt="../_images/loupe_grossissement.png" src="../_images/loupe_grossissement.png" style="width: 60%;" /></a>
+</div>
+<blockquote>
+<div><p>Il vient <span class="math notranslate nohighlight">\(\alpha' \approx \tan \alpha ' = -\frac{\overline{AB}}{f'}\)</span></p>
+<p><strong>Calcul de l’angle à l’oeil nu</strong>. Il vient directement <span class="math notranslate nohighlight">\(\alpha \approx \tan \alpha = -\frac{\overline{AB}}{d_{\min}}\)</span></p>
+<p>On obtient le grossissement:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-916601bc-2790-4996-abd1-b74a6aa34524">
+<span class="eqno">(19)<a class="headerlink" href="#equation-916601bc-2790-4996-abd1-b74a6aa34524" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+G_c = \left\vert \frac{\alpha'}{\alpha} \right\vert = \frac{d_{\min}}{f'}
+\end{equation}\]</div>
+<p>Application numérique: <span class="math notranslate nohighlight">\(G_c = \times 25\)</span></p>
+<p><strong>Q3. Plus petit objet distinguable.</strong>
+On peut reprendre les formules précédentes:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9c14e801-40f6-4fcb-a719-d52d2d0b9d80">
+<span class="eqno">(20)<a class="headerlink" href="#equation-9c14e801-40f6-4fcb-a719-d52d2d0b9d80" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+AB = f' \tan \theta \approx \theta f' \approx 3 \times 10^{-6} \rm{rad}
+\end{equation}\]</div>
+</div></blockquote>
+</div>
+<div class="topic">
+<p class="topic-title">Remarque</p>
+<p><strong>Analyse de la latitude de mise au point et du grossissement.</strong></p>
+<ul class="simple">
+<li><p>On remarque que la latitude de mise au point diminue très rapidement avec la distance focale. A l’inverse, le grossissement augmente quand la distance focale diminue. On a donc un compromis entre le grossissement et la latitude de mise au point: plus on augmente le premier, plus la seconde est délicate.</p></li>
+<li><p>Diminuer la distance focale peut avoir d’autres limites, notamment l’obligation de bomber la lentille ce qui conduit à des aberrations plus importantes.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="opt_instru.html" title="previous page">Instruments d’optique</a>
+    <a class='right-next' id="next-link" href="opt_instru_meth.html" title="next page">Activités</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

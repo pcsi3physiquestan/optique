@@ -1,0 +1,722 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stigmatisme approché et condition de Gauss &#8212; Optique géométrique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/opt_centres_gauss.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Eléments principaux des systèmes centrés" href="opt_centres_elements.html" />
+    <link rel="prev" title="Miroir plan: Présentation et relation" href="opt_centres_miroir.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Optique géométrique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../optique.html">
+   Optique géométrique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_bases.html">
+   Bases de l’optique géométrique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_bases_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_ondes.html">
+       La lumière est une onde
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_approx.html">
+       Approximation de l’optique géométrique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_snell.html">
+       Lois de Snell-Descartes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_bases_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_methodes.html">
+       Activité
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_exemples.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_td.html">
+       Entrainement : Bases de l’optique
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="opt_centres.html">
+   Systèmes centrés
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="opt_centres_contxt.html">
+     Connaître le contexte
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_gene.html">
+       Présentation générale
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_stigmatisme.html">
+       Stigmatisme rigoureux. Notion d’images.
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_miroir.html">
+       Miroir plan: Présentation et relation
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Stigmatisme approché et condition de Gauss
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_elements.html">
+       Eléments principaux des systèmes centrés
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_centres_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_meth.html">
+       Méthode : Recherche des éléments principaux
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_td.html">
+       Entrainement : Systèmes centrés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_lentilles.html">
+   Lentilles minces
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_lentilles_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_pres.html">
+       Lentilles minces: Présentation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_rayons.html">
+       Lentilles minces: tracés des rayons
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_relations.html">
+       Relations des lentilles minces
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_oeil.html">
+       L’oeil et ses défauts
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_lentilles_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_ex_rayons.html">
+       Méthodes : Tracés graphiques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_exemple.html">
+       Méthodes : Etude qualitatives
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="opt_lentilles_meth.html">
+       Activités
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_accole.html">
+         Activités : Lentilles accolées
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_esp.html">
+         Activités : Zones d’espaces conjuguées
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_proj.html">
+         Activité : Projection
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_td.html">
+       Entrainement : Lentilles minces
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_instru.html">
+   Instruments d’optique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_loupe.html">
+     Méthode : la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_instru_meth.html">
+     Activités
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_instru_meth_oculaire.html">
+       Etude d’un oculaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_instru_meth_lunette.html">
+       Etude d’une lunette afocale
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_td.html">
+     Entrainement : Instruments d’optique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_num.html">
+     Numérique : Systèmes optiques multilentilles
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/opt_centres_gauss.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/opt_centres_gauss.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/opt_centres_gauss.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stigmatisme-approche">
+   Stigmatisme approché
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#absence-de-stigmatisme-rigoureux-en-ligne">
+     Absence de stigmatisme rigoureux (en ligne)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stigmatisme-approche-selection-des-rayons">
+     Stigmatisme approché: sélection des rayons
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conditions-de-gauss">
+   Conditions de Gauss
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condition-de-gauss-simulation-en-ligne">
+     Condition de Gauss: Simulation (en ligne)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condition-de-gauss-presentation">
+     Condition de Gauss: Présentation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conditions-de-gauss-realisation-experimentale">
+     Conditions de Gauss: Réalisation expérimentale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condition-de-gauss-utilisation-analytique">
+     Condition de Gauss: Utilisation analytique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condition-de-gauss-aberrations">
+     Condition de Gauss: Aberrations
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="stigmatisme-approche-et-condition-de-gauss">
+<h1>Stigmatisme approché et condition de Gauss<a class="headerlink" href="#stigmatisme-approche-et-condition-de-gauss" title="Permalink to this headline">¶</a></h1>
+<p>Comme nous l’avons précisé précédemment, seul le miroir plan permet de réaliser un stigmatisme rigoureux. Mais on utilise pourtant des miroirs sphériques, des lentilles…  Et l’on arrive à voir des images nettes.</p>
+<p>Pour ce faire, on doit se placer dans un cadre moins “rigoureux” mais suffisant à cause des “imperfections” de notre oeil: le <strong>stigmatisme approché</strong>.</p>
+<div class="section" id="stigmatisme-approche">
+<h2>Stigmatisme approché<a class="headerlink" href="#stigmatisme-approche" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="absence-de-stigmatisme-rigoureux-en-ligne">
+<h3>Absence de stigmatisme rigoureux (en ligne)<a class="headerlink" href="#absence-de-stigmatisme-rigoureux-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title">Absence de stigmatisme: Cas du dioptre plan</p>
+<p>On observe sur la simulation suivante où le faisceau issu du point <span class="math notranslate nohighlight">\(A_1\)</span> ressort sans converger en un point précis. Il n’y a donc pas stigmatisme rigoureux.</p>
+<p>Nous verrons sur des simulations ultérieures que le miroir sphérique ne réalise pas non plus de stigmatisme rigoureux.</p>
+<div class="figure align-center" id="plan-aberration">
+<a class="reference internal image-reference" href="../_images/optique_dioptre_aberration.jpg"><img alt="../_images/optique_dioptre_aberration.jpg" src="../_images/optique_dioptre_aberration.jpg" style="width: 50%;" /></a>
+</div>
+</div>
+<div class="topic">
+<p class="topic-title">Se rapproché du stigmatisme</p>
+<p>Si l’on ne peut réaliser un stigmatisme rigoureux, on peut essayer s’en rapprocher en <strong>sélectionnant</strong> certains rayons qui passent tous à peu près en un même point.</p>
+<p>On peut le voir sur le cas du dioptre sur le schéma suivant. On a uniquement gardé les rayons peu inclinés et on peut considérer en première approximation qu’ils convergent en un point. Plus précisément en une tâche suffisamment petite pour que notre oeil ne puisse la distinguer d’un point.</p>
+<div class="figure align-center" id="plan-diaphragme">
+<a class="reference internal image-reference" href="../_images/optique_dioptre_diaphragme.jpg"><img alt="../_images/optique_dioptre_diaphragme.jpg" src="../_images/optique_dioptre_diaphragme.jpg" style="width: 50%;" /></a>
+</div>
+<p>C’est en sélectionnant les rayons qu’on pourra s’approcher du stigmatisme et donc réaliser…  <strong>un stigmatisme approché</strong>.</p>
+</div>
+</div>
+<div class="section" id="stigmatisme-approche-selection-des-rayons">
+<h3>Stigmatisme approché: sélection des rayons<a class="headerlink" href="#stigmatisme-approche-selection-des-rayons" title="Permalink to this headline">¶</a></h3>
+<div class="full-width admonition important">
+<p class="admonition-title">Important</p>
+<p>On dit qu’un système réalise un <strong>stigmatisme approché</strong> pour un couple de points (A;A’) si tous les rayons lumineux du faisceau issu du point A <em>et traversant le système optique</em> ressortent <strong>au voisinage</strong> du point A’.</p>
+<p>A’ sera considéré comme l’image de l’objet A par le système optique et on dira que A’ et A sont conjugués.</p>
+</div>
+</div>
+</div>
+<div class="section" id="conditions-de-gauss">
+<h2>Conditions de Gauss<a class="headerlink" href="#conditions-de-gauss" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="condition-de-gauss-simulation-en-ligne">
+<h3>Condition de Gauss: Simulation (en ligne)<a class="headerlink" href="#condition-de-gauss-simulation-en-ligne" title="Permalink to this headline">¶</a></h3>
+<p>On utilisera ici un miroir sphérique pour réaliser la simulation du tracé des rayons. On utilise un point objet à l’infini dans un premier temps puis une simulation sur un objet à distance finie sera produite.</p>
+<div class="tabbed-set docutils">
+<input checked="checked" id="fa23a65a-29ba-4e02-86f0-1a14f4598ed5" name="7bdc92cd-a0ba-4ec2-b4b1-72c5de7a4475" type="radio">
+</input><label class="tabbed-label" for="fa23a65a-29ba-4e02-86f0-1a14f4598ed5">
+Infini sur l’axe optique</label><div class="tabbed-content docutils">
+<div class="figure align-center" id="spherique-axe">
+<a class="reference internal image-reference" href="../_images/optique_spherique_proche_axe.jpg"><img alt="../_images/optique_spherique_proche_axe.jpg" src="../_images/optique_spherique_proche_axe.jpg" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Objet à l’infini sur l’axe optique (<strong>pas A</strong>). Sélection des rayons proches.</span><a class="headerlink" href="#spherique-axe" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<input id="67015068-2f17-4ce6-a03f-2548f237a33b" name="7bdc92cd-a0ba-4ec2-b4b1-72c5de7a4475" type="radio">
+</input><label class="tabbed-label" for="67015068-2f17-4ce6-a03f-2548f237a33b">
+Infini hors de l’axe optique</label><div class="tabbed-content docutils">
+<div class="figure align-center" id="spherique-incline">
+<a class="reference internal image-reference" href="../_images/optique_spherique_peu_incline.jpg"><img alt="../_images/optique_spherique_peu_incline.jpg" src="../_images/optique_spherique_peu_incline.jpg" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Objet à l’infini hors de l’axe optique (<strong>pas A</strong>). Sélection des rayons peu inclinés ET proches.</span><a class="headerlink" href="#spherique-incline" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<input id="19f38cb4-41b0-41a2-96be-f5aa1607dd2c" name="7bdc92cd-a0ba-4ec2-b4b1-72c5de7a4475" type="radio">
+</input><label class="tabbed-label" for="19f38cb4-41b0-41a2-96be-f5aa1607dd2c">
+Objet proche</label><div class="tabbed-content docutils">
+<div class="figure align-center" id="spherique-fini">
+<a class="reference internal image-reference" href="../_images/optique_spherique_objet_fini.jpg"><img alt="../_images/optique_spherique_objet_fini.jpg" src="../_images/optique_spherique_objet_fini.jpg" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Objet à distance finie (point A). Sélection des rayons peu inclinés ET proches.</span><a class="headerlink" href="#spherique-fini" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="condition-de-gauss-presentation">
+<h3>Condition de Gauss: Présentation<a class="headerlink" href="#condition-de-gauss-presentation" title="Permalink to this headline">¶</a></h3>
+<div class="full-width admonition important">
+<p class="admonition-title">Important</p>
+<p>Les <strong>conditions de Gauss</strong> (ou condition des rayons paraxiaux) sont un cadre théorique et expérimental dans lequel on sélectionne uniquement les rayons sont satisfont aux deux conditions:</p>
+<ul class="simple">
+<li><p>ils ne doivent pas être trop inclinés par rapport à l’axe optique.</p></li>
+<li><p>ils doivent entrer dans le système optique en un point proche de l’axe optique.</p></li>
+</ul>
+<p><strong>Un système centré placé dans les conditions de Gauss réalise un stigmatisme approché.</strong></p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Si cette propriété est hors programme, on verra qu’elle sera nécessaire pour expliquer la méthode de recherche d’image par les lentilles.</p>
+</div>
+<div class="topic">
+<p class="topic-title">Complément : Aplanétisme (HP)</p>
+<p>Il n’est pas nécessaire de le retenir mais se placer dans les conditions de Gauss permet aussi de réaliser un aplanétisme approché.</p>
+</div>
+</div>
+<div class="section" id="conditions-de-gauss-realisation-experimentale">
+<h3>Conditions de Gauss: Réalisation expérimentale<a class="headerlink" href="#conditions-de-gauss-realisation-experimentale" title="Permalink to this headline">¶</a></h3>
+<p>En pratique, on va réaliser les conditions de Gauss en:</p>
+<ul class="simple">
+<li><p>mettant un diaphragme en amont du système optique pour empêcher les rayons trop éloignés d’entrer.</p></li>
+<li><p>mettant un diaphragme en aval du système optique (ou à l’intérieur) pour couper le passage des rayons trop inclinés.</p></li>
+</ul>
+</div>
+<div class="section" id="condition-de-gauss-utilisation-analytique">
+<h3>Condition de Gauss: Utilisation analytique<a class="headerlink" href="#condition-de-gauss-utilisation-analytique" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Attention pour les applications numériques, les valeurs des angles <strong>doivent être en radians</strong>.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Approximations aux petits angles</strong>
+Dans le cadre des conditions de Gauss, il vient que les angles avec l’axe optique sont petits. On utilisera alors l’approximation des petites angles sur les fonctions trigonométriques:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\sin i &amp;\approx i\\
+	\tan i &amp;\approx i\\
+	\cos i &amp;\approx 1 \text{ ou } 1 - \frac{i^2}{2} \textrm{ (si l'on a besoin de plus de précision.)}\\
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="condition-de-gauss-aberrations">
+<h3>Condition de Gauss: Aberrations<a class="headerlink" href="#condition-de-gauss-aberrations" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Si les conditions de Gauss ne sont pas respectées expérimentalement, cela donne lieu à des <strong>aberrations géométriques</strong>, c’est-à-dire que l’image sera déformée ou floue.</p>
+</div>
+<div class="topic">
+<p class="topic-title">Exemple d’aberrations</p>
+<div class="figure align-center" id="abberation">
+<img alt="../_images/abb_coussinet.jpg" src="../_images/abb_coussinet.jpg" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="opt_centres_miroir.html" title="previous page">Miroir plan: Présentation et relation</a>
+    <a class='right-next' id="next-link" href="opt_centres_elements.html" title="next page">Eléments principaux des systèmes centrés</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

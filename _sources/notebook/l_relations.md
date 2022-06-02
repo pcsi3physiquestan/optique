@@ -20,17 +20,17 @@ kernelspec:
 
 ### Lentilles minces: Relation de conjugaison (Enoncé)
 
-````{important} __Fondamental : Relation de conjugaison d'une lentille mince.__
-
+````{important} __Relation de conjugaison d'une lentille mince.__
+:class: full-width
 Soit une lentille mince de centre optique O, de foyer objet F, de foyer image F' et de distance focale image f'. Soit un point objet A sur l'axe optique conjugué avec un point image A'. On a les relations suivantes:
 
-Relation de Descartes:
+* Relation de Descartes:
 
 \begin{equation}
 \frac{1}{\overline{OA'}} - \frac{1}{\overline{OA}} = \frac{1}{f'}
 \end{equation}
 	
-Relation de Newton:
+* Relation de Newton:
 
 \begin{equation}
 \overline{FA} \times \overline{F'A'} = - f'^2
@@ -39,7 +39,7 @@ Relation de Newton:
 
 ### Lentilles minces: Relations de conjugaison (Démonstration)
 
-````{important} __Fondamental : Démonstration__
+````{important} __Démonstration__
 La démonstration passe par plusieurs étapes:
 
 1. Réaliser un schéma clair avec des rayons utiles mettant en avant des triangles semblables
@@ -47,7 +47,7 @@ La démonstration passe par plusieurs étapes:
 3. Isoler les rapports de grandissement $\frac{\overline{A'B'}}{\overline{AB}}$.
 4. Déduire des équations obtenues les expressions voulues.
 
-Nous allons le démontrer pour une lentille convergente. Il faut s'entraîner à le démontrer pour une lentille divergente. Le schéma de construction est donné ci-dessous. On utilise trois rayons entrant:
+__1.__ Nous allons le démontrer pour une lentille convergente. Il faut s'entraîner à le démontrer pour une lentille divergente. Le schéma de construction est donné ci-dessous. On utilise trois rayons entrant:
 
 * celui passant par le centre optique qui ressort non dévié.
 * celui passant par le foyer principal objet qui ressort parallèle à l'axe optique
@@ -58,7 +58,7 @@ Nous allons le démontrer pour une lentille convergente. Il faut s'entraîner à
 :align: center
 ```
 
-On remarque que:
+__2.__On remarque que:
 
 * les triangles OAB et OA'B'
 * les triangles F'OI et F'A'B'
@@ -72,7 +72,7 @@ sont tous semblables deux à deux. On peut donc écrire l' égalité des rapport
 	\frac{\overline{A'B'}}{\overline{F'A'}} &= \frac{\overline{OI}}{\overline{F'O}}
 \end{align*}
 
-soit les grandissements (en remarquant que $\overline{OI} = \overline{AB}$ et $\overline{OJ} = \overline{A'B'}$):
+__3.__soit les grandissements (en remarquant que $\overline{OI} = \overline{AB}$ et $\overline{OJ} = \overline{A'B'}$):
 
 \begin{align*}
 	\frac{\overline{A'B'}}{\overline{AB}} &= \frac{\overline{OA'}}{\overline{OA}}\\
@@ -80,7 +80,7 @@ soit les grandissements (en remarquant que $\overline{OI} = \overline{AB}$ et $\
 	\frac{\overline{A'B'}}{\overline{AB}} &= \frac{\overline{F'A'}}{\overline{F'O}}
 \end{align*}
 
-En égalisant les deux dernières relations, il vient directement (avec $\overline{FO} = - \overline{F'O} = f')$:
+__4.__En égalisant les deux dernières relations, il vient directement (avec $\overline{FO} = - \overline{F'O} = f')$:
 
 \begin{equation}
 \overline{FA} \times \overline{F'A'} = - f'^2
@@ -102,7 +102,8 @@ En divisant par le produit $\overline{OA}\cdot \overline{OA'}\cdot \overline{FO}
 
 ## Lentilles minces: Relations de grandissement
 
-````{important} __Fondamental : Relation de grandissement pour une lentille mince__
+````{important} __Relation de grandissement pour une lentille mince__
+:class: full-width
 Soit une lentille mince de centre optique O, de foyer objet F, de foyer image F' et de distance focale image f'. Soit un  objet AB dans un plan frontal conjugué avec une  image A'B'. On a les relations dites de grandissement suivantes:
 
 \begin{align*}

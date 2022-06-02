@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stigmatisme rigoureux. Notion d’images. &#8212; Optique géométrique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,26 +32,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/stigmatisme.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -59,7 +59,10 @@
     <link rel="next" title="Miroir plan: Présentation et relation" href="miroir.html" />
     <link rel="prev" title="Systèmes centrées: présentation générales" href="s_cen_gene.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -77,13 +80,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Optique géométrique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -408,7 +412,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#stigmatisme-rigoureux">
@@ -431,57 +435,55 @@
         
               <div>
                 
-  <div class="section" id="stigmatisme-rigoureux-notion-d-images">
+  <div class="tex2jax_ignore mathjax_ignore section" id="stigmatisme-rigoureux-notion-d-images">
 <h1>Stigmatisme rigoureux. Notion d’images.<a class="headerlink" href="#stigmatisme-rigoureux-notion-d-images" title="Permalink to this headline">¶</a></h1>
 <p>Un système optique sert à modifier la position et la taille apparente de l’objet lumineux visé. Son correspondant - son conjugué - après le système optique (ce qu’on va voir à travers la jumelle, la lunette, la loupe… ) est appelé <strong>image</strong> et celle-ci doit être vue nettement. C’est-à-dire qu’à un point de l’objet doit correspondre dans l’image…  un point (et non une tâche). C’est ce qu’on appelle le <strong>stigmatisme.</strong></p>
 <p>Nous allons simplement présenter ici la définition du stigmatisme et dans le cadre où ce dernier est réalisé, préciser la notion d’image.</p>
 <div class="section" id="stigmatisme-rigoureux">
 <h2>Stigmatisme rigoureux<a class="headerlink" href="#stigmatisme-rigoureux" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Besoin de netteté<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Le but d’utilisation d’un système optique est de pouvoir observer une image nette et non déformée à travers l’instrument.</p>
-<p class="card-text">En terme de faisceau lumineux, celà implique que pour un faisceau incident issu d’un point objet traversant le système optique, le faisceau sortant doit concourir en un point.</p>
-<p class="card-text">Ci dessous l’exemple du miroir plan où le faisceau issu du point <span class="math notranslate nohighlight">\(A_1\)</span> donne un faisceau réfléchi qui concourt au point <span class="math notranslate nohighlight">\(A_2\)</span> (plus précisément c’est le prolongement des rayons réfléchies réels qui concourent en <span class="math notranslate nohighlight">\(A_2\)</span>).</p>
+<div class="topic">
+<p class="topic-title first">Besoin de netteté</p>
+<p>Le but d’utilisation d’un système optique est de pouvoir observer une image nette et non déformée à travers l’instrument.</p>
+<p>En terme de faisceau lumineux, celà implique que pour un faisceau incident issu d’un point objet traversant le système optique, le faisceau sortant doit concourir en un point.</p>
+<p>Ci dessous l’exemple du miroir plan où le faisceau issu du point <span class="math notranslate nohighlight">\(A_1\)</span> donne un faisceau réfléchi qui concourt au point <span class="math notranslate nohighlight">\(A_2\)</span> (plus précisément c’est le prolongement des rayons réfléchies réels qui concourent en <span class="math notranslate nohighlight">\(A_2\)</span>).</p>
 <div class="figure align-center" id="miroir-plan-1">
 <img alt="../_images/optique_miroir_plan.jpg" src="../_images/optique_miroir_plan.jpg" />
 </div>
 </div>
-</details><div class="admonition important">
+<div class="full-width admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Stigmatisme rigoureux</strong></p>
 <p>Un système optique est dit <strong>rigoureusement stigmatique</strong> pour deux points (A ;A’) si l’ensemble des rayons lumineux issus du premier point A et traversant le système forment d’autres rayons lumineux dont les supports passent par le second point A’.</p>
-<p>Le premier point A est appelé point objet, le second point image A’. On dit que les deux points A et A’ sont conjugués.</p>
+<p>Le premier point A est appelé <strong>point objet</strong>, le second <strong>point image A’</strong>. On dit que les deux points A et A’ sont <strong>conjugués</strong>.</p>
+<div class="figure align-center" id="objet-p">
+<img alt="../_images/objet_image_p.jpg" src="../_images/objet_image_p.jpg" />
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Conjugaison d’un point objet et image</span><a class="headerlink" href="#objet-p" title="Permalink to this image">¶</a></p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On parlera par extension d’une image étendue, ensemble de points image conjuguées aux points objets d’un objet éntendu.</p>
+</div>
 </div>
 </div>
 <div class="section" id="images-reelles-et-virtuelles">
 <h2>Images réelles et virtuelles<a class="headerlink" href="#images-reelles-et-virtuelles" title="Permalink to this headline">¶</a></h2>
-<div class="admonition important">
+<div class="full-width admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Image ponctuelle</strong></p>
-<p>Lorsque le stigmatisme est réalisé, le faisceau incident issu d’un point objet A ressort du système optique en concourant en un point <span class="math notranslate nohighlight">\(A_1\)</span> appelé image de l’objet <strong><span class="math notranslate nohighlight">\(A_1\)</span></strong>.</p>
-<p>On dit que A et <span class="math notranslate nohighlight">\(A_1\)</span> sont <strong>conjugués.</strong></p>
-<p>On parlera par extension de l’image d’un objet étendu.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Définition : Image réelles et virtuelles.</strong></p>
-<p>Lorsque le point image est au concours des rayons réels, on dit que l’image est réelle (comme <span class="math notranslate nohighlight">\(A'_1\)</span> dans l’image ci-dessous). En pratique, il s’agit d’une image formée en aval du système optique. On peut y placer un écran et observer l’image sur l’écran.</p>
-<p>Lorsque le point image est au concours du prolongement virtuels des rayons sortants (rayons sortants dits virtuels), on dit que l’image est virtuelle (comme <span class="math notranslate nohighlight">\(A'_2)\)</span>. En pratique, il s’agit d’une image formée avant la sortie du système optique. On ne peut la matérialiser sur un écran mais il suffit de placer son oeil derrière le système optique pour la voir.</p>
+<ul class="simple">
+<li><p>Lorsque le point image est au concours des rayons réels, on dit que l’<strong>image est réelle</strong> (comme <span class="math notranslate nohighlight">\(A'_1\)</span> dans l’<a class="reference internal" href="#image-virtuelle"><span class="std std-ref">image ci-après</span></a>). <em>En pratique, il s’agit d’une image formée en aval du système optique. On peut y placer un écran et observer l’image sur l’écran.</em></p></li>
+<li><p>Lorsque le point image est au concours du prolongement virtuels des rayons sortants (rayons sortants dits virtuels), on dit que l’<strong>image est virtuelle</strong> (comme <span class="math notranslate nohighlight">\(A'_2\)</span> sur l’[image ci-après](image virtuelle) ou <span class="math notranslate nohighlight">\(A_2\)</span>, image de <span class="math notranslate nohighlight">\(A_1\)</span> dans le cas du <a class="reference internal" href="#miroir-plan-1"><span class="std std-ref">miroir plan ci-dessus</span></a>). En pratique, il s’agit d’une image formée avant la sortie du système optique. On ne peut la matérialiser sur un écran <em>mais il suffit de placer son oeil derrière le système optique pour la voir</em>.</p></li>
+</ul>
 <div class="figure align-center" id="image-virtuelle">
 <img alt="../_images/optique_image_virtuelle_reelle.jpg" src="../_images/optique_image_virtuelle_reelle.jpg" />
 </div>
 </div>
-<div class="dropdown admonition attention">
+<div class="topic">
+<p class="topic-title first">Observation d’une image</p>
+<div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p><strong>Observation d’une image</strong></p>
 <p>L’image est ce qu’on voit en plaçant notre oeil après le système optique (à condition de se placer évidemment derrière l’endroit où se forme l’image !).</p>
 <p>On peut voir l’image à travers un système optique quelque soit la nature (réelle ou virtuelle) de l’image.</p>
 <p>Le caractère virtuel de l’image empêche simplement de placer un écran pour qu’elle se forme sur celui-ci.</p>
+</div>
 </div>
 </div>
 </div>
@@ -509,16 +511,27 @@ Besoin de netteté<div class="summary-down docutils">
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="s_cen_gene.html" title="previous page">Systèmes centrées: présentation générales</a>
-    <a class='right-next' id="next-link" href="miroir.html" title="next page">Miroir plan: Présentation et relation</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="s_cen_gene.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Systèmes centrées: présentation générales</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="miroir.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Miroir plan: Présentation et relation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -534,8 +547,7 @@ Besoin de netteté<div class="summary-down docutils">
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

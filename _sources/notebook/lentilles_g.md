@@ -16,7 +16,7 @@ kernelspec:
 
 # Lentilles minces - Approches graphiques
 
-````{admonition} Objectifs
+````{admonition} Compétences
 :class: tip
 * Connaître les définitions et les propriétés du centre optique, des foyers principaux et secondaires, de la distance focale, de la vergence.
 * Construire l'image d'un objet situé à une distance finie ou infinie de rayons lumineux.

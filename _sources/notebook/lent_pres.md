@@ -18,7 +18,7 @@ kernelspec:
 
 ## Lentilles minces: définition
 
-````{important} __Définition : Lentille sphérique mince__
+````{important} __Lentille sphérique mince__
 
 Une lentille sphérique est un système optique centré composé d'un milieu transparent taillé suivant deux dioptres sphériques. On a repéré ici les centres et sommets respectifs des deux faces: $C_1, C_2, S_1$ et $S_2$.
 
@@ -33,33 +33,32 @@ Dans ces conditions, on peut confondre les sommets $S_1$ et $S_2$. Ce point sera
 
 ## Lentilles minces: typologie
 
-````{important} __Définition : Lentilles divergente et convergente__
+````{sidebar} Remarque
 
-Si la distance focale image est positive, on dit que la lentille est __convergente__.
+Comportement des faisceaux qui traversent chaque lentille.
 
-Si la distance focale image est négative, on dit que la lentille est __divergente__.
-````
-
-````{dropdown} Remarque
-
-On peut associer le nom des types de lentilles au comportement des faisceaux qui les traversent.
-
-* lentille convergente: l'ouverture angulaire du faisceau tend à diminuer. Par exemple, un faisceau incident parallèle donnera un faisceau convergent en sortie.
-* lentille divergente: l'ouverture angulaire du faisceau tend à augmenter. Par exemple, un faisceau incident parallèle donnera un faisceau divergent en sortie.
+* lentille convergente: l'ouverture angulaire du faisceau tend à diminuer.
+* lentille divergente: l'ouverture angulaire du faisceau tend à augmenter.
 
 ```{figure} ./images/optique_lentille_cv_dv.jpg
 :name: lentille_cvdv
 :align: center
 ```
 ````
+````{important} __Lentilles divergente et convergente__
+
+* Si la distance focale image est positive, on dit que la lentille est __convergente__.
+* Si la distance focale image est négative, on dit que la lentille est __divergente__.
+````
+
 
 ## Lentilles minces: Schématisation de Gauss
 
-````{important} Stigmatisme approché
+````{margin} Stigmatisme approché
 Dans le cadre des conditions de Gauss, une lentille mince réalise un stigmatisme approché.
 ````
 
-````{important} __Fondamental : Schématisation de Gauss d'une lentille convergente__
+````{important} __Schématisation de Gauss d'une lentille convergente__
 
 ```{figure} ./images/optique_gauss_convergente.jpg
 :name: gauss_cv

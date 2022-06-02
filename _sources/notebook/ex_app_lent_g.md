@@ -14,7 +14,7 @@ kernelspec:
   name: python3
 ---
 # Application: recherche d'antécédent
-Cet exercice d'application directe est à faire à la suite du cours pour vérifier votre compréhension des méthodes. Vous pourrez confronter votre travail avec celui de vos camarades et poser des questions sur cet exercice en classe mais il ne sera pas donné de correction complète.
+Ces exercices d'application directe est à faire à la suite du cours pour vérifier votre compréhension des méthodes. Vous pourrez confronter votre travail avec celui de vos camarades et poser des questions sur cet exercice en classe mais il ne sera pas forcément donné de correction complète.
 
 
 ````{admonition} Exercice 

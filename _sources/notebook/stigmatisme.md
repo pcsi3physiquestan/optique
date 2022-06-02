@@ -22,7 +22,7 @@ Nous allons simplement présenter ici la définition du stigmatisme et dans le c
 ## Stigmatisme rigoureux
 
 
-````{dropdown} Besoin de netteté
+````{topic} Besoin de netteté
 Le but d'utilisation d'un système optique est de pouvoir observer une image nette et non déformée à travers l'instrument.
 
 En terme de faisceau lumineux, celà implique que pour un faisceau incident issu d'un point objet traversant le système optique, le faisceau sortant doit concourir en un point.
@@ -35,29 +35,30 @@ Ci dessous l'exemple du miroir plan où le faisceau issu du point $A_1$ donne un
 ```
 ````
 
-````{important} __Définition : Stigmatisme rigoureux__
+````{important} __Stigmatisme rigoureux__
+:class: full-width
 
 Un système optique est dit __rigoureusement stigmatique__ pour deux points (A ;A') si l'ensemble des rayons lumineux issus du premier point A et traversant le système forment d'autres rayons lumineux dont les supports passent par le second point A'.
 
-Le premier point A est appelé point objet, le second point image A'. On dit que les deux points A et A' sont conjugués.
+Le premier point A est appelé __point objet__, le second __point image A'__. On dit que les deux points A et A' sont __conjugués__.
+
+```{figure} ./images/objet_image_p.jpg
+:name: objet_p
+:align: center
+Conjugaison d'un point objet et image
+```
+
+```{margin}
+On parlera par extension d'une image étendue, ensemble de points image conjuguées aux points objets d'un objet éntendu.
+```
 ````
 
 ## Images réelles et virtuelles
 
-````{important} __Définition : Image ponctuelle__
-
-Lorsque le stigmatisme est réalisé, le faisceau incident issu d'un point objet A ressort du système optique en concourant en un point $A_1$ appelé image de l'objet __$A_1$__.
-
-On dit que A et $A_1$ sont __conjugués.__
-
-On parlera par extension de l'image d'un objet étendu.
-````
-
-````{important} __Définition : Image réelles et virtuelles.__
-
-Lorsque le point image est au concours des rayons réels, on dit que l'image est réelle (comme $A'_1$ dans l'image ci-dessous). En pratique, il s'agit d'une image formée en aval du système optique. On peut y placer un écran et observer l'image sur l'écran.
-
-Lorsque le point image est au concours du prolongement virtuels des rayons sortants (rayons sortants dits virtuels), on dit que l'image est virtuelle (comme $A'_2)$. En pratique, il s'agit d'une image formée avant la sortie du système optique. On ne peut la matérialiser sur un écran mais il suffit de placer son oeil derrière le système optique pour la voir.
+````{important} __Image réelles et virtuelles__
+:class: full-width
+* Lorsque le point image est au concours des rayons réels, on dit que l'__image est réelle__ (comme $A'_1$ dans l'[image ci-après](image_virtuelle)). _En pratique, il s'agit d'une image formée en aval du système optique. On peut y placer un écran et observer l'image sur l'écran._
+* Lorsque le point image est au concours du prolongement virtuels des rayons sortants (rayons sortants dits virtuels), on dit que l'__image est virtuelle__ (comme $A'_2$ sur l'[image ci-après](image virtuelle) ou $A_2$, image de $A_1$ dans le cas du [miroir plan ci-dessus](miroir_plan_1)). En pratique, il s'agit d'une image formée avant la sortie du système optique. On ne peut la matérialiser sur un écran _mais il suffit de placer son oeil derrière le système optique pour la voir_.
 
 ```{figure} ./images/optique_image_virtuelle_reelle.jpg
 :name: image_virtuelle
@@ -65,14 +66,13 @@ Lorsque le point image est au concours du prolongement virtuels des rayons sorta
 ```
 ````
 
-````{attention}
-:class: dropdown
-__Observation d'une image__
-
+````{topic} Observation d'une image
+```{attention}
 L'image est ce qu'on voit en plaçant notre oeil après le système optique (à condition de se placer évidemment derrière l'endroit où se forme l'image !).
 
 On peut voir l'image à travers un système optique quelque soit la nature (réelle ou virtuelle) de l'image.
 
 Le caractère virtuel de l'image empêche simplement de placer un écran pour qu'elle se forme sur celui-ci.
+```
 ````
 

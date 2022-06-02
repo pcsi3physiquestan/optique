@@ -38,7 +38,7 @@ Avec la lunette, l'observateur vise l'horizon donc l'axe optique de la lunette a
 3. Dans ces conditions, déterminer la relation entre l'angle AOC et l'angle SOH où S désigne la position de l'astre et H l'horizon.
 ````
 
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 1. $2 \theta + \phi - \pi/3$
 2. $\theta = \pi/6 - \phi / 2$
 3. $\phi/2$
@@ -64,7 +64,7 @@ On étudie un dioptre hémisphérique (une lentille) de rayon R et d'indice n pl
 6. \*Faire un développement limité au second ordre en i de la distance CA. Conclure quant à la possibilité de réaliser l'approximation de Gauss.
 ````
 
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 1. $CA = R \cos i + R \frac{\sin i}{\tan(r - i)}$
 2. $CF' = R \frac{n}{n-1}$
 3. Foyer principal image

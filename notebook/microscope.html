@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etude de systèmes optiques multilentilles &#8212; Optique géométrique</title>
+    <title>Numérique : Systèmes optiques multilentilles &#8212; Optique géométrique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,33 +32,36 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/microscope.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="TD Optique 4: Instruments d’optique" href="td_instr.html" />
+    <link rel="prev" title="Entrainement : Instruments d’optique" href="opt_instru_td.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Optique géométrique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -93,8 +97,8 @@
 </ul>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="bases.html">
-   Approximation de l’optique géométrique
+  <a class="reference internal" href="opt_bases.html">
+   Bases de l’optique géométrique
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -102,110 +106,60 @@
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes.html">
-     La lumière est une onde
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_bases_contxt.html">
+     Connaître le contexte
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_ondes.html">
+       La lumière est une onde
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_approx.html">
+       Approximation de l’optique géométrique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_snell.html">
+       Lois de Snell-Descartes
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="approx.html">
-     Approximation de l’optique géométrique
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_bases_ex.html">
+     Maitriser les méthodes
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="snell.html">
-     Lois de Snell-Descartes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="snell_methodes.html">
-     Lois de Snell-Descartes - Méthodes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="td_bases.html">
-     Travaux dirigées
-    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_methodes.html">
+       Méthode et exemple
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_bases_td.html">
+       Entrainement : Bases de l’optique
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="sys_centres.html">
+  <a class="reference internal" href="opt_centres.html">
    Systèmes centrés
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s_cen_gene.html">
-     Systèmes centrées: présentation générales
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="stigmatisme.html">
-     Stigmatisme rigoureux. Notion d’images.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="miroir.html">
-     Miroir plan: Présentation et relation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="gauss.html">
-     Stigmatisme approché et condition de Gauss
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="elements.html">
-     Eléments principaux des systèmes centrés
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="td_s_cen.html">
-     TD Optique 2a: Systèmes centrés
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="lentilles_g.html">
-   Lentilles minces - Approches graphiques
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lent_pres.html">
-     Lentilles minces: Présentation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lent_rayons.html">
-     Lentilles minces: tracés des rayons
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ex_app_lent_g.html">
-     Application: recherche d’antécédent
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="td_lentilles_g.html">
-     TD Optique 2b: Lentilles minces - Construction graphique
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="lentilles_an.html">
-   Lentilles minces - Relations
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -213,24 +167,9 @@
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="l_relations.html">
-     Relations des lentilles minces
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="l_exemple.html">
-     Exemples d’études
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ex_app_lent_an.html">
-     Application: démonstration de la relation de conjugaison
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="l_meth.html">
-     Activités méthodes
+    <a class="reference internal" href="opt_centres_contxt.html">
+     Connaître le contexte
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
     <label for="toctree-checkbox-5">
@@ -239,82 +178,205 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="l_meth_esp.html">
-       Zones d’espaces conjuguées
+      <a class="reference internal" href="opt_centres_gene.html">
+       Présentation générale
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="l_meth_proj.html">
-       Projection
+      <a class="reference internal" href="opt_centres_stigmatisme.html">
+       Stigmatisme rigoureux. Notion d’images.
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_miroir.html">
+       Miroir plan: Présentation et relation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_gauss.html">
+       Stigmatisme approché et condition de Gauss
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_elements.html">
+       Eléments principaux des systèmes centrés
       </a>
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="td_lentilles_an.html">
-     TD Optique 2c: Lentilles minces - Relations mathématiques
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="oeil.html">
-   L’oeil et ses défauts
-  </a>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="instruments.html">
-   Instruments d’optique
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="instr_loupe.html">
-     Exemple d’étude: la loupe
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="instr_meth.html">
-     Activités méthodes
+    <a class="reference internal" href="opt_centres_ex.html">
+     Maitriser les méthodes
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="instr_meth_oculaire.html">
+      <a class="reference internal" href="opt_centres_meth.html">
+       Exemple : Recherche des éléments principaux
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_centres_td.html">
+       Entrainement : Systèmes centrés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="opt_lentilles.html">
+   Lentilles minces
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_lentilles_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_pres.html">
+       Lentilles minces: Présentation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_rayons.html">
+       Lentilles minces: tracés des rayons
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_relations.html">
+       Relations des lentilles minces
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_oeil.html">
+       L’oeil et ses défauts
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_lentilles_ex.html">
+     Maitriser les méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_meth.html">
+       Activités méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_ex_rayons.html">
+       Méthodes : Tracés graphiques
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="opt_lentilles_exemple.html">
+       Exemples : Etude de lentilles
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_accole.html">
+         Méthodes : Lentilles accolées
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_esp.html">
+         Méthodes : Zones d’espaces conjuguées
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="opt_lentilles_meth_proj.html">
+         Méthodes : Projection
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_lentilles_td.html">
+       Entrainement : Lentilles minces
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="opt_instru.html">
+   Instruments d’optique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_loupe.html">
+     Exemple : la loupe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="opt_instru_meth.html">
+     Activités méthodes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="opt_instru_meth_oculaire.html">
        Etude d’un oculaire
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="instr_meth_lunette.html">
+      <a class="reference internal" href="opt_instru_meth_lunette.html">
        Etude d’une lunette afocale
       </a>
      </li>
     </ul>
    </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="td_instr.html">
-     TD Optique 4: Instruments d’optique
+   <li class="toctree-l2">
+    <a class="reference internal" href="opt_instru_td.html">
+     Entrainement : Instruments d’optique
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul class="current">
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
-       Etude de systèmes optiques multilentilles
-      </a>
-     </li>
-    </ul>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Numérique : Systèmes optiques multilentilles
+    </a>
    </li>
   </ul>
  </li>
@@ -357,11 +419,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/microscope.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/microscope.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/microscope.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -384,7 +449,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/microscope.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/microscope.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -404,7 +469,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#position-du-probleme">
@@ -427,8 +492,8 @@
         
               <div>
                 
-  <div class="section" id="etude-de-systemes-optiques-multilentilles">
-<h1>Etude de systèmes optiques multilentilles<a class="headerlink" href="#etude-de-systemes-optiques-multilentilles" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="numerique-systemes-optiques-multilentilles">
+<h1>Numérique : Systèmes optiques multilentilles<a class="headerlink" href="#numerique-systemes-optiques-multilentilles" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="position-du-probleme">
 <h2>Position du problème<a class="headerlink" href="#position-du-probleme" title="Permalink to this headline">¶</a></h2>
 <p>On considère un microscope constitué :</p>
@@ -437,7 +502,7 @@
 <li><p>d’un oculaire dit de Ramsden constitué de deux lentilles minces de même distance focale de distance focale <span class="math notranslate nohighlight">\(f_2 = f_3 = 3cm\)</span> distantes de <span class="math notranslate nohighlight">\(\overline{O_2 O_3} = {2 \over 3}f_3\)</span></p></li>
 <li><p>la distance entre l’objectif et la première lentille de l’oculaire est <span class="math notranslate nohighlight">\(\Delta = 18cm\)</span> (on l’appellera <em>intervale optique</em>).</p></li>
 </ul>
-<p>Le but de l’exercice est de trouver par simulation numérique, puis par le calcul où placer un objet (de taille 1U.A.) pour que l’image finale soit à l’infini.</p>
+<p>Le but de l’exercice est de trouver par simulation numérique, puis par le calcul où placer un objet (de taille 1(unité arbitraire)) pour que l’image finale soit à l’infini.</p>
 <p>On place l’origine de l’axe optique à l’emplacement de l’objectif et on suppose que le systèmes vérifient les conditions de Gauss.</p>
 </div>
 <div class="section" id="modelisation-sous-python">
@@ -445,10 +510,10 @@
 <ul class="simple">
 <li><p>On va modéliser un objet (ou une image) par une liste de deux éléments <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">d]</span></code> correspondant à sa position <span class="math notranslate nohighlight">\(x\)</span> sur l’axe optique et sa taille transverse <span class="math notranslate nohighlight">\(d\)</span>.</p>
 <ul>
-<li><p>Dans la suite, si on utilie comme argument d’une fonction un objet (donc une liste de deux éléments), il sera appelé <code class="docutils literal notranslate"><span class="pre">obj</span></code> ou <code class="docutils literal notranslate"><span class="pre">obj1,</span> <span class="pre">obj2,</span> <span class="pre">...</span></code>.</p></li>
+<li><p>Dans la suite, si on utilise comme argument d’une fonction un objet lumineux (donc une liste de deux éléments), il sera appelé <code class="docutils literal notranslate"><span class="pre">obj</span></code> ou <code class="docutils literal notranslate"><span class="pre">obj1,</span> <span class="pre">obj2,</span> <span class="pre">...</span></code>.</p></li>
 </ul>
 </li>
-<li><p>On va modéliser une lentille mince par une liste de deux éléments <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">f]</span></code> correspondant à sa position <span class="math notranslate nohighlight">\(x\)</span> sur l’axe optique et sa distance focale <span class="math notranslate nohighlight">\(f'\)</span>.</p>
+<li><p>On va modéliser une lentille mince par une liste de deux éléments <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">f]</span></code> correspondant à sa position <span class="math notranslate nohighlight">\(x\)</span> sur l’axe optique de son centre optique et sa distance focale image <span class="math notranslate nohighlight">\(f'\)</span>.</p>
 <ul>
 <li><p>Dans la suite, si on utilie comme arguments d’une fonction une lentille (donc une liste de deux éléments), il sera appelé <code class="docutils literal notranslate"><span class="pre">L</span></code> ou <code class="docutils literal notranslate"><span class="pre">L1,</span> <span class="pre">L2,</span> <span class="pre">...</span></code>.</p></li>
 </ul>
@@ -459,7 +524,7 @@
 <ol class="simple">
 <li><p>Comment appelle-t-on le point sur l’axe optique où doit être placé l’objet?</p></li>
 <li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">image(L,</span> <span class="pre">obj)</span></code> qui renvoie les caractéristiques d’une image (liste à deux éléments) d’un objet <code class="docutils literal notranslate"><span class="pre">obj</span></code> par une lentille <code class="docutils literal notranslate"><span class="pre">L</span></code>.</p></li>
-<li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">microscope(fobj,</span> <span class="pre">f2,</span> <span class="pre">Delta,</span> <span class="pre">obj)</span></code> qui renvoie les caractéristiques d’une image (liste à deux éléments) d’un objet <code class="docutils literal notranslate"><span class="pre">obj</span></code> par un microscope dont la focale de l’objectif est <code class="docutils literal notranslate"><span class="pre">fobj</span></code>, celle des lentilles de l’oculaire <code class="docutils literal notranslate"><span class="pre">f2</span></code> et l’intervale optique <code class="docutils literal notranslate"><span class="pre">Delta</span></code></p></li>
+<li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">microscope(fobj,</span> <span class="pre">f2,</span> <span class="pre">Delta,</span> <span class="pre">obj)</span></code> qui renvoie les caractéristiques d’une image (liste à deux éléments) d’un objet <code class="docutils literal notranslate"><span class="pre">obj</span></code> par un microscope dont la focale de l’objectif est <code class="docutils literal notranslate"><span class="pre">fobj</span></code>, celle des lentilles de l’oculaire <code class="docutils literal notranslate"><span class="pre">f2</span></code> (on rappelle qu’il y en a deux) et l’intervale optique <code class="docutils literal notranslate"><span class="pre">Delta</span></code></p></li>
 <li><p>Pour des objets situé entre l’objectif et 2cm en amont de l’objectif, tracer deux graphiques donnant l’un la position de l’image finale en fonction de la position de l’objet et la taille de l’image finale en fonction de la taille de l’objet. En déduire visuellement où placer l’objet. (Ne pas hésiter à “zoomer”).</p></li>
 <li><p>*Pour déterminer numériquement la position de l’objet, réaliser une recherche de 0 (par dichotomie à <span class="math notranslate nohighlight">\(10^{-6} cm\)</span> près sur la position de l’objet) sur la fonction <span class="math notranslate nohighlight">\(Y(x_{obj}\)</span> où <span class="math notranslate nohighlight">\(x_{obj}\)</span> est la position de l’objet et <span class="math notranslate nohighlight">\(Y\)</span> l’inverse de la position de l’image.</p></li>
 <li><p>Déterminer analytiquement la position de l’objet en déterminant successivement : la position du foyer principal objet de l’oculaire seule puis la position de l’objet.</p></li>
@@ -467,7 +532,7 @@
 </div></blockquote>
 <p><em>Indications utiles</em> :</p>
 <ul class="simple">
-<li><p>Faire attention à ne pas confondre la position absolue sur un axe et une distance relative entre deux éléments.</p></li>
+<li><p>Attention à ne pas confondre la position absolue sur un axe et une distance relative entre deux éléments.</p></li>
 <li><p>Il faudra peut-être tracer <span class="math notranslate nohighlight">\(Y(x_{obj})\)</span> pour choisir l’intervalle pour la dichotomie.</p></li>
 </ul>
 </div>
@@ -496,15 +561,20 @@
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="td_instr.html" title="previous page">TD Optique 4: Instruments d’optique</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="opt_instru_td.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Entrainement : Instruments d’optique</p>
         </div>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -520,8 +590,7 @@
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>
