@@ -115,7 +115,7 @@ But: On désire étudier la déviation du rayon lumineux D en fonction de l'angl
 ```{figure} ./images/optique_prisme_deviation.jpg
 :name: prisme
 :align: center
-:width: 75%
+:width: 60%
 Déviation par le prisme
 ```
 
