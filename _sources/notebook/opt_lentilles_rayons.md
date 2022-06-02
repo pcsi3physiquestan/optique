@@ -44,8 +44,9 @@ _A l'inverse, un rayon sortant parallèle à l'axe optique a pour antécédent u
 :align: center
 :width: 40%
 ```
+````
 
-
+````{important} __Fondamental : Rayons utiles (2)__
 * Un rayon entrant passant par le centre optique ressort non dévié.
 ```{figure} ./images/optique_rayon_centre_optique.jpg
 :name: l_rayon_centre
