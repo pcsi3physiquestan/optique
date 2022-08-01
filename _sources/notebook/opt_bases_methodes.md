@@ -53,7 +53,7 @@ On considère le cas où $n_1 < n_2 $.
 >Plus précisément, les gammes valeurs atteintes sont $i_2 \in [-\arcsin\left ( \frac{n_1}{n_2}\right); \arcsin\left ( \frac{n_1}{n_2}\right)]$
 ````
 
-````{important} __Bilan__
+````{important} __Bilan - A retenir__
 :class: full-width
 On retiendra que lors du passage d'un milieu moins réfringent à un milieu plus réfringent:
 
@@ -87,7 +87,7 @@ On considère le cas où $n_2 < n_1 $.
 >Si l'angle d'incidence est supérieure à $i_0$, on observe expérimentalement qu'il n'y a pas de rayon réfracté. On parle de __réflexion totale__: toute la lumière est réfléchie.
 ````
 
-````{important} __Bilan__
+````{important} __Bilan - A retenir__
 :class: full-width
 On retiendra que lors du passage d'un milieu plus réfringent à un milieu moins réfringent:
 

@@ -8,4 +8,8 @@ div.topic{
 	background-color: #f7f7ff;
 	font-size: 0.85em;
 	padding: 0 40px 0 40px;
+
+}
+p.topic-title{
+	font_style: italic;
 }

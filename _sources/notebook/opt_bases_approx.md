@@ -99,7 +99,6 @@ On définit les termes suivants:
 * Isotrope: Les caractéristiques du milieu sont les mêmes dans les différentes directions de l'espace (par exemple la vitesse de la lumière est la même dans toutes les directions de l'espace).
 ```
 ````{important}
-:class: full-width
 __Propriétés des rayons__
 * Propagation rectiligne : On rappelle que dans un milieu homogène transparent et isotrope, les rayons lumineux se propagent en ligne droite.
 * Indépendance des rayons : Les rayons lumineux sont indépendants, c'est-à-dire que la propagation de l'un n'influe pas sur la propagation l'autre, même quand ils se croisent.

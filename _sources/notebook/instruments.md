@@ -15,7 +15,7 @@ kernelspec:
 ---
 # Instruments d'optique
 
-````{admonition} Objectifs
+````{admonition} Compétences
 * Modéliser à l'aide de plusieurs lentilles un dispositif optique d'utilisation courante.
 * Connaître les positions relatives des éléments d'un système afocal à deux lentilles.
 * Savoir calculer des éléments caractéristiques (grossissement, grossissement commercial, profondeur de champ) pour un instrument d'optique donné (leur définition étant donnée).

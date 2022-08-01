@@ -14,7 +14,7 @@ kernelspec:
   name: python3
 ---
 # L'oeil et ses défauts
-````{admonition} Objectifs
+````{admonition} Compétences
 * Modéliser l'oeil comme l'association d'une lentille de vergence variable et d'un capteur fixe.
 * Connaître les ordres de grandeur de la limite de résolution angulaire et de la plage d’accommodation.
 ````

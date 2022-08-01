@@ -31,7 +31,8 @@ On considère donc un doublet de lentille \{$L_1,L_2$\} appelé doublet de Ramsd
 
 ````{important} 
 :class: dropdown
-__Bilan à retenir - Ce n'est PAS la correction.__ On retiendra que:
+__Bilan à retenir - Ce n'est PAS la correction.__  
+On retiendra que:
 * pour des systèmes devant grossir des objets à distance finies (oculaire, loupe, microscope... ), on va chercher -  dans le cas d'oeil emmétrope - à placer l'objet sur le foyer principal objet de l'ensemble.
 * La mesure du grossissement (commercial) passe en général par l'utilisation de l'image intermédiaire.
 ````
