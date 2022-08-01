@@ -86,8 +86,8 @@ Un objet n'est pas nécessairement matériel (source primaire ou secondaire), il
 
 Exemple: Un oeil humaine utilise un télescope. Le téléscope vise une étoile (qui est un objet pour le téléscope) et en donne une image (grossie normalement). C'est cette image qui est vue par l'oeil. Elle est donc l'objet pour système optique {oeil} (plus exactement le cristalin).
 
-\begin{equation}
+$$
 \textrm{Objet : Etoile} \underbrace{\longrightarrow}_{Lunette astronomique} \underbrace{\textrm{Image intermédiaire}}_{\begin{cases}&\textrm{Image pour la lunette}\\&\textrm{Objet pour l'oeil}\end{cases}} \underbrace{\longrightarrow}_{\textrm{Cristallin de l'oeil}} \textrm{Image finale sur la rétine}
-\end{equation}
+$$
 ```
 ````

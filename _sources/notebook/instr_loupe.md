@@ -46,9 +46,9 @@ On cherche l'antécédent du Punctum Proximum positionné tel que $\overline{F'A
 
 Puisque qu'on a déjà la distance au foyer image, on va utiliser la relation de Newton:
 
-\begin{equation}
+$$
 \overline{FA_{PP}} \times \underbrace{\overline{FA'_{PP}}}{-d_{\min}} = - f'^2 \Longrightarrow \boxed{\overline{FA_{PP}} = \frac{f'^2}{d_{\min}}}
-\end{equation}
+$$
 Application numérique: la largeur de l'intervalle est 4mm.
 
 __Q2. Grossissement commercial__
@@ -69,18 +69,18 @@ __Calcul de l'angle à l'oeil nu__. Il vient directement $\alpha \approx \tan \a
 
 On obtient le grossissement:
 
-\begin{equation}
+$$
 G_c = \left\vert \frac{\alpha'}{\alpha} \right\vert = \frac{d_{\min}}{f'}
-\end{equation}
+$$
 
 Application numérique: $G_c = \times 25$
 
 __Q3. Plus petit objet distinguable.__
 On peut reprendre les formules précédentes:
 
-\begin{equation}
+$$
 AB = f' \tan \theta \approx \theta f' \approx 3 \times 10^{-6} \rm{rad}
-\end{equation}
+$$
 ````
 
 ````{dropdown} Remarque

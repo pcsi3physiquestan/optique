@@ -26,15 +26,15 @@ Soit une lentille mince de centre optique O, de foyer objet F, de foyer image F'
 
 * Relation de Descartes:
 
-\begin{equation}
+$$
 \frac{1}{\overline{OA'}} - \frac{1}{\overline{OA}} = \frac{1}{f'}
-\end{equation}
+$$
 	
 * Relation de Newton:
 
-\begin{equation}
+$$
 \overline{FA} \times \overline{F'A'} = - f'^2
-\end{equation}
+$$
 ````
 
 ### Lentilles minces: Relations de conjugaison (Démonstration)
@@ -82,9 +82,9 @@ __3.__soit les grandissements (en remarquant que $\overline{OI} = \overline{AB}$
 
 __4.__En égalisant les deux dernières relations, il vient directement (avec $\overline{FO} = - \overline{F'O} = f')$:
 
-\begin{equation}
+$$
 \overline{FA} \times \overline{F'A'} = - f'^2
-\end{equation}
+$$
 
 On peut aussi égaler les deux premières et utiliser la relation $\overline{FA} = \overline{FO} + \overline{OA}$:
 
@@ -95,9 +95,9 @@ On peut aussi égaler les deux premières et utiliser la relation $\overline{FA}
 
 En divisant par le produit $\overline{OA}\cdot \overline{OA'}\cdot \overline{FO}$, il vient bien la relation:
 
-\begin{equation}
+$$
 \frac{1}{\overline{OA'}} - \frac{1}{\overline{OA}} = \frac{1}{f'}
-\end{equation}
+$$
 ````
 
 ## Lentilles minces: Relations de grandissement

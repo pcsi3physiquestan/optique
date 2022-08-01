@@ -38,9 +38,10 @@ On peut donc écrire les deux relations de conjugaison:
 \end{cases}
 \end{equation}
 soit en sommant les deux relations:
-\begin{equation}
+
+$$
 \frac{1}{\overline{OA_2}} - \frac{1}{\overline{OA}} = V_1 + V_2
-\end{equation}
+$$
 
 _Tout se passe donc bien comme s'il n'y avait qu'une seule lentille conjuguant $A$ et $A_2$ de vergence $V_1 + V_2$ et située en $O$._
 ````

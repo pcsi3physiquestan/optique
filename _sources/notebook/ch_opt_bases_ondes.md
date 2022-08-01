@@ -61,9 +61,9 @@ Exemple : les longueurs d'onde du visible données $400nm ;800nm$ sont des longu
 :class: full-width
 On rappelle (Terminale) que pour une onde monochromatique de fréquence $\nu$, de longueur d'onde $\lambda$ et de célérité $c_0$, on la relation :
 
-\begin{equation}
+$$
 \lambda \nu = c_0
-\end{equation}
+$$
 ````
 
 

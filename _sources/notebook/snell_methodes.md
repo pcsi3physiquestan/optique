@@ -97,9 +97,9 @@ On retiendra que lors du passage d'un milieu plus réfringent à un milieu moins
 
 L'angle d'incidence limite permettant la réfraction se calcule en cherchant un angle réfracté de $\pm \pi/2$. On obtient: 
 
-\begin{equation}
+$$
 i_0 = \pm \arcsin\left ( \frac{n_2}{n_1}\right)
-\end{equation}
+$$
 ````
 
 ````{sidebar} Angle de réfraction limite.

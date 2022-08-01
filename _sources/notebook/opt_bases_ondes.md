@@ -53,9 +53,9 @@ Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1
 :class: full-width
 On rappelle que pour une onde monochromatique de fréquence $\nu$, de longueur d'onde $\lambda$ et de célérité $c_0$, on la relation :
 
-\begin{equation}
+$$
 \lambda \nu = c_0
-\end{equation}
+$$
 ````
 
 

@@ -45,9 +45,10 @@ _La correction de ces exercices méthodes est en ligne._
 >
 >Il suffit de remplacer $\overline{OH'}$ dans la relation de conjugaison
 >
-\begin{equation}
+
+$$
 - \frac{1}{\overline{OH}} - \frac{1}{\overline{OH}} = \frac{1}{f'} \Longrightarrow \boxed{\overline{OH} = - 2 f' = - \overline{OH'}}
-\end{equation}
+$$
 ````
 
 ```{margin} Remarque
