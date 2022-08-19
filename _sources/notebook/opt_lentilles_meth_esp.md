@@ -63,7 +63,7 @@ Les couleurs donnent la correspondance entre les zones objets et images
 ```
 
 
-````{dropdown} Remarque
+````{topic} Remarque
 
 __Points principaux__ On remarquera que les points qui délimitent les zones d'espaces conjugués sont des points importants pour l'objet (l'infini, le foyer __objet__, le centre optique) ou pour l'image (l'infini, le foyer __image__, le centre optique).
 ````

@@ -47,7 +47,7 @@ La démonstration passe par plusieurs étapes:
 3. Isoler les rapports de grandissement $\frac{\overline{A'B'}}{\overline{AB}}$.
 4. Déduire des équations obtenues les expressions voulues.
 
-__1.__ Nous allons le démontrer pour une lentille convergente. Il faut s'entraîner à le démontrer pour une lentille divergente. Le schéma de construction est donné ci-dessous. On utilise trois rayons entrant:
+__1.__ Nous allons le démontrer pour une lentille convergente. Il faut s'entraîner à le démontrer pour une lentille divergente. Le schéma de construction est donné ci-dessous. On utilise trois rayons entrants:
 
 * celui passant par le centre optique qui ressort non dévié.
 * celui passant par le foyer principal objet qui ressort parallèle à l'axe optique
@@ -58,7 +58,7 @@ __1.__ Nous allons le démontrer pour une lentille convergente. Il faut s'entra�
 :align: center
 ```
 
-__2.__On remarque que:
+__2.__ On remarque que:
 
 * les triangles OAB et OA'B'
 * les triangles F'OI et F'A'B'
@@ -72,7 +72,7 @@ sont tous semblables deux à deux. On peut donc écrire l' égalité des rapport
 	\frac{\overline{A'B'}}{\overline{F'A'}} &= \frac{\overline{OI}}{\overline{F'O}}
 \end{align*}
 
-__3.__soit les grandissements (en remarquant que $\overline{OI} = \overline{AB}$ et $\overline{OJ} = \overline{A'B'}$):
+__3.__ Soit les grandissements (en remarquant que $\overline{OI} = \overline{AB}$ et $\overline{OJ} = \overline{A'B'}$):
 
 \begin{align*}
 	\frac{\overline{A'B'}}{\overline{AB}} &= \frac{\overline{OA'}}{\overline{OA}}\\
@@ -83,7 +83,7 @@ __3.__soit les grandissements (en remarquant que $\overline{OI} = \overline{AB}$
 
 ````{important} __Démonstration(suite)__
 
-__4.__En égalisant les deux dernières relations, il vient directement (avec $\overline{FO} = - \overline{F'O} = f')$:
+__4.__ En égalisant les deux dernières relations, il vient directement (avec $\overline{FO} = - \overline{F'O} = f')$:
 
 $$
 \overline{FA} \times \overline{F'A'} = - f'^2

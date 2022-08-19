@@ -67,7 +67,7 @@ A' sera considéré comme l'image de l'objet A par le système optique et on dir
 On utilisera ici un miroir sphérique pour réaliser la simulation du tracé des rayons. On utilise un point objet à l'infini dans un premier temps puis une simulation sur un objet à distance finie sera produite.
 
 
-````{tabbed} Infini sur l'axe optique
+````{topic} Infini sur l'axe optique
 ```{figure} ./images/optique_spherique_proche_axe.jpg
 :name: spherique_axe
 :align: center
@@ -75,7 +75,7 @@ On utilisera ici un miroir sphérique pour réaliser la simulation du tracé des
 Objet à l'infini sur l'axe optique (__pas A__). Sélection des rayons proches.
 ```
 ````
-````{tabbed} Infini hors de l'axe optique
+````{topic} Infini hors de l'axe optique
 ```{figure} ./images/optique_spherique_peu_incline.jpg
 :name: spherique_incline
 :align: center
@@ -83,7 +83,7 @@ Objet à l'infini sur l'axe optique (__pas A__). Sélection des rayons proches.
 Objet à l'infini hors de l'axe optique (__pas A__). Sélection des rayons peu inclinés ET proches.
 ```
 ````
-````{tabbed} Objet proche
+````{topic} Objet proche
 ```{figure} ./images/optique_spherique_objet_fini.jpg
 :name: spherique_fini
 :align: center
@@ -96,7 +96,7 @@ Objet à distance finie (point A). Sélection des rayons peu inclinés ET proche
 
 ````{important}
 :class: full-width
-Les __conditions de Gauss__ (ou condition des rayons paraxiaux) sont un cadre théorique et expérimental dans lequel on sélectionne uniquement les rayons sont satisfont aux deux conditions:
+Les __conditions de Gauss__ (ou condition des rayons paraxiaux) sont un cadre théorique et expérimental dans lequel on sélectionne uniquement les rayons qui sont satisfont aux deux conditions:
 
 * ils ne doivent pas être trop inclinés par rapport à l'axe optique.
 * ils doivent entrer dans le système optique en un point proche de l'axe optique.
@@ -108,7 +108,7 @@ __Un système centré placé dans les conditions de Gauss réalise un stigmatism
 Si cette propriété est hors programme, on verra qu'elle sera nécessaire pour expliquer la méthode de recherche d'image par les lentilles.
 ```
 ````{topic} Complément : Aplanétisme (HP)
-Il n'est pas nécessaire de le retenir mais se placer dans les conditions de Gauss permet aussi de réaliser un aplanétisme approché.
+Il n'est pas nécessaire de le retenir mais se placer dans les conditions de Gauss permet aussi de réaliser un aplanétisme approché. L'_aplanétisme_ est le fit qu'un objet dans un plan frontal possède une image qui est aussi dans un plan frontal. Cette propriété sera utile pour justifier les recherches d'image par des lentilles minces.
 ````
 
 ### Conditions de Gauss: Réalisation expérimentale

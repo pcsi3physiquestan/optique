@@ -14,11 +14,10 @@ kernelspec:
   name: python3
 ---
 
-# Méthodes : Etude qualitatives
+# Méthodes : Etudes qualitatives
 _La correction de ces exercices méthodes est en ligne._
-## Lentille convergente
 
-````{admonition} Exercice 
+````{admonition} Lentille convergente 
 :class: attention
 
 1. On considère une lentille convergente de distance focale image f'. Déterminer le deux points sur l'axe optique H et H' tels qu'un objet dans le plan frontal de H a une image dans le plan frontal de H' et tel que le grandissement soit égale (algébriquement) à -1
@@ -64,10 +63,7 @@ Il est important de savoir justifier un tracé à l'écrit.
 ```
 ````
 
-
-## Lentille divergente
-
-````{admonition} Exercice 
+````{admonition} Lentille divergente 
 :class: attention
 
 On considère une lentille divergente de distance focale image f'= - 10cm et un objet AB de taille h = 2cm (A est sur l'axe optique) situé à d = 20cm en amont du foyer principal objet.

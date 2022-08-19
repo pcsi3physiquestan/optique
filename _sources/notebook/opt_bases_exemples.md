@@ -35,7 +35,7 @@ L'oeil d'un observateur se trouve à la verticale de centre de la pièce à une 
 
 1. On appelle O le centre de la pièce. Déterminer l'équation que vérifie l'ouverture angulaire $\theta_0$ du faisceau issu du point O et qui entre dans l’oeil en fonction du rayon de la pupille $R_1$.
 
-2. **Faire l'application numérique pour $H_0 = H_1$ en choisissant  des valeurs numériques plausibles. On sera amener à simplifier l'équation précédente AVANT de la résoudre en justifiant les simplification réalisée par des ordres de grandeurs.
+2. **Faire l'application numérique pour $H_0 = H_1$ en choisissant  des valeurs numériques plausibles. On sera amener à simplifier l'équation précédente AVANT de la résoudre en justifiant les simplifications réalisées par des ordres de grandeurs.
 ````
 
 ````{topic} Correction

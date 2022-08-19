@@ -28,7 +28,7 @@ Une onde se propage à une vitesse - une célérité - donnée qui dépend du mi
 
 On définit l'indice de réfraction n d'un milieu par : $n = \frac{c}{c_{milieu}}$.
 
-* n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de lalumière dans le vide.
+* n est toujours supérieur ou égale à 1 et $c = 3 \times 10^8 m.s^{-1}$ est la vitesse de la lumière dans le vide.
 
 * Un milieu est dit __dispersif__ si son indice de réfraction dépend de la longueur d'onde.
 ````

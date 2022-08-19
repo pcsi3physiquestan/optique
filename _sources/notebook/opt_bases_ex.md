@@ -16,7 +16,7 @@ kernelspec:
 # Maitriser les méthodes
 De manière générale dans les cours, ces parties présentent (à traiter dans l'ordre):
 * des exercices-types (Méthodes) montrant les méthodes d'applications des théorèmes et principes du cours. __Leur correction est en ligne.__ Il faut les comprendre et savoir les refaire.
-* des activités (Activités) montrant des applications des théorèmes (méthodes à savoir refaire) __avec des conclusions des exercices qui doivent être apprises et que vous devez savoir redémontrer.__ (pas dans ce cours)
+* des activités (Activités) montrant des applications des théorèmes (méthodes à savoir refaire) __avec des conclusions des exercices qui doivent être apprises et que vous devez savoir redémontrer.__ (ici le tracé qualitatif des rayons et la réfraction totale).
 * des exercices d'application (Application) : exercices de bases pouvant être faits dès le début travail du cours pour voir si l'on maitrise les méthodes de base.
     * Pour ce chapitre, les exercices d'applications sont [accessible en ligne](https://stanislas.edunao.com/mod/quiz/view.php?id=12780) _(connection nécessaire)_.
     * Vous trouverez aussi [un questionnaire de cours](https://stanislas.edunao.com/mod/resource/view.php?id=12781) pour s'entraîner à répondre __rapidement__ à ces questions _(connection nécessaire)_.

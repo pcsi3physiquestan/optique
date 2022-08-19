@@ -108,7 +108,7 @@ Soleil dans le dos, sous un angle $a_{\max} - \alpha$
 ## La déviation par le prisme
 Il s'agit d'une activité d'approfondissement permettant d'essayer de s'entraîner sur un exercice plus difficile. Certains points pourront être utiles plus tard en Travaux Pratiques.
 
-Principe général: On considère un prisme triangulaire d'angle au sommet A dont la base est posée horizontalement sur un socle. On envoie un faisceau lumineux constitué de rayon parallèle sur une des face et on observe les rayons sortant par l'autre face (les deux faces constituant l'angle A). Ce seront les deux faces utiles du prisme. Le faisceau étant parallèle l'angle que font les rayons avec la première face du prisme est toujours la même, on note cet angle i. Il vient par les lois de Descartes que les angles formées par les différents rayons réfractés seront les mêmes quelques soit le rayon considéré. On va donc considéré un seul rayon pour l'étude.
+Principe général: On considère un prisme triangulaire d'angle au sommet A dont la base est posée horizontalement sur un socle. On envoie un faisceau lumineux constitué de rayon parallèle sur une des face et on observe les rayons sortant par l'autre face (les deux faces constituant l'angle A). Ce seront les deux faces utiles du prisme. Le faisceau étant parallèle l'angle que font les rayons avec la première face du prisme est toujours la même, on note cet angle i. Il vient par les lois de Descartes que les angles formées par les différents rayons réfractés seront les mêmes quelques soit le rayon considéré. On va donc considérer un seul rayon pour l'étude.
 
 But: On désire étudier la déviation du rayon lumineux D en fonction de l'angle d'incidence i. L'air extérieur est considéré comme un milieu d'indice 1.
 

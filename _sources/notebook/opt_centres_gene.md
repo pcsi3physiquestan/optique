@@ -85,7 +85,7 @@ __Nature de l'objet__
 
 Un objet n'est pas nécessairement matériel (source primaire ou secondaire), il peut être aussi formé au concours de rayons transmis par un premier système optique (on dira qu'il est l'image - cf. suite - donnée par le premier système optique) avant d'entrée dans le second système optique (dont il est donc l'objet).
 
-Exemple: Un oeil humaine utilise un télescope. Le téléscope vise une étoile (qui est un objet pour le téléscope) et en donne une image (grossie normalement). C'est cette image qui est vue par l'oeil. Elle est donc l'objet pour système optique {oeil} (plus exactement le cristalin).
+Exemple: Un oeil humain utilise un télescope. Le téléscope vise une étoile (qui est un objet pour le téléscope) et en donne une image (grossie normalement). C'est cette image qui est vue par l'oeil. Elle est donc l'objet pour système optique {oeil} (plus exactement le cristalin).
 
 $$
 \textrm{Objet : Etoile} \underbrace{\longrightarrow}_{Lunette astronomique} \underbrace{\textrm{Image intermédiaire}}_{\begin{cases}&\textrm{Image pour la lunette}\\&\textrm{Objet pour l'oeil}\end{cases}} \underbrace{\longrightarrow}_{\textrm{Cristallin de l'oeil}} \textrm{Image finale sur la rétine}

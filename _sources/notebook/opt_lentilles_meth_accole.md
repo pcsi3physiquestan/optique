@@ -20,11 +20,11 @@ Nous allons étudier ici le cas de deux lentilles minces accolées, __c'est-à-d
 
 ````{admonition} Exercice 
 :class: attention
-Montrer que __deux lentilles accolées de vergence $V_1$ et $V_2$ sont équivalentes à une seule lentille dont le centre optique est placé au même endroit que ceux des lentilles accolées et dont la vergence est $V = V_1 + V_2$
+Montrer que __deux lentilles accolées__ de vergence $V_1$ et $V_2$ sont équivalentes à une seule lentille dont le centre optique est placé au même endroit que ceux des lentilles accolées et dont la vergence est $V = V_1 + V_2$
 ````
 
 ````{topic} Correction
-Soit un objet $A$ dont l'image par $L_1$ (image intermédiaire) et appelé $A_1$. On appelle $A_2$ l'image de $A_1$ par $L_2$ (image finale). $A$ est supposé sur l'axe optique. On note $O$ le centre optique __commun_ aux deux lentilles par hypothèse. On a donc le schéma de transformation:
+Soit un objet $A$ dont l'image par $L_1$ (image intermédiaire) et appelé $A_1$. On appelle $A_2$ l'image de $A_1$ par $L_2$ (image finale). $A$ est supposé sur l'axe optique. On note $O$ le centre optique __commun__ aux deux lentilles par hypothèse. On a donc le schéma de transformation:
 
 $$
 A \overbrace{\longrightarrow}^{L_1(O,f'_1)} A_1 \overbrace{\longrightarrow}^{L_2(O,f'_2)} A_2

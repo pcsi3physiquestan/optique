@@ -49,7 +49,9 @@ Un __faisceau lumineux__ est l'étendue de lumière issue d'un objet et - en gé
 
 ## Rayon lumineux et diffraction
 
+````{topic} Introduction
 On peut voir un rayon lumineux comme un faisceau de  section ponctuelle (donc nulle). Une idée pour isoler un rayon lumineux est donc d'utiliser un diaphragme de section ponctuelle (donc nulle). Celà permet d'avoir une vision de l'esprit de ce qu'est un rayon. En pratique, on peut chercher à le diaphragmer avec une section très très faible, mais... 
+````
 
 ````{margin}
 Le rayon lumineux est donc uniquement une _vision théorique_ (par la pensée) pour décrire le trajet de la lumière.
@@ -58,7 +60,7 @@ Le rayon lumineux est donc uniquement une _vision théorique_ (par la pensée) p
 
 Lorsqu'on essaie d'isoler un rayon lumineux comme précédemment et qu'on atteint une taille de diaphragme de l'ordre du micromètre (pour le visible - c'est-à-dire qu'elle devient de __l'ordre de la longueur d'onde__), la tâche augmente et l'on voit apparaître des anneaux autour de la tâche. On parle de phénomène de __diffraction.__
 
-Le phénomène de diffraction empêche de tendre rigoureusement vers un rayon lumineux isolé. Dans ces conditions, on ne peut même plus parler de rayon lumineux (il n'y a par exemple pas de correspondance entre un rayon avant et après le diaphragme.
+Le phénomène de diffraction empêche de tendre rigoureusement vers un rayon lumineux isolé. Dans ces conditions, on ne peut même plus parler de rayon lumineux (il n'y a par exemple pas de correspondance entre un rayon avant et après le diaphragme).
 
 ```{figure} ./images/bog-isolons_un_rayon.png
 :name: isolons

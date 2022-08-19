@@ -41,7 +41,7 @@ Foyer principal image (gauche) et objet (droite)
 ````
 
 ```{sidebar} Objet et image à l'infini
-* Il est fondamental de savoir reconnaître et représenter un objet ou une image à l'infin : ils ne sont pas représentés par des points mais par des faisceaux parallèles dont _l'angle par rapport à l'axe optique défini la position de l'objet/image à l'infini. On parle __d'angle sous lequel et vu l'objet__.
+* Il est fondamental de savoir reconnaître et représenter un objet ou une image à l'infini : ils ne sont pas représentés par des points mais par des faisceaux parallèles dont _l'angle par rapport à l'axe optique_ défini la position de l'objet/image à l'infini. On parle __d'angle sous lequel est vu l'objet__.
 ```
 ````{important} __Foyers secondaires objets et images__
 Les foyers _secondaires_ objet et image sont les points respectivement du plan focal objet ou image n'étant pas sur l'axe optique.

@@ -43,14 +43,12 @@ __Conséquence:__ On cherchera à placer l'image finale __à l'infini.__. On ét
 
 ## Types de systèmes
 
-````{panels}
 ```{important} 
 __Système afocal__
 
 Un système __afocal__ est un système donnant d'un objet à l'infini une image finale à l'infini.
 ```
----
-__Autres systèmes__
+````{sidebar} Autres systèmes
 Il existe d'autres systèmes visant des objets à distance finie: loupe, microscope, viseurs... Dans le cadre d'utilisation canonique, ces instruments renvoient néanmoins l'image finale à l'infini.
 ````
 
@@ -60,7 +58,7 @@ Il existe d'autres systèmes visant des objets à distance finie: loupe, microsc
 * Champ angulaire : écart angulaire maximal pouvant être vue par l'instrument d'optique.
 * Pouvoir de résolution : angle minimal nécessaire pour pouvoir distinguer (résoudre) deux objets visés.
 * Profondeur de champ : intervalle de position permettant d'être vue nette à travers l'instrument pour un réglage donné.
-*Latitude de mise au point : gamme de réglage (et position) possible de l'instrument d'optique permettant à l'oeil de l'observateur d'observer l'objet net (l'image finale vue donnée par l'instrument - donc l'objet vu par l'oeil - doit être entre le Punctum Proximum et le Punctum Remotum). La latitude de mise au point dépendant de l'oeil de l'observateur, on déterminer implicitement la latitude de mise au point du système {instrument + oeil}
+* Latitude de mise au point : gamme de réglage (et position) possible de l'instrument d'optique permettant à l'oeil de l'observateur d'observer l'objet net (l'image finale vue donnée par l'instrument - donc l'objet vu par l'oeil - doit être entre le Punctum Proximum et le Punctum Remotum). La latitude de mise au point dépendant de l'oeil de l'observateur, on déterminer implicitement la latitude de mise au point du système {instrument + oeil}
     * _En pratique, ces grandeurs dépendent du système d'observation derrière l'instrument (en pratique l'oeil de l'observateur). C'est pourquoi on parle en général du champ angulaire/résolution... du système {instrument + oeil}._
 ````
 

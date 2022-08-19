@@ -15,6 +15,11 @@ kernelspec:
 ---
 
 # Méthode : Recherche des éléments principaux
+````{topic} Méthodes présentées
+* L'utilisation de la géométrie et de la trigonométrie pour établir de relations mathématiques
+* L'utilisation des petits angles pour se placer dans les conditions de gauss
+* Dans les conditions de Gauss (ordre 1), on trouve normalement un résultat dépendant de la position de l'objet/image mais _pas du rayon choisi (ici de l'angle i)._ C'est le __stigmatisme approchée.__
+````
 
 ## Foyer image d'un miroir sphérique.
 
@@ -61,9 +66,4 @@ CI^2 &= \overrightarrow{CI} \cdot \overrightarrow{CI} = \left(\overrightarrow{CF
 >__Q3. Condition de Gauss__. Lorsque $d \ll R$, il vient que $i \ll 1$ donc $CF \approx \frac{R}{2}$
 >
 >Cette fois, la position du foyer ne dépend plus des rayons: en sélectionant les rayons paraxiaux (conditions de Gauss), on réalise un stigmatisme approché.
-````
-````{admonition} A retenir
-* L'utilisation de la géométrie et de la trigonométrie pour établir de relations mathématiques
-* L'utilisation des petits angles pour se placer dans les conditions de gauss
-* Dans les conditions de Gauss (ordre 1), on trouve normalement un résultat dépendant de la position de l'objet/image mais _pas du rayon choisi (ici de l'angle i)._ C'est le __stigmatisme approchée.__
 ````

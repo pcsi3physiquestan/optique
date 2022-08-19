@@ -67,7 +67,7 @@ On retiendra que lors du passage d'un milieu moins réfringent à un milieu plus
 On considère le cas où $n_2 < n_1 $.
 
 1. Le rayon réfracté s'éloigne-t-il ou se rapproche-t-il de la normale?
-2. Justifier que l'angle réfracté va atteinte une réfraction rasante (égale à $\pm \pi/2$ pour un angle d'incidence strictement inférieure à $\pm \pi/2$ (en valeur absolue). On notera $i_0$ la valeur limite de l'angle d'incidence.
+2. Justifier que l'angle réfracté va atteinte une réfraction rasante (égale à $\pm \pi/2$ pour un angle d'incidence strictement inférieure à $\pm \pi/2$. On notera $i_0$ la valeur limite de l'angle d'incidence.
 3. Que se passe-t-il si l'angle d'incidence est supérieure à $i_0$ ?
 ````
 
