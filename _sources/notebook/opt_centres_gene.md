@@ -47,7 +47,7 @@ Un système centré est un système optique - c'est-à-dire une série de dioptr
 ````{margin}
 On parle aussi de rayon _réfléchi_ pour un rayon sortant d'un système optique après réflexion sur un miroir.
 ````
-```{figure} ./images/optique_sys_centres_virtuel.jpeg
+```{figure} ./images/optique_sys_centres_virtuel.png
 :name: virtuel
 :align: center
 ```
