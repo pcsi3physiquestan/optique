@@ -31,7 +31,7 @@ Pour les constructions géométriques et les applications numériques, on prendr
 * Diamètre l'objectif: $D_1 = 4 \rm{cm}$
 * Diamètre l'oculaire: $D_2 = 2 \rm{cm}$
 
-On notera les foyers objets et images respectivement $F_1, F_2$ et $F_1, F_2$.
+On notera les foyers objets et images respectivement $F_1, F_2$ et $F'_1, F'_2$.
 
 On notera A un objet à l'infini sur l'axe optique, $A'$ son image par l'objectif (image intermédiaire) et $A_1$ son image finale
 
@@ -86,7 +86,7 @@ On suppose dans un premier temps que la résolution de la lunette est due au pou
 ````{admonition} Exercice - Latitude de mise au point
 :class: attention
 1. L'oeil accommodant, l'objet visé peut ne pas être strictement à l'infini. Rappeler ce qu'est le processus d'accommodation.
-2. Déterminer la position $A_1$ de l'image finale d'un objet réel visé situé en un point A qui n'est pas à l'infini. On exprimera la distance $\overline{F_2 A_1}$ en fonction de $\overline{F_1 A}$.
+2. Déterminer la position $A_1$ de l'image finale d'un objet réel visé situé en un point A qui n'est pas à l'infini. On exprimera la distance $\overline{F'_2 A_1}$ en fonction de $\overline{F_1 A}$.
 3. L'observateur place son oeil sur le cercle oculaire. Déterminer la latitude de mise au point.
 ````
 
