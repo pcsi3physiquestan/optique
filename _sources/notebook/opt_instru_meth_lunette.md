@@ -92,6 +92,10 @@ On suppose dans un premier temps que la résolution de la lunette est due au pou
 
 ````{admonition} Exercice - Lunette réelle
 :class: attention
+Définitino : On appelle le champ (angulaire) de pleine lumière, l'angle maximal sous lequel un objet peut-être vu par la lunette et où le faisceau sortant est intégralement le faisceau entrant. Quand on observe le ciel, la faible luminosité empêche souvent de visualiser des objets qui ne sont pas dans le champ de pleine lumière (même si une partie de la lumière qui arrive jusqu'à la lunette en ressort).
+
+On peut montrer que ce champ a pour expression: $\tan(\theta_{\max})=\frac{1}{2} \frac{D_2 f_1 - D_1 f_2}{f_1 (f_1+f_2)}$.
+
 On s'intéresse à une lunette réelle. Ses caractéristiques sont:
 * Distance focale: 600 mm.
 * Diamètre de l'objectif: 50 mm.
@@ -111,8 +115,4 @@ On s'intéresse à une lunette réelle. Ses caractéristiques sont:
 2. Dans le cas d'un faisceau parallèle à l'axe optique, déterminer le diamètre du faisceau transmis. Faire un schéma représentant le faisceau et son passage à travers la lunette. Plus ce diamètre est grand, plus la lunette est lumineuse, c'est pourquoi, outre le grossissement, le diamètre de l'objectif est déterminant dans la qualité de la lunette.
 3. Faire le même schéma pour un faisceau faisant un angle $\theta=30^{\circ}$ par rapport à l'axe optique. Que se passe-t-il? En déduire que le faisceau "utile" entrant, c'est-à-dire l'ensemble des rayons entrant dans la lunette qui ressortent effectivement dépend de l'angle. Quelle est la conséquence sur l'observation?
 4. Déterminer graphiquement l'angle maximal pour lequel la section du faisceau "utile" est encore maximale (c'est-à-dire vaut la section déterminée pour le cas d'un faisceau parallèle à l'axe optique). On notera cette angle $\theta_{\max}$.
-
-On appelle cet angle le champ (angulaire) de pleine lumière. Quand on observe le ciel, la faible luminosité empêche souvent de visualiser des objets qui ne sont pas dans le champ de pleine lumière (même si une partie de la lumière qui arrive jusqu'à la lunette en ressort).
-
-On peut montrer que ce champ a pour expression: $\tan(\theta_{\max})=\frac{1}{2} \frac{D_2 f_1 - D_1 f_2}{f_1 (f_1+f_2)}$.
 ````
