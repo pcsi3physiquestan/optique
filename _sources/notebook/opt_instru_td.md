@@ -25,7 +25,7 @@ Un microscope optique permet d'observer des globules sanguins. Il est modélisab
 * $\times 40$ pour l'objectif, ce qui signifie que la valeur absolue du grandissement de l'objet $AB$ par l'objectif est de 40
 * $\times 10$ pour l'oculaire, ce qui signifie que le grossissement commercial ou rapport entre l'angle sous lequel on voit l'image à l'infini d'un objet à travers l'oculaire seul et l'angle sous lequel on voit ce même objet à l'oeil nu lorsqu'il est situé à la distance minimale de vision distincte $\delta=-25\rm{cm}$ vaut 10.
 * $n\sin u =\omega_0=0,65$ pour l'ouverture numérique ou la valeur de $n\sin(u)$ avec n le milieu dans lequel se trouve l'objectif et u l'angle maximum des rayons issus de A arrivant sur l'objectif.
-* $\Delta=16\rm{cm}$ pour l'intervalle optique ou distance entre le foyer image $F_1$ de l'objectif et le foyer objet $F_2$ de l'oculaire.
+* $\Delta=16\rm{cm}$ pour l'intervalle optique ou distance entre le foyer image $F'_1$ de l'objectif et le foyer objet $F_2$ de l'oculaire.
 
 
 ````{admonition} Exercice 
