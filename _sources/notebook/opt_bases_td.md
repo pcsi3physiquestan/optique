@@ -138,7 +138,7 @@ Déviation par le prisme
 Voici la correction complète de cet exercice, elle servira pour un TP ultérieur.
 
 ```{figure} ./images/optique_prisme_deviation_corr.jpg
-:name: prisme
+:name: prisme_corr
 :align: center
 :width: 60%
 Déviation par le prisme
