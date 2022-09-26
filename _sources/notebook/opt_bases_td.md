@@ -133,3 +133,89 @@ Déviation par le prisme
 7. En général, le prisme choisi est très dispersif c'est-à-dire que l'indice de réfraction n dépend fortement (tout est relatif) de la longueur d'onde du faisceau incident $\lambda$. Expliquer pourquoi un tel dispositif permet la réaliser d'un spectroscope, c'est-à-dire un appareil permettant de déterminer le spectre d'un signal lumineux.
 8. (Recherche) Expliquez comment Newton a utiliser cette méthode pour montrer que la lumière blanche était composé d'un grand nombre de radiations "élémentaires". Commenter ce terme (et précisez le terme utilisé aujourd'hui).
 ````
+
+````{topic} Correction
+Voici la correction complète de cet exercice, elle servira pour un TP ultérieur.
+
+```{figure} ./images/optique_prisme_deviation_corr.jpg
+:name: prisme
+:align: center
+:width: 60%
+Déviation par le prisme
+```
+__1.__ Les loi de Snell-Descartes pour la réfraction en I et I' s'écrivent:
+
+$$
+sin i = n sin r;\ \ sin i' = n sin r'
+$$
+
+__2.__ Dans le quadrilatère AIHI', la somme des angles s'écrit $\widehat{IHI'} + \frac{\pi}{2} + A + \frac{\pi}{2} = 2 \pi$ et dans le triangle IHI' $\widehat{IHI'} + r + r' = \pi$. Il vient:
+
+$$
+A = r + r'
+$$
+
+De plus dans le quadrilatère GIHI' : $\widehat{IHI'} + i + (\pi - D) + i' = 2 \pi$. Il vient:
+
+$$
+D = i + i' - A
+$$
+
+__3.__ Lorsque i augmente, r augmente et r' diminue donc i' diminue. Il vient que le cas de réflexion totale risque d'arriver pour des angles $i$ faibles. La limite de réflexion totale est pour $r' = \arcsin \frac{1}{n}$ soit $r = A - \arcsin \frac{1}{n}$ soit:
+
+$$
+i = i_0 = \arcsin \left(n \sin \left ( A - \arcsin \frac{1}{n}\right)\right)
+$$
+
+Les gammes de valeurs permettant d'avoir un rayon sortant sont donc $i_0 \leq i \leq \frac{\pi}{2}$. A.N. : $i_0 = 28 ^{\circ}$
+
+Si l'angle $A$ est trop grand, $i_0$ n'est pas défini: tous les angles $i$ donnent une réflexion totale, on parle de "prisme à réflexion totale" (utilisé dans les jumelles par exemples).
+
+Si $i=i_0$, alors $i'=\frac{\pi}{2}$ soit $D = i_0 + \frac{\pi}{2} - A$.
+Si $i=\frac{\pi}{2}$, alors $i'=i_0$ soit $D = i_0 + \frac{\pi}{2} - A$.
+
+__4.__ $D(i)$ étant une fonction continue non constante et $D(i_0) = D(\pi/2)$, il vient qu'il y a forcément un extremum entre les deux.
+
+__5.__ On calcul $\frac{\rm{dD}}{\rm{di}}$:
+
+$$ 
+\frac{\rm{dD}}{\rm{di}} = \frac{\rm{di}}{\rm{di}} + \frac{\rm{di'}}{\rm{di}} - \frac{\rm{dA}}{\rm{di}} = 1 - \frac{\rm{di'}}{\rm{dr'}}\frac{\rm{dr'}}{\rm{dr}}\frac{\rm{dr}}{\rm{di}}
+$$
+
+Or, des différentes relations précédentes, il vient:
+
+\begin{align*}
+  n \cos r' &= \cos i' \frac{\rm{di'}}{\rm{dr'}}\\
+  n \cos r \frac{\rm{dr}}{\rm{di}} &= \cos i \\
+  0 &= 1 + \frac{\rm{dr'}}{\rm{dr}}
+\end{align*}
+
+donc:
+
+$$  
+\frac{\rm{dD}}{\rm{di}} = 1 - \frac{\cos r' \cos i}{\cos r \cos i'}
+$$
+
+Au cas extrême $(i=i_0, i'=\pi/2)$, $D = -\infty$.
+Au cas extrême $(i'=i_0, i=\pi/2)$, $D = 1$.
+
+Donc, la dérivée s'annule forcément, il y aura au moins un extremum et au moins un minimum (passage d'une valeur négative à une valeur positive).
+
+__6.__ Sous l'hypothèse d'unicité, il vient que $i=i'$ au minimum de déviation $D_m$ (sinon si $i=i_1 \new i' = i_2$ pour $D = D_m$, alors $D=D_m$ pour $i=i_2; i' = i_1$ par retour inverse et relation trouvée précédemment, il n'y aurait pas unicité). Il vient (on pose $i = i_m$ et $r = r_m$ au minimum de déviation):
+
+\begin{align*}
+  i_m &= \frac{A+D}{2}\\
+  r_m &= \frac{A}{2}
+\end{align*}
+
+soit avec Snell-Descartes:
+
+$$
+\sin \frac{A+D}{2} = n  \sin \frac{A}{2}
+$$
+
+__7.__ L'indice de réfraction dépendant de la longueur d'onde, ces dernières seront séparées par le prisme. L'indice de réfraction étant propre au prisme comme l'angle A, il vient qu'en utlisant une lampe dont les longueurs d'onde sont connues, on peut associer à différentes longueurs d'onde un angle de déviation minimal $D_{m,i}(\lambda_i)$ puis par interpolation la fonction $D_m(\lambda)$. On peut ensuite utiliser cette courbe d'étalonnage pour, en mesurant un angle de déviation $D_m$, remonter à une longueur d'onde inconnue.
+
+__8.__"élémentaires" = "monochromatique". Il a placé un deuxième prisme après le premier en ayant isolé une couleur: celle-ci ne se séparait pas à nouveau en plusieurs couleurs contrairement à la lumière différenciant ainsi une lumière polychromatique d'une lumière monochromatique.
+
+````

@@ -614,6 +614,72 @@
 <li><p>(Recherche) Expliquez comment Newton a utiliser cette méthode pour montrer que la lumière blanche était composé d’un grand nombre de radiations “élémentaires”. Commenter ce terme (et précisez le terme utilisé aujourd’hui).</p></li>
 </ol>
 </div>
+<div class="topic">
+<p class="topic-title">Correction</p>
+<p>Voici la correction complète de cet exercice, elle servira pour un TP ultérieur.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/optique_prisme_deviation_corr.jpg"><img alt="../_images/optique_prisme_deviation_corr.jpg" src="../_images/optique_prisme_deviation_corr.jpg" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Déviation par le prisme</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>1.</strong> Les loi de Snell-Descartes pour la réfraction en I et I’ s’écrivent:</p>
+<div class="math notranslate nohighlight">
+\[
+sin i = n sin r;\ \ sin i' = n sin r'
+\]</div>
+<p><strong>2.</strong> Dans le quadrilatère AIHI’, la somme des angles s’écrit <span class="math notranslate nohighlight">\(\widehat{IHI'} + \frac{\pi}{2} + A + \frac{\pi}{2} = 2 \pi\)</span> et dans le triangle IHI’ <span class="math notranslate nohighlight">\(\widehat{IHI'} + r + r' = \pi\)</span>. Il vient:</p>
+<div class="math notranslate nohighlight">
+\[
+A = r + r'
+\]</div>
+<p>De plus dans le quadrilatère GIHI’ : <span class="math notranslate nohighlight">\(\widehat{IHI'} + i + (\pi - D) + i' = 2 \pi\)</span>. Il vient:</p>
+<div class="math notranslate nohighlight">
+\[
+D = i + i' - A
+\]</div>
+<p><strong>3.</strong> Lorsque i augmente, r augmente et r’ diminue donc i’ diminue. Il vient que le cas de réflexion totale risque d’arriver pour des angles <span class="math notranslate nohighlight">\(i\)</span> faibles. La limite de réflexion totale est pour <span class="math notranslate nohighlight">\(r' = \arcsin \frac{1}{n}\)</span> soit <span class="math notranslate nohighlight">\(r = A - \arcsin \frac{1}{n}\)</span> soit:</p>
+<div class="math notranslate nohighlight">
+\[
+i = i_0 = \arcsin \left(n \sin \left ( A - \arcsin \frac{1}{n}\right)\right)
+\]</div>
+<p>Les gammes de valeurs permettant d’avoir un rayon sortant sont donc <span class="math notranslate nohighlight">\(i_0 \leq i \leq \frac{\pi}{2}\)</span>. A.N. : <span class="math notranslate nohighlight">\(i_0 = 28 ^{\circ}\)</span></p>
+<p>Si l’angle <span class="math notranslate nohighlight">\(A\)</span> est trop grand, <span class="math notranslate nohighlight">\(i_0\)</span> n’est pas défini: tous les angles <span class="math notranslate nohighlight">\(i\)</span> donnent une réflexion totale, on parle de “prisme à réflexion totale” (utilisé dans les jumelles par exemples).</p>
+<p>Si <span class="math notranslate nohighlight">\(i=i_0\)</span>, alors <span class="math notranslate nohighlight">\(i'=\frac{\pi}{2}\)</span> soit <span class="math notranslate nohighlight">\(D = i_0 + \frac{\pi}{2} - A\)</span>.
+Si <span class="math notranslate nohighlight">\(i=\frac{\pi}{2}\)</span>, alors <span class="math notranslate nohighlight">\(i'=i_0\)</span> soit <span class="math notranslate nohighlight">\(D = i_0 + \frac{\pi}{2} - A\)</span>.</p>
+<p><strong>4.</strong> <span class="math notranslate nohighlight">\(D(i)\)</span> étant une fonction continue non constante et <span class="math notranslate nohighlight">\(D(i_0) = D(\pi/2)\)</span>, il vient qu’il y a forcément un extremum entre les deux.</p>
+<p><strong>5.</strong> On calcul <span class="math notranslate nohighlight">\(\frac{\rm{dD}}{\rm{di}}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ 
+\frac{\rm{dD}}{\rm{di}} = \frac{\rm{di}}{\rm{di}} + \frac{\rm{di'}}{\rm{di}} - \frac{\rm{dA}}{\rm{di}} = 1 - \frac{\rm{di'}}{\rm{dr'}}\frac{\rm{dr'}}{\rm{dr}}\frac{\rm{dr}}{\rm{di}}
+\]</div>
+<p>Or, des différentes relations précédentes, il vient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  n \cos r' &amp;= \cos i' \frac{\rm{di'}}{\rm{dr'}}\\
+  n \cos r \frac{\rm{dr}}{\rm{di}} &amp;= \cos i \\
+  0 &amp;= 1 + \frac{\rm{dr'}}{\rm{dr}}
+\end{align*}\]</div>
+<p>donc:</p>
+<div class="math notranslate nohighlight">
+\[  
+\frac{\rm{dD}}{\rm{di}} = 1 - \frac{\cos r' \cos i}{\cos r \cos i'}
+\]</div>
+<p>Au cas extrême <span class="math notranslate nohighlight">\((i=i_0, i'=\pi/2)\)</span>, <span class="math notranslate nohighlight">\(D = -\infty\)</span>.
+Au cas extrême <span class="math notranslate nohighlight">\((i'=i_0, i=\pi/2)\)</span>, <span class="math notranslate nohighlight">\(D = 1\)</span>.</p>
+<p>Donc, la dérivée s’annule forcément, il y aura au moins un extremum et au moins un minimum (passage d’une valeur négative à une valeur positive).</p>
+<p><strong>6.</strong> Sous l’hypothèse d’unicité, il vient que <span class="math notranslate nohighlight">\(i=i'\)</span> au minimum de déviation <span class="math notranslate nohighlight">\(D_m\)</span> (sinon si <span class="math notranslate nohighlight">\(i=i_1 \new i' = i_2\)</span> pour <span class="math notranslate nohighlight">\(D = D_m\)</span>, alors <span class="math notranslate nohighlight">\(D=D_m\)</span> pour <span class="math notranslate nohighlight">\(i=i_2; i' = i_1\)</span> par retour inverse et relation trouvée précédemment, il n’y aurait pas unicité). Il vient (on pose <span class="math notranslate nohighlight">\(i = i_m\)</span> et <span class="math notranslate nohighlight">\(r = r_m\)</span> au minimum de déviation):</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  i_m &amp;= \frac{A+D}{2}\\
+  r_m &amp;= \frac{A}{2}
+\end{align*}\]</div>
+<p>soit avec Snell-Descartes:</p>
+<div class="math notranslate nohighlight">
+\[
+\sin \frac{A+D}{2} = n  \sin \frac{A}{2}
+\]</div>
+<p><strong>7.</strong> L’indice de réfraction dépendant de la longueur d’onde, ces dernières seront séparées par le prisme. L’indice de réfraction étant propre au prisme comme l’angle A, il vient qu’en utlisant une lampe dont les longueurs d’onde sont connues, on peut associer à différentes longueurs d’onde un angle de déviation minimal <span class="math notranslate nohighlight">\(D_{m,i}(\lambda_i)\)</span> puis par interpolation la fonction <span class="math notranslate nohighlight">\(D_m(\lambda)\)</span>. On peut ensuite utiliser cette courbe d’étalonnage pour, en mesurant un angle de déviation <span class="math notranslate nohighlight">\(D_m\)</span>, remonter à une longueur d’onde inconnue.</p>
+<p><strong>8.</strong>”élémentaires” = “monochromatique”. Il a placé un deuxième prisme après le premier en ayant isolé une couleur: celle-ci ne se séparait pas à nouveau en plusieurs couleurs contrairement à la lumière différenciant ainsi une lumière polychromatique d’une lumière monochromatique.</p>
+</div>
 </div>
 </div>
 
