@@ -201,7 +201,7 @@ Au cas extrême $(i'=i_0, i=\pi/2)$, $D = 1$.
 
 Donc, la dérivée s'annule forcément, il y aura au moins un extremum et au moins un minimum (passage d'une valeur négative à une valeur positive).
 
-__6.__ Sous l'hypothèse d'unicité, il vient que $i=i'$ au minimum de déviation $D_m$ (sinon si $i=i_1 \neq i' = i_2$ pour $D = D_m$, alors $D=D_m$ pour $i=i_2; i' = i_1$ par retour inverse et relation trouvée précédemment, il n'y aurait pas unicité). Il vient (on pose $i = i_m$ et $r = r_m$ au minimum de déviation):
+__6.__ Sous l'hypothèse d'unicité, il vient que $i=i'$ au minimum de déviation $D_m$ (sinon si $i=i_1 \neq i' = i_2$ pour $D = D_m$, alors $D=D_m$ pour $i=i_2; i' = i_1$ par retour inverse et relation trouvée précédemment : il n'y aurait pas unicité). Il vient (on pose $i = i_m$ et $r = r_m$ au minimum de déviation):
 
 \begin{align*}
   i_m &= \frac{A+D}{2}\\
