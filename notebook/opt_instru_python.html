@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instruments d’optique &#8212; Optique géométrique</title>
+    <title>Physique et informatique - Entrainement &#8212; Optique géométrique</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,12 +52,11 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/opt_instru.html" />
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/optique/notebook/opt_instru_python.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Méthode : la loupe" href="opt_instru_loupe.html" />
-    <link rel="prev" title="Entrainement : Lentilles minces" href="opt_lentilles_td.html" />
+    <link rel="prev" title="Entrainement : Instruments d’optique" href="opt_instru_td.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -339,7 +338,7 @@
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="opt_instru.html">
    Instruments d’optique
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
@@ -347,7 +346,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="opt_instru_loupe.html">
      Méthode : la loupe
@@ -380,8 +379,8 @@
      Entrainement : Instruments d’optique
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="opt_instru_python.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Physique et informatique - Entrainement
     </a>
    </li>
@@ -427,11 +426,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/notebook/opt_instru.ipynb"><button type="button"
+            href="../_sources/notebook/opt_instru_python.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/opt_instru.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notebook/opt_instru_python.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -456,7 +455,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/opt_instru.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/opt_instru_python.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -479,18 +478,13 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#types-de-systemes">
-   Types de systèmes
+  <a class="reference internal nav-link" href="#etude-theorique">
+   Etude théorique
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#caracteristiques-generales-champ-resolution-et-profondeur-de-champ-en-ligne">
-   Caractéristiques générales: Champ, résolution et profondeur de champ (en ligne)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#le-grossissement">
-   Le grossissement
+  <a class="reference internal nav-link" href="#partie-code">
+   Partie code
   </a>
  </li>
 </ul>
@@ -504,88 +498,87 @@
         
               <div>
                 
-  <div class="section" id="instruments-d-optique">
-<h1>Instruments d’optique<a class="headerlink" href="#instruments-d-optique" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-competences admonition">
-<p class="admonition-title">Compétences</p>
+  <div class="section" id="physique-et-informatique-entrainement">
+<h1>Physique et informatique - Entrainement<a class="headerlink" href="#physique-et-informatique-entrainement" title="Permalink to this headline">¶</a></h1>
+<p>Ces exercices proposent de s’entrainer à l’utilisation de Python en physique dans le cadre de l’optique. On n’utilisera pas ici de méthode numérique particulière, simplement le tracé graphique et l’utilisation de <code class="docutils literal notranslate"><span class="pre">numpy</span></code>.</p>
+<div class="section" id="etude-theorique">
+<h2>Etude théorique<a class="headerlink" href="#etude-theorique" title="Permalink to this headline">¶</a></h2>
+<p>Cette partie est semblable à un exercice d’entrainement classique.</p>
+<p>On considère un axe Ox et on supposera par la suite que <em>tous les axes optiques des systèmes centrées mis en jeu sont confondus avec Ox.</em> On repèrera donc la position longitudinale de tout objet, image ou lentille par une coordonnées <span class="math notranslate nohighlight">\(x\)</span> sur cet axe. <strong>Attention, ces coordonnées ne sont PAS des distance algébriques comme dans les relations de conjugaison.</strong></p>
+<p>On choisi un axe <span class="math notranslate nohighlight">\(Oy\)</span> orienté de sorte à ce que <span class="math notranslate nohighlight">\((O, \overrightarrow{e}_x, \overrightarrow{e}_y)\)</span> soit orienté dans le sens trigonométrique. La côté <span class="math notranslate nohighlight">\(y\)</span> d’un objet ou d’une image sur cet axe correspondra à sa taille.</p>
+<div class="tip admonition">
+<p class="admonition-title">Mise en équation</p>
+<ol class="simple">
+<li><p>On considère une lentille placé à la coordonnée <span class="math notranslate nohighlight">\(x_L\)</span>, de distance focale <span class="math notranslate nohighlight">\(f'\)</span> et un objet lumineux situé à une coordonnée <span class="math notranslate nohighlight">\(x_O\)</span> et de taille <span class="math notranslate nohighlight">\(y_O\)</span>. Exprimer la position <span class="math notranslate nohighlight">\(x_I\)</span> et la taille <span class="math notranslate nohighlight">\(y_I\)</span> de l’image de cet objet par la lentille et montrer que :</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x_I &amp;= x_L + \frac{f' (x_O - x_L)}{f' + x_O - x_L}\\
+y_I &amp;= \frac{f'}{f' + x_0 - x_L}y_O
+\end{cases}
+\end{split}\]</div>
+</div>
+<p>On va considérer pour l’étude numérique un système à trois lentilles <span class="math notranslate nohighlight">\((L_2), (L_3), L_4)\)</span> telle que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+f_2 = f_4 &amp;= -6 \rm{cm}\\
+f_3 = 3.5 \rm{cm}
+\overline{O_2 O_4} = f_4 + \frac{f_2 f_3}{f_2 + f_3}
+\end{cases}
+\end{split}\]</div>
+<p>Les lentilles <span class="math notranslate nohighlight">\(L_2\)</span> et <span class="math notranslate nohighlight">\(L_4\)</span> sont fixes et la lentilles <span class="math notranslate nohighlight">\(L_3\)</span> peut se déplacer entre les deux lentilles.</p>
+<p>On rappelle que lorsque deux lentilles de distances focales <span class="math notranslate nohighlight">\(f_A\)</span> et <span class="math notranslate nohighlight">\(f_B\)</span> sont accolées, l’ensemble est équivalent à une seule lentille dont la distance focale est:</p>
+<div class="math notranslate nohighlight">
+\[
+f_{eq} = \frac{f_A f_B}{f_B + f_B}
+\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Cas extrêmes.</p>
+<p>Justifier que lorsque <span class="math notranslate nohighlight">\(L_3\)</span> est accolée à <span class="math notranslate nohighlight">\(L_2\)</span> ou à <span class="math notranslate nohighlight">\(L_4\)</span>, alors le système est afocal.</p>
+</div>
+</div>
+<div class="section" id="partie-code">
+<h2>Partie code<a class="headerlink" href="#partie-code" title="Permalink to this headline">¶</a></h2>
+<p>Vous allez maintenant vous entraîner à coder en Python. Lorsqu’on code des problèmes physiques, il est important de savoir sous quelle forme/type on va coder les objets physiques. Ici:</p>
 <ul class="simple">
-<li><p>Modéliser à l’aide de plusieurs lentilles un dispositif optique d’utilisation courante.</p></li>
-<li><p>Connaître les positions relatives des éléments d’un système afocal à deux lentilles.</p></li>
-<li><p>Savoir calculer des éléments caractéristiques (grossissement, grossissement commercial, profondeur de champ) pour un instrument d’optique donné (leur définition étant donnée).</p></li>
+<li><p>Les objets et les images seront représentés par des listes de deux flottants <code class="docutils literal notranslate"><span class="pre">obj</span> <span class="pre">&lt;-</span> <span class="pre">[xi,</span> <span class="pre">yi]</span></code> où <code class="docutils literal notranslate"><span class="pre">xi</span></code> et <code class="docutils literal notranslate"><span class="pre">yi</span></code> représentent les coordonnées de l’objet (position sur Ox et taille sur Oy).</p></li>
+<li><p>Les lentilles seront représentées par des listes de deux flottants <code class="docutils literal notranslate"><span class="pre">L1</span> <span class="pre">&lt;-</span> <span class="pre">[xL,</span> <span class="pre">f]</span></code> où <code class="docutils literal notranslate"><span class="pre">xL</span></code> représente la position sur Ox de la lentille et <code class="docutils literal notranslate"><span class="pre">f</span></code> la distance focale image de la lentille.</p></li>
 </ul>
+<div class="cell tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exemples</span>
+<span class="n">objet1</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="c1"># Objet ou image en x=-3 de taille y=1</span>
+<span class="n">lentille1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Lentilles en x=2 de distance focale f=-1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">objet</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Quelle valeur est affichee ? A quelle grandeur physique correspond-elle ?</span>
+</pre></div>
 </div>
-<p><em>Ce chapitre étant un chapitre d’application, la mise en contexte ci-dessous est relativement courte. On y trouvera princpalement des exercices.</em></p>
-<div class="topic">
-<p class="topic-title">Intérêt d’un instrument d’optique</p>
-<p>Un instrument d’optique peut avoir plusieurs buts suivant les raisons de son utilisation. On distingue les instruments d’optique devant être utilisés par l’oeil (loupe, lunette… ) et les instruments d’optique servant à projeter l’image (en vue d’un enregistrement: l’appareil photographique).</p>
-<p>Nous allons surtout développer l’étude des premiers (un devoir libre traite de l’appareil photographique). Ces instruments ont en général pour but de permettre l’observation d’objets dans les meilleures conditions c’est-à-dire:</p>
+</div>
+</div>
+<p>Lorsqu’on étudiera le système <span class="math notranslate nohighlight">\(L_2 + L_3 + L_4\)</span>, on supposera que la lentille <span class="math notranslate nohighlight">\(L_2\)</span> est placée en <span class="math notranslate nohighlight">\(O\)</span>, soit <span class="math notranslate nohighlight">\(x_2 = 0\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Codons</p>
+<ol class="simple">
+<li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">image(L:list,</span> <span class="pre">objet:list)</span> <span class="pre">--&gt;</span> <span class="pre">list</span></code> qui prend comme argument:</p>
 <ul class="simple">
-<li><p>l’image (finale) donnée par l’instrument sera placée au Punctum Remotum de l’oeil de l’utilisateur. Cette image sert d’objet pour l’oeil.</p></li>
-<li><p>l’image (finale) est en générale “grossie”, c’est-à-dire que <strong>l’angle sous laquelle on la voit avec l’instrument sera plus grand que l’angle sous lequel on la voyait à l’oeil nu.</strong></p></li>
-</ul>
-</div>
-<div class="sidebar">
-<p class="sidebar-title">Cas de l’utilisation par un oeil myope</p>
-<p>En général, les instruments sont analysés par le constructeur dans le cadre canonique précédent (on parle de caractéristiques “commerciales”). Mais une bonne partie des instruments proposent un réglage (l’oculaire - cf. suite) permettant d’adapter l’appareil à un utilisateur myope.</p>
-</div>
-<div class="topic">
-<p class="topic-title">Cas d’étude canonique</p>
-<p>L’étude canonique consiste à analyser les caractéristiques d’un instrument dans le cadre d’une utilisation par un <strong>oeil emmétrope.</strong></p>
-<p><strong>Conséquence:</strong> On cherchera à placer l’image finale <strong>à l’infini.</strong>. On étudiera très souvent les caractéristiques de l’instrument dans ce cadre.</p>
-</div>
-<div class="section" id="types-de-systemes">
-<h2>Types de systèmes<a class="headerlink" href="#types-de-systemes" title="Permalink to this headline">¶</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Système afocal</strong></p>
-<p>Un système <strong>afocal</strong> est un système donnant d’un objet à l’infini une image finale à l’infini.</p>
-</div>
-<div class="sidebar">
-<p class="sidebar-title">Autres systèmes</p>
-<p>Il existe d’autres systèmes visant des objets à distance finie: loupe, microscope, viseurs… Dans le cadre d’utilisation canonique, ces instruments renvoient néanmoins l’image finale à l’infini.</p>
-</div>
-</div>
-<div class="section" id="caracteristiques-generales-champ-resolution-et-profondeur-de-champ-en-ligne">
-<h2>Caractéristiques générales: Champ, résolution et profondeur de champ (en ligne)<a class="headerlink" href="#caracteristiques-generales-champ-resolution-et-profondeur-de-champ-en-ligne" title="Permalink to this headline">¶</a></h2>
-<div class="topic">
-<p class="topic-title">Caractéristiques générales</p>
-<ul class="simple">
-<li><p>Champ angulaire : écart angulaire maximal pouvant être vue par l’instrument d’optique.</p></li>
-<li><p>Pouvoir de résolution : angle minimal nécessaire pour pouvoir distinguer (résoudre) deux objets visés.</p></li>
-<li><p>Profondeur de champ : intervalle de position permettant d’être vue nette à travers l’instrument pour un réglage donné.</p></li>
-<li><p>Latitude de mise au point : gamme de réglage (et position) possible de l’instrument d’optique permettant à l’oeil de l’observateur d’observer l’objet net (l’image finale vue donnée par l’instrument - donc l’objet vu par l’oeil - doit être entre le Punctum Proximum et le Punctum Remotum). La latitude de mise au point dépendant de l’oeil de l’observateur, on déterminer implicitement la latitude de mise au point du système {instrument + oeil}</p>
-<ul>
-<li><p><em>En pratique, ces grandeurs dépendent du système d’observation derrière l’instrument (en pratique l’oeil de l’observateur). C’est pourquoi on parle en général du champ angulaire/résolution… du système {instrument + oeil}.</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">L</span></code>: une liste représentant une lentille</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">objet</span></code>: une liste représentant un objet<br />
+et qui renvoie une liste représentant l’image de l’objet par la lentille.</p></li>
 </ul>
 </li>
+<li><p>Se servir de la fonction image pour trouver la position de l’image finale donnée par le système <span class="math notranslate nohighlight">\(L_2 + L_3 + L_4\)</span> lorsque <span class="math notranslate nohighlight">\(L_3\)</span> est au milieu de <span class="math notranslate nohighlight">\(L_2\)</span> et <span class="math notranslate nohighlight">\(L_4\)</span>.</p></li>
+<li><p>Ecrire une procédure <code class="docutils literal notranslate"><span class="pre">systeme(objet:list)</span> <span class="pre">--&gt;</span> <span class="pre">list</span></code> qui prend comme argument un objet et qui renvoie la position finale après le système <span class="math notranslate nohighlight">\(L_2 + L_3 + L_4\)</span>.</p></li>
+<li><p>Pour 100 positions équiréparties d’objet entre 100m et 1m, tous de taille 1, obtenir, sous forme de liste les positions des images correspondant. On devra pour cela:</p>
+<ul class="simple">
+<li><p>Utiliser la fonction <code class="docutils literal notranslate"><span class="pre">numpy.linspace</span></code> pour créer un vecteur position d’objet équiréparties.</p></li>
+<li><p>Utiliser une boucle pour obtenir et stocker les positions d’image obtenues dans une liste.</p></li>
 </ul>
+</li>
+<li><p>Modifier le programme précédent pour obtenir aussi dans une seconde liste, les tailles des images.</p></li>
+<li><p>Tracer 2 graphiques représentant la position ou la taille de l’image en fonction de la position de l’objet.</p></li>
+</ol>
 </div>
-</div>
-<div class="section" id="le-grossissement">
-<h2>Le grossissement<a class="headerlink" href="#le-grossissement" title="Permalink to this headline">¶</a></h2>
-<div class="topic">
-<p class="topic-title">Problème du grandissement</p>
-<p>Le grandissement ne donne pas forcément d’information utile pour un objet/image vu par l’oeil car la taille apparente dépend de la distance à l’objet (un objet à l’infini a une taille… infinie).</p>
-<p>On utilise plutôt <em>l’angle sous lequel est vu un objet</em> et la tendance à <em>grossir</em> est associée au <strong>grossissement</strong> : un rapport <em>d’angle</em> sous lequel est vu l’objet avec l’appareil et à l’oeil nu.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Grossissement</strong></p>
-<p>On définit le <strong>grossissement</strong> d’un instrument d’optique comme le rapport (en valeur absolue) de l’angle sous lequel on voit l’objet à travers l’instrument d’optique sur l’angle sous lequel on voit l’objet à l’oeil nu.</p>
-</div>
-<div class="topic">
-<p class="topic-title">Cadre d’utilisation du grossissement</p>
-<p>Le grossissement dans le cas général dépend de la position de l’objet visé (si l’image n’est pas renvoyé à l’infini) et de la position de l’oeil (si l’objet n’est pas à l’infini).</p>
-<p>C’est pourquoi, on utilisera le grossissement principalement <strong>pour les instruments d’optique afocaux.</strong></p>
-<p>Comme nous allons le voir, pour les instruments visant un objets à distance finie, les constructeurs donnent une donnée commercial dans une utilisation canonique: on calcule ou mesure le grossissement dans des conditions optimales: l’image finale sera à l’infini et l’angle à l’oeil nu est le plus grand possible, d’où la définition:</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Grossissement commercial</strong></p>
-<p>On définit le <strong>grossissement commercial</strong> d’un instrument d’optique comme le rapport (en valeur absolue) de l’angle sous lequel on voit l’objet à travers l’instrument d’optique <strong>lorsque l’image finale est à l’infini</strong> sur l’angle sous lequel on voit l’objet à l’oeil nu <strong>lorsque l’objet est placé au Punctum Proximum de l’oeil soit à <span class="math notranslate nohighlight">\(d=25\rm{cm}\)</span></strong> (soit l’angle maximal sous lequel on peut voir l’objet à l’oeil nu).</p>
-</div>
-</div>
-<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -614,8 +607,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="opt_lentilles_td.html" title="previous page">Entrainement : Lentilles minces</a>
-    <a class='right-next' id="next-link" href="opt_instru_loupe.html" title="next page">Méthode : la loupe</a>
+    <a class='left-prev' id="prev-link" href="opt_instru_td.html" title="previous page">Entrainement : Instruments d’optique</a>
 
         </div>
         
