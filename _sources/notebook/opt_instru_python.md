@@ -91,7 +91,7 @@ Lorsqu'on étudiera le système $L_2 + L_3 + L_4$, on supposera que la lentille 
 ````
 
 ```{code-cell} ipython3
-:tags: [remove-output, remove-input]
+:tags: [remove-output, hide-input]
 #1
 def image(L: list, objet:list) -> list:
     xL = L[0]

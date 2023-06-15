@@ -579,7 +579,65 @@ et qui renvoie une liste représentant l’image de l’objet par la lentille.</
 <li><p>Tracer 2 graphiques représentant la position ou la taille de l’image en fonction de la position de l’objet.</p></li>
 </ol>
 </div>
-<div class="cell tag_remove-output tag_remove-input docutils container">
+<div class="cell tag_remove-output tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#1</span>
+<span class="k">def</span> <span class="nf">image</span><span class="p">(</span><span class="n">L</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">objet</span><span class="p">:</span><span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+    <span class="n">xL</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">xO</span> <span class="o">=</span> <span class="n">objet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">yO</span> <span class="o">=</span> <span class="n">objet</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">xL</span> <span class="o">+</span> <span class="p">(</span><span class="n">f</span> <span class="o">*</span> <span class="p">(</span><span class="n">xO</span> <span class="o">-</span><span class="n">xL</span><span class="p">)</span> <span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">f</span> <span class="o">+</span> <span class="n">xO</span> <span class="o">-</span> <span class="n">xL</span><span class="p">),</span> <span class="n">yO</span> <span class="o">*</span> <span class="n">f</span> <span class="o">/</span> <span class="p">(</span><span class="n">f</span> <span class="o">+</span> <span class="n">xO</span> <span class="o">-</span> <span class="n">xL</span><span class="p">)]</span>
+
+<span class="c1">#2</span>
+<span class="n">f2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">6</span>
+<span class="n">f4</span> <span class="o">=</span> <span class="o">-</span><span class="mi">6</span>
+<span class="n">f3</span> <span class="o">=</span> <span class="mf">3.5</span>
+<span class="n">x4</span> <span class="o">=</span> <span class="n">f4</span> <span class="o">+</span> <span class="n">f2</span> <span class="o">*</span> <span class="n">f3</span> <span class="o">/</span> <span class="p">(</span><span class="n">f2</span> <span class="o">+</span> <span class="n">f3</span><span class="p">)</span>
+<span class="n">image1</span> <span class="o">=</span> <span class="n">image</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">f2</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">image2</span> <span class="o">=</span> <span class="n">image</span><span class="p">([</span><span class="n">x4</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">f3</span><span class="p">],</span> <span class="n">image1</span><span class="p">)</span>
+<span class="n">imagef</span> <span class="o">=</span> <span class="n">image</span><span class="p">([</span><span class="n">x4</span><span class="p">,</span> <span class="n">f4</span><span class="p">],</span> <span class="n">image2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imagef</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1">#3</span>
+<span class="k">def</span> <span class="nf">systeme</span><span class="p">(</span><span class="n">objet</span><span class="p">:</span><span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+    <span class="n">f2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">6</span>
+    <span class="n">f4</span> <span class="o">=</span> <span class="o">-</span><span class="mi">6</span>
+    <span class="n">f3</span> <span class="o">=</span> <span class="mf">3.5</span>
+    <span class="n">x4</span> <span class="o">=</span> <span class="n">f4</span> <span class="o">+</span> <span class="n">f2</span> <span class="o">*</span> <span class="n">f3</span> <span class="o">/</span> <span class="p">(</span><span class="n">f2</span> <span class="o">+</span> <span class="n">f3</span><span class="p">)</span>
+    <span class="n">image1</span> <span class="o">=</span> <span class="n">image</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">f2</span><span class="p">],</span> <span class="n">objet</span><span class="p">)</span>
+    <span class="n">image2</span> <span class="o">=</span> <span class="n">image</span><span class="p">([</span><span class="n">x4</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">f3</span><span class="p">],</span> <span class="n">image1</span><span class="p">)</span>
+    <span class="n">imagef</span> <span class="o">=</span> <span class="n">image</span><span class="p">([</span><span class="n">x4</span><span class="p">,</span> <span class="n">f4</span><span class="p">],</span> <span class="n">image2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">imagef</span>
+
+<span class="c1">#4 et #5</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">pos_objet</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10000</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">images_pos</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">images_taille</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">pos</span> <span class="ow">in</span> <span class="n">pos_objet</span><span class="p">:</span>
+    <span class="n">imagef</span> <span class="o">=</span> <span class="n">systeme</span><span class="p">([</span><span class="n">pos</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="n">images_pos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">imagef</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">images_taille</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">imagef</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1">#6</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Position des images&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Objet(cm)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Image(cm)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pos_objet</span><span class="p">,</span> <span class="n">images_pos</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+<span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Taille des images&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Objet(cm)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Image(cm)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pos_objet</span><span class="p">,</span> <span class="n">images_taille</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
