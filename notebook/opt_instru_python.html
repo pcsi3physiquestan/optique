@@ -524,8 +524,8 @@ y_I &amp;= \frac{f'}{f' + x_0 - x_L}y_O
 \[\begin{split}
 \begin{cases}
 f_2 = f_4 &amp;= -6 \rm{cm}\\
-f_3 = 3.5 \rm{cm}
-\overline{O_2 O_4} = f_4 + \frac{f_2 f_3}{f_2 + f_3}
+f_3 &amp;= 3.5 \rm{cm}\\
+\overline{O_2 O_4} &amp;= f_4 + \frac{f_2 f_3}{f_2 + f_3}
 \end{cases}
 \end{split}\]</div>
 <p>Les lentilles <span class="math notranslate nohighlight">\(L_2\)</span> et <span class="math notranslate nohighlight">\(L_4\)</span> sont fixes et la lentilles <span class="math notranslate nohighlight">\(L_3\)</span> peut se déplacer entre les deux lentilles.</p>
@@ -551,7 +551,7 @@ f_{eq} = \frac{f_A f_B}{f_B + f_B}
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exemples</span>
 <span class="n">objet1</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="c1"># Objet ou image en x=-3 de taille y=1</span>
 <span class="n">lentille1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Lentilles en x=2 de distance focale f=-1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">objet</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Quelle valeur est affichee ? A quelle grandeur physique correspond-elle ?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">objet1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Quelle valeur est affichee ? A quelle grandeur physique correspond-elle ?</span>
 </pre></div>
 </div>
 </div>
@@ -567,7 +567,7 @@ f_{eq} = \frac{f_A f_B}{f_B + f_B}
 et qui renvoie une liste représentant l’image de l’objet par la lentille.</p></li>
 </ul>
 </li>
-<li><p>Se servir de la fonction image pour trouver la position de l’image finale donnée par le système <span class="math notranslate nohighlight">\(L_2 + L_3 + L_4\)</span> lorsque <span class="math notranslate nohighlight">\(L_3\)</span> est au milieu de <span class="math notranslate nohighlight">\(L_2\)</span> et <span class="math notranslate nohighlight">\(L_4\)</span>.</p></li>
+<li><p>Se servir de la fonction image pour trouver la position de l’image finale donnée par le système <span class="math notranslate nohighlight">\(L_2 + L_3 + L_4\)</span> lorsque <span class="math notranslate nohighlight">\(L_3\)</span> est au milieu de <span class="math notranslate nohighlight">\(L_2\)</span> et <span class="math notranslate nohighlight">\(L_4\)</span> pour un objet situé 1m avant le système.</p></li>
 <li><p>Ecrire une procédure <code class="docutils literal notranslate"><span class="pre">systeme(objet:list)</span> <span class="pre">--&gt;</span> <span class="pre">list</span></code> qui prend comme argument un objet et qui renvoie la position finale après le système <span class="math notranslate nohighlight">\(L_2 + L_3 + L_4\)</span>.</p></li>
 <li><p>Pour 100 positions équiréparties d’objet entre 100m et 1m, tous de taille 1, obtenir, sous forme de liste les positions des images correspondant. On devra pour cela:</p>
 <ul class="simple">
@@ -578,6 +578,8 @@ et qui renvoie une liste représentant l’image de l’objet par la lentille.</
 <li><p>Modifier le programme précédent pour obtenir aussi dans une seconde liste, les tailles des images.</p></li>
 <li><p>Tracer 2 graphiques représentant la position ou la taille de l’image en fonction de la position de l’objet.</p></li>
 </ol>
+</div>
+<div class="cell tag_remove-output tag_remove-input docutils container">
 </div>
 </div>
 </div>

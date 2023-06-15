@@ -1,7 +1,6 @@
 ---
 jupytext:
   encoding: '# -*- coding: utf-8 -*-'
-  formats: ipynb,md:myst
   split_at_heading: true
   text_representation:
     extension: .md
@@ -13,6 +12,7 @@ kernelspec:
   language: python
   name: python3
 ---
+
 # Physique et informatique - Entrainement
 
 Ces exercices proposent de s'entrainer à l'utilisation de Python en physique dans le cadre de l'optique. On n'utilisera pas ici de méthode numérique particulière, simplement le tracé graphique et l'utilisation de `numpy`.
@@ -41,8 +41,8 @@ On va considérer pour l'étude numérique un système à trois lentilles $(L_2)
 $$
 \begin{cases}
 f_2 = f_4 &= -6 \rm{cm}\\
-f_3 = 3.5 \rm{cm}
-\overline{O_2 O_4} = f_4 + \frac{f_2 f_3}{f_2 + f_3}
+f_3 &= 3.5 \rm{cm}\\
+\overline{O_2 O_4} &= f_4 + \frac{f_2 f_3}{f_2 + f_3}
 \end{cases}
 $$
 
@@ -64,12 +64,13 @@ Vous allez maintenant vous entraîner à coder en Python. Lorsqu'on code des pro
 * Les objets et les images seront représentés par des listes de deux flottants `obj <- [xi, yi]` où `xi` et `yi` représentent les coordonnées de l'objet (position sur Ox et taille sur Oy).
 * Les lentilles seront représentées par des listes de deux flottants `L1 <- [xL, f]` où `xL` représente la position sur Ox de la lentille et `f` la distance focale image de la lentille.
 
-```{code-cell}
+```{code-cell} ipython3
 :tags: [remove-output]
+
 # Exemples
 objet1 = [-3, 1] # Objet ou image en x=-3 de taille y=1
 lentille1 = [2, -1] # Lentilles en x=2 de distance focale f=-1
-print(objet[0])  # Quelle valeur est affichee ? A quelle grandeur physique correspond-elle ?
+print(objet1[0])  # Quelle valeur est affichee ? A quelle grandeur physique correspond-elle ?
 ```
 
 Lorsqu'on étudiera le système $L_2 + L_3 + L_4$, on supposera que la lentille $L_2$ est placée en $O$, soit $x_2 = 0$.
@@ -80,7 +81,7 @@ Lorsqu'on étudiera le système $L_2 + L_3 + L_4$, on supposera que la lentille 
     * `L`: une liste représentant une lentille
     * `objet`: une liste représentant un objet  
     et qui renvoie une liste représentant l'image de l'objet par la lentille.
-2. Se servir de la fonction image pour trouver la position de l'image finale donnée par le système $L_2 + L_3 + L_4$ lorsque $L_3$ est au milieu de $L_2$ et $L_4$.
+2. Se servir de la fonction image pour trouver la position de l'image finale donnée par le système $L_2 + L_3 + L_4$ lorsque $L_3$ est au milieu de $L_2$ et $L_4$ pour un objet situé 1m avant le système.
 3. Ecrire une procédure `systeme(objet:list) --> list` qui prend comme argument un objet et qui renvoie la position finale après le système $L_2 + L_3 + L_4$.
 4. Pour 100 positions équiréparties d'objet entre 100m et 1m, tous de taille 1, obtenir, sous forme de liste les positions des images correspondant. On devra pour cela:
     * Utiliser la fonction `numpy.linspace` pour créer un vecteur position d'objet équiréparties.
@@ -89,4 +90,65 @@ Lorsqu'on étudiera le système $L_2 + L_3 + L_4$, on supposera que la lentille 
 6. Tracer 2 graphiques représentant la position ou la taille de l'image en fonction de la position de l'objet.
 ````
 
+```{code-cell} ipython3
+:tags: [remove-output, remove-input]
+#1
+def image(L: list, objet:list) -> list:
+    xL = L[0]
+    f = L[1]
+    xO = objet[0]
+    yO = objet[1]
+    return [xL + (f * (xO -xL) ) / (f + xO - xL), yO * f / (f + xO - xL)]
 
+#2
+f2 = -6
+f4 = -6
+f3 = 3.5
+x4 = f4 + f2 * f3 / (f2 + f3)
+image1 = image([0, f2], [-100, 1])
+image2 = image([x4 / 2, f3], image1)
+imagef = image([x4, f4], image2)
+print(imagef[0])
+
+#3
+def systeme(objet:list) -> list:
+    f2 = -6
+    f4 = -6
+    f3 = 3.5
+    x4 = f4 + f2 * f3 / (f2 + f3)
+    image1 = image([0, f2], objet)
+    image2 = image([x4 / 2, f3], image1)
+    imagef = image([x4, f4], image2)
+    return imagef
+
+#4 et #5
+import numpy as np
+pos_objet = np.linspace(-10000, -100, 100)
+images_pos = []
+images_taille = []
+for pos in pos_objet:
+    imagef = systeme([pos, 1])
+    images_pos.append(imagef[0])
+    images_taille.append(imagef[1])
+
+#6
+import matplotlib.pyplot as plt
+f, ax = plt.subplots()
+f.suptitle("Position des images")
+ax.set_xlabel('Objet(cm)')
+ax.set_ylabel('Image(cm)')
+ax.plot(pos_objet, images_pos)
+ax.grid()
+
+f, ax = plt.subplots()
+f.suptitle("Taille des images")
+ax.set_xlabel('Objet(cm)')
+ax.set_ylabel('Image(cm)')
+ax.plot(pos_objet, images_taille)
+ax.grid()
+
+```
+
+```{code-cell} ipython3
+
+```
