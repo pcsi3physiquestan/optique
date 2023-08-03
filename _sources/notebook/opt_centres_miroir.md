@@ -14,7 +14,6 @@ kernelspec:
   name: python3
 ---
 
-(miroir_plan)=
 # Miroir plan: Présentation et relation
 
 
