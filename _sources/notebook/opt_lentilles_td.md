@@ -110,5 +110,5 @@ On désire corriger un oeil myope grâce à un verre de lunette qu'on considère
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ [Méthode : Etude qualitative](lentille_qu)._
 * _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
-* _$\Longrightarrow$ [L'oeil : Accomodation]((oeil_acco))._
+* _$\Longrightarrow$ [L'oeil : Accomodation](oeil_acco)._
 * _$\Longrightarrow$ [Lentilles accolées](lentilles_acco)._
