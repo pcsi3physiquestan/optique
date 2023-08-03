@@ -87,6 +87,7 @@ On considère le cas où $n_2 < n_1 $.
 >Si l'angle d'incidence est supérieure à $i_0$, on observe expérimentalement qu'il n'y a pas de rayon réfracté. On parle de __réflexion totale__: toute la lumière est réfléchie.
 ````
 
+(snell_totale)=
 ````{important} __Bilan - A retenir__
 :class: full-width
 On retiendra que lors du passage d'un milieu plus réfringent à un milieu moins réfringent:

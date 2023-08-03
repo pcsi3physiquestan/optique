@@ -48,6 +48,10 @@ Une impulsion lumineuse (une information) arrive à t = 0 au point O sous la for
 6. En déduire quelle quantité d'information cette fibre peut transmettre en une seconde. A.N.: $l=10km,\theta_i=8^{\circ},n_1=1,5$
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Lois de Snell-Descartes](snell_enonce)._
+* _$\Longrightarrow$ [Réflexion totale](snell_totale)._
+
 ````{topic} Eléments de réponse (sans justification)
 * $n_2 < n_1$
 * 90\% puis 0.1\%
@@ -101,9 +105,15 @@ On explique le phénomène de l'arc-en-ciel par les propriétés dispersives de 
 9. Déterminer les valeurs maximum de a pour le rouge (n=1,331) et pour le violet (n=1,337) et en déduire quelle couleur fera l'extérieur de l'arc-en-ciel (c'est-à-dire la partie la plus haute). Que vaut l'ouverture angulaire $\Delta\alpha$ de l'arc-en-ciel?
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Lois de Snell-Descartes](snell_enonce)._
+* _$\Longrightarrow$ [Réflexion totale](snell_totale)._
+* _$\Longrightarrow$ Trigonométrie_
+
 ````{topic} Eléments de réponse (sans justification)
 Soleil dans le dos, sous un angle $a_{\max} - \alpha$
 ````
+
 
 ## La déviation par le prisme
 Il s'agit d'une activité d'approfondissement permettant d'essayer de s'entraîner sur un exercice plus difficile. Certains points pourront être utiles plus tard en Travaux Pratiques.
@@ -133,6 +143,11 @@ Déviation par le prisme
 7. En général, le prisme choisi est très dispersif c'est-à-dire que l'indice de réfraction n dépend fortement (tout est relatif) de la longueur d'onde du faisceau incident $\lambda$. Expliquer pourquoi un tel dispositif permet la réaliser d'un spectroscope, c'est-à-dire un appareil permettant de déterminer le spectre d'un signal lumineux.
 8. (Recherche) Expliquez comment Newton a utiliser cette méthode pour montrer que la lumière blanche était composé d'un grand nombre de radiations "élémentaires". Commenter ce terme (et précisez le terme utilisé aujourd'hui).
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Lois de Snell-Descartes](snell_enonce)._
+* _$\Longrightarrow$ [Réflexion totale](snell_totale)._
+* _$\Longrightarrow$ Trigonométrie_
 
 ````{topic} Correction
 Voici la correction complète de cet exercice, elle servira pour un TP ultérieur.

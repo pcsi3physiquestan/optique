@@ -19,4 +19,6 @@ kernelspec:
  Soit $\lambda_0$ la longueur d'onde dans le vide, sachant que la fréquence d'une onde lumineuse ne varie pas d'un milieu à l'autre, montrer que la longueur d'onde correspondante dans un milieu d'indice de réfraction $n$ est $\lambda = \frac{\lambda_0}{n}$
  ````
 
+_Point utile pour cet exercice $\Longrightarrow$ [Relation de dispersion](rel_dispersion)._
+
  _On rappelle que d'autres exercices d'application sont en ligne._

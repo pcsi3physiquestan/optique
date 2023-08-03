@@ -13,7 +13,7 @@ kernelspec:
   language: python
   name: python3
 ---
-
+(lentille_qu)=
 # Méthodes : Etudes qualitatives
 _La correction de ces exercices méthodes est en ligne._
 

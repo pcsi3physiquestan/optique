@@ -42,6 +42,9 @@ On considère une lentille convergente et un point __image__ A. Déterminer l'an
 ```
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Tracés graphiques](traces_gr)._
+
 ## Utilisation des relations
 ````{admonition} Exercice 
 :class: attention
@@ -61,8 +64,18 @@ Estimer la distance entre la lentille et la matrice CCD d'un appareil photo num�
 4. à 50cm. Commenter. 
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Etude qualitative](lentille_qu)._
+* _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
+
+
 ## Accomodation de l'oeil
 ````{admonition} Exercice 
 :class: attention
 Déterminer la gamme de distance focale que peut prendre le cristallin d'un oeil emmétrope.
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Etude qualitative](lentille_qu)._
+* _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
+* _$\Longrightarrow$ [L'oeil : Accomodation](oeil_acco)._

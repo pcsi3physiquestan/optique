@@ -24,6 +24,7 @@ Les caractéristiques intéressantes de la loupe sont:
 * sa latitude de mise au point: on recherchera l'intervalle de position d'objet pouvant être vue par l'oeil - on placera l'oeil au foyer image de la loupe de façon arbitraire.
 * sa profondeur de champ et sa résolution angulaire (pour un oeil emmétrope). Nous ne calculerons ici que la résolution angulaire.
 
+(grossissement)=
 ## Caractéristiques d'une loupe
 Vous pouvez essayer de faire l'exercice au moyen des définitions précédentes.
 

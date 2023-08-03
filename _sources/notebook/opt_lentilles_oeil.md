@@ -13,6 +13,7 @@ kernelspec:
   language: python
   name: python3
 ---
+(oeil)=
 # L'oeil et ses défauts
 
 ## Modélisation
@@ -44,6 +45,7 @@ Du point de vue de l'optique géométrique, on peut modéliser l'oeil comme une 
 ```
 ````
 
+(oeil_acco)=
 ### Accomodation
 
 ```{sidebar} Accomodation et fatigue oculaire

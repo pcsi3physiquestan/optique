@@ -116,3 +116,10 @@ On s'intéresse à une lunette réelle. Ses caractéristiques sont:
 3. Faire le même schéma pour un faisceau faisant un angle $\theta=30^{\circ}$ par rapport à l'axe optique. Que se passe-t-il? En déduire que le faisceau "utile" entrant, c'est-à-dire l'ensemble des rayons entrant dans la lunette qui ressortent effectivement dépend de l'angle. Quelle est la conséquence sur l'observation?
 4. Déterminer graphiquement l'angle maximal pour lequel la section du faisceau "utile" est encore maximale (c'est-à-dire vaut la section déterminée pour le cas d'un faisceau parallèle à l'axe optique). On notera cette angle $\theta_{\max}$.
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Tracés graphiques](traces_gr)._
+* _$\Longrightarrow$ [Méthode : Etude qualitative](lentille_qu)._
+* _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
+* _$\Longrightarrow$ [Eléments principaux d'un système centré](foyers)._
+* _$\Longrightarrow$ [Détermination d'un grossissement](grossissement)._

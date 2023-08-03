@@ -14,6 +14,7 @@ kernelspec:
   name: python3
 ---
 
+(lentilles_acco)=
 # Activités : Lentilles accolées
 
 Nous allons étudier ici le cas de deux lentilles minces accolées, __c'est-à-dire de deux lentilles dont on peut considerer que les centres optiques sont confondus.__

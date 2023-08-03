@@ -13,11 +13,11 @@ kernelspec:
   language: python
   name: python3
 ---
-
 # Relations des lentilles minces
 
 ## Lentilles minces: Relations de conjugaison
 
+(conjugaison)=
 ### Lentilles minces: Relation de conjugaison (Enoncé)
 
 ````{important} __Relation de conjugaison d'une lentille mince.__

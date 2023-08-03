@@ -14,6 +14,7 @@ kernelspec:
   name: python3
 ---
 
+(traces_gr)=
 # Méthodes : Tracés graphiques
 ## Tracé un rayon transmis quelconque.
 Les corrections sont en ligne. __Il est important de s'entraîner à rédiger la description du tracé.__

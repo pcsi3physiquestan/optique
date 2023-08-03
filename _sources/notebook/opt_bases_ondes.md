@@ -47,6 +47,7 @@ Dans le vide, la célérité des ondes lumineuses est $c = 3 \times 10^8 m.s^{-1
 | Liquide | | Variables suivant leur nature. Utile pour la réfractométrie en chimie. Dispersif.|
 ````
 
+(rel_dispersion)=
 ## Relation entre célérité et longueur d'onde
 
 ````{important} __Relation fréquence-longueur d'onde__

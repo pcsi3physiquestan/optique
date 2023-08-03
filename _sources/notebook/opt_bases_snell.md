@@ -22,6 +22,7 @@ Les lois de Snell-Descartes permettent de traiter le cas où l'on passe brusquem
 On remarquera que localement, l'approximation de l'optique géométrique n'est plus valable. Cela explique que les propriétés précédentes ne suffisent plus à étudier le comportement des rayons lumineux.
 ````
 
+(snell_enonce)=
 ## Lois de Snell-Descartes: Enoncé
 
 

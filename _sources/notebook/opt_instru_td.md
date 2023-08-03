@@ -39,3 +39,10 @@ Un microscope optique permet d'observer des globules sanguins. Il est modélisab
 7. Calculer l'angle u intervenant dans l'ouverture numérique pour un objectif placé dans l'air. Le microscope utilisé est-il utilisé dans les conditions de Gauss? Quel type d'aberrations doit-on corriger? Quel est l'ordre de grandeur du diamètre de la monture de l'objectif?
 8. Déterminer la position et la taille du cercle oculaire défini comme l'image de la monture de l'objectif à travers l'oculaire. Quel est l'intérêt de placer l'oeil dans le plan du cercle oculaire?
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Tracés graphiques](traces_gr)._
+* _$\Longrightarrow$ [Méthode : Etude qualitative](lentille_qu)._
+* _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
+* _$\Longrightarrow$ [Eléments principaux d'un système centré](foyers)._
+* _$\Longrightarrow$ [Détermination d'un grossissement](grossissement)._

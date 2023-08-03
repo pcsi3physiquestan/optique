@@ -39,6 +39,10 @@ Avec la lunette, l'observateur vise l'horizon donc l'axe optique de la lunette a
 3. Dans ces conditions, déterminer la relation entre l'angle AOC et l'angle SOH où S désigne la position de l'astre et H l'horizon.
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Miroir plan](miroir_plan)._
+* _$\Longrightarrow$ Trigonométrie_
+
 ````{topic} Eléments de réponse (sans justification)
 1. $2 \theta + \phi - \pi/3$
 2. $\theta = \pi/6 - \phi / 2$
@@ -65,6 +69,12 @@ On étudie un dioptre hémisphérique (une lentille) de rayon R et d'indice n pl
 5. Faire l'application numérique pour n = 1,5, R = 5cm.
 6. \*Faire un développement limité au second ordre en i de la distance CA. Conclure quant à la possibilité de réaliser l'approximation de Gauss.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Lois de Snell-Descartes](snell_enonce)._
+* _$\Longrightarrow$ [Réflexion totale](snell_totale)._
+* _$\Longrightarrow$ [Eléments principaux d'un système centré](foyers)._
+* _$\Longrightarrow$ [Méthode : Recherche d'un foyer](meth_foyer)._
+* _$\Longrightarrow$ Trigonométrie_
 
 ````{topic} Eléments de réponse (sans justification)
 1. $CA = R \cos i + R \frac{\sin i}{\tan(r - i)}$

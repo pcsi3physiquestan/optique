@@ -21,6 +21,7 @@ kernelspec:
 * Dans les conditions de Gauss (ordre 1), on trouve normalement un résultat dépendant de la position de l'objet/image mais _pas du rayon choisi (ici de l'angle i)._ C'est le __stigmatisme approchée.__
 ````
 
+(meth_foyer)=
 ## Foyer image d'un miroir sphérique.
 
 ````{admonition} Exercice 

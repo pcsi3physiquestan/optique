@@ -43,3 +43,9 @@ Les oculaires sont rarement utilisées seules (sauf en joaillerie). En général
 Par la suite, on va étudier une lunette ou un microscope. En général, l'oculaire est composée de plusieurs lentilles mais on peut "faire comme si" elle se ramenait à une lentille (loupe) dont le grossissement est équivalent - on donne en général la focale correspondante. Celà simplifie l'étude sans changer les résultats. Il ne faut donc pas être étonné de voir des oculaires à une lentille par la suite.
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Tracés graphiques](traces_gr)._
+* _$\Longrightarrow$ [Méthode : Etude qualitative](lentille_qu)._
+* _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
+* _$\Longrightarrow$ [Eléments principaux d'un système centré](foyers)._
+* _$\Longrightarrow$ [Détermination d'un grossissement](grossissement)._

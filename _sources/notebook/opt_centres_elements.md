@@ -16,6 +16,7 @@ kernelspec:
 
 # Eléments principaux des systèmes centrés
 
+(foyers)=
 ## Eléments principaux: foyers
 
 ```{margin}

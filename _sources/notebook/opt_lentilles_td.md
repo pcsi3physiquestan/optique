@@ -48,6 +48,9 @@ On considère une lentille divergente. Déterminer les antécédents (il est con
 ```
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Tracés graphiques](traces_gr)._
+
 ## Etude d'un doublet
 On considère un doublet de lentille, c'est-à-dire deux lentilles $L_1$ et $L_2$ de distance focale image respectives $f_1  = a$ et $f_2 = 3a$ et dont les centre optique (respectivement $O_1$ et $O_2$) sont distants de $\overline{O_1 O_2} = 2a$.
 
@@ -64,6 +67,13 @@ On considère un doublet de lentille, c'est-à-dire deux lentilles $L_1$ et $L_2
 1. $\overline{F_1 A} = \frac{a}{2}$
 2. $\overline{F'_2 A'} = - \frac{9a}{2}$
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Tracés graphiques](traces_gr)._
+* _$\Longrightarrow$ [Méthode : Etude qualitative](lentille_qu)._
+* _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
+* _$\Longrightarrow$ [Eléments principaux d'un système centré](foyers)._
+
 
 ## L'oeil et ses défauts
 On désire étudier l'oeil et l'un de ses défauts: la myopie. On modélise l'oeil par une lentille convergente représentant le cristallin (distance focale image $f'$, centre optique O) qui doit former l'image de l'objet observé sur la rétine qu'on modélisera par un écran situé en $A'$ à une distance $e=\overline{OA'}=15\rm{mm}$. L'oeil observe un objet situé en A à une distance $\overline{AO}=d$.
@@ -97,3 +107,8 @@ On désire corriger un oeil myope grâce à un verre de lunette qu'on considère
 * Par abus de langage, on appelle degré de myopie la vergence du verre correcteur (en valeur absolue) qu'il faut mettre devant un oeil pour corriger sa myopie. A quelle condition sur $\delta V$ et $d_L$, cette abus est-il acceptable?
 * Dans le cas où $\delta V=4\delta$, calculer la nouvelle position du $P_P$, on notera cette distance (dans le sens positif) $d_{mc}$. Que devient cette distance dans le cas où $\delta V \ll 1/d_L$?
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ [Méthode : Etude qualitative](lentille_qu)._
+* _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
+* _$\Longrightarrow$ [L'oeil : Accomodation]((oeil_acco))._
+* _$\Longrightarrow$ [Lentilles accolées](lentilles_acco)._
