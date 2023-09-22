@@ -15,9 +15,9 @@ kernelspec:
 ---
 # Entrainement : Instruments d'optique
 
-Pensez à travailler les [questions de cours](https://stanislas.edunao.com/mod/resource/view.php?id=12793) et les [raisonnements qualitatifs](https://stanislas.edunao.com/mod/quiz/view.php?id=12792) (en ligne) aussi.
+Pensez à travailler les [questions de cours](https://moodlecpge.stanislas.fr/mod/resource/view.php?id=127) et les [raisonnements qualitatifs](https://moodlecpge.stanislas.fr/mod/quiz/view.php?id=128) (en ligne) aussi.
 
-Il est vivement conseillé de s'entraîner aussi avec le [devoir libre sur l'appareil photographique](https://stanislas.edunao.com/mod/resource/view.php?id=12790).
+Il est vivement conseillé de s'entraîner aussi avec le devoir libre sur l'appareil photographique.
 
 ## Le microscope
 Un microscope optique permet d'observer des globules sanguins. Il est modélisable par deux lentilles minces convergentes $L_1$ pour l'objectif de distance focale $f_1$ et $L_2$ pour l'oculaire de distance focale $f_2$. Il est réglé pour donner une image à l'infini d'un objet réel $AB$ perpendiculaire à l'axe optique (A étant sur l'axe optique) légèrement en avant du foyer objet de l'objectif. Cette image est observée par un oeil emmétrope (normal) placé au voisinage du foyer image de l'oculaire. On notera $A'B'$ l'image intermédiaire. Le microscope porte les indications suivantes:

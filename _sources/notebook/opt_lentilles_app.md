@@ -14,7 +14,7 @@ kernelspec:
   name: python3
 ---
 # Application
-_On rappelle que certains exercices sont disponibles en ligne (https://stanislas.edunao.com/course/view.php?id=987&section=3)._
+_On rappelle que certains exercices sont disponibles [en ligne](https://moodlecpge.stanislas.fr/course/view.php?id=2&section=1)._
 Ces exercices d'application directe est à faire à la suite du cours pour vérifier votre compréhension des méthodes. Vous pourrez confronter votre travail avec celui de vos camarades et poser des questions sur cet exercice en classe mais il ne sera pas forcément donné de correction complète.
 
 ## Tracés graphiques

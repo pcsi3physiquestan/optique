@@ -18,7 +18,7 @@ kernelspec:
 # Méthodes : Tracés graphiques
 ## Tracé un rayon transmis quelconque.
 Les corrections sont en ligne. __Il est important de s'entraîner à rédiger la description du tracé.__
-_Vous pouvez visualiser la méthode de tracé d'une image grâce à [cette simulation Geogebra](https://stanislas.edunao.com/mod/resource/view.php?id=12786)._
+_Vous pouvez visualiser la méthode de tracé d'une image grâce à [cette simulation Geogebra](https://moodlecpge.stanislas.fr/mod/resource/view.php?id=119)._
 
 ````{admonition} Exercice 
 :class: attention

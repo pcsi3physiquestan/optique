@@ -19,7 +19,7 @@ kernelspec:
 ## Tracé qualitatif du rayon réfracté.
 Le tracé du rayon réfléchi s'obtient par simple symétrie quel que soient les valeurs des indices. Nous allons plutôt ici voir comment on peut prévoir semi-qualitativement le tracé du rayon réfracté et nous obtiendrons plus informations très importantes. Nous travaillerons dans le plan d'incidence.
 
-_Vous pouvez utiliser la [simulation Geogebra en ligne](https://stanislas.edunao.com/mod/resource/view.php?id=12779) pour visualiser les différents comportements._
+_Vous pouvez utiliser la [simulation Geogebra en ligne](https://moodlecpge.stanislas.fr/mod/resource/view.php?id=111) pour visualiser les différents comportements._
 __Les conclusions obtenues ici sont à connaître autant qu'à savoir retrouver.__
 
 Il est __vivement__ conseillé de réfléchir aux exercices __avant__ de regarder les réponses (en ligne).
