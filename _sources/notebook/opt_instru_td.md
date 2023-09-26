@@ -46,3 +46,12 @@ _Point utile pour cet exercice_
 * _$\Longrightarrow$ [Relations de conjugaison](conjugaison)._
 * _$\Longrightarrow$ [Eléments principaux d'un système centré](foyers)._
 * _$\Longrightarrow$ [Détermination d'un grossissement](grossissement)._
+
+
+````{dropdown} Correction partielle
+
+Corrigé des dernières questions (7 et 8).
+
+* Dans l'air $n \approx 1$ donc $u = \arcsin \omega_0 = 0.71 \rm{rad} = 41 ^{\circ}$. Le microscope n'est donc pas utilisé dans les conditions de Gauss (en pratique, les lentilles sont taillées pour atténuer les aberrations géométriques et l'utilisation d'un ensemble de lentilles corrige aussi les aberratinos chromatiques). Il vient: $D = \overline{O_1 A} \tan \arcsin u = $ (remplacer $\overline{O_1 A}$ par l'expression trouvée précédemment).
+* $\overline{F'_2 O_c} = \frac{(\delta / G_c)^2}{\Delta + \Delta / \gamma}$ et $D_{Oc} = -D \times \frac{(\delta / G_c)}{\Delta + \Delta / \gamma}$ grâce à la relation de grandissement au foyer image (le diamètre est donné en valeur absolue ici).
+````
