@@ -90,6 +90,12 @@ On suppose dans un premier temps que la résolution de la lunette est due au pou
 3. L'observateur place son oeil sur le cercle oculaire. Déterminer la latitude de mise au point.
 ````
 
+````{topic} Latitue de mise au point - Eléments de correction
+1. cf. cours
+2. Notons $A_i$ l'image intermédiaire, on peut écrire deux relations de conjugaison : $\overline{F_1 A}\overline{F'_1 A_i} = -f_1^2$ et $\overline{F_2 A_i}\overline{F'_2 A_1} = -f_2^2$. En divisant les relations avec $F'_1 = F_2$, il vient: $\overline{F'_2 A_1} = \frac{f_2^2}{f_1^2}\overline{F_1 A}$.
+3. On cherche les antécédents de $A_1$ lorsqu'il est au PR et au PP. Dans le premier cas, l'antécédent est à l'infini et dans le second: $\overline{F_1 A} = \frac{f_1^2}{f_2^2}\overline{F'_2 A_1} = \frac{f_1^2}{f_2^2}\left(\frac{f_2^2}{f_1} - d_{min}\right)$ avec $d_{min}$ la distance au punctum proximum.
+````
+
 ````{admonition} Exercice - Lunette réelle
 :class: attention
 Définitino : On appelle le champ (angulaire) de pleine lumière, l'angle maximal sous lequel un objet peut-être vu par la lunette et où le faisceau sortant est intégralement le faisceau entrant. Quand on observe le ciel, la faible luminosité empêche souvent de visualiser des objets qui ne sont pas dans le champ de pleine lumière (même si une partie de la lumière qui arrive jusqu'à la lunette en ressort).
